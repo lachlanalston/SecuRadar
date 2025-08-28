@@ -1,7 +1,7 @@
 [
   {
     "title": "Countering Chinese State-Sponsored Actors Compromise of Networks Worldwide to Feed Global Espionage System",
-    "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/apt40-advisory-prc-mss-tradecraft-in-action",
+    "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/countering-chinese-state-sponsored-actors-compromise-of-networks-worldwide-to-feed-global-espionage-system",
     "date": "2025-08-28",
     "summary": "This joint cyber security advisory provides insights into People's Republic of China (PRC) state-sponsored cyber threat actors, detailing how they gain and maintain persistent access, and the capabilities they possess. It offers threat hunting guidance and mitigation strategies to help safeguard networks.",
     "severity": "Critical",
