@@ -1,20 +1,38 @@
 [
   {
-    "title": "Critical vulnerability in Fortinet",
-    "link": "https://www.cyber.gov.au/advisories/fortinet-critical",
+    "title": "Countering Chinese State-Sponsored Actors Compromise of Networks Worldwide to Feed Global Espionage System",
+    "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/apt40-advisory-prc-mss-tradecraft-in-action",
     "date": "2025-08-28",
-    "summary": "A critical vulnerability affects Fortinet devices...",
+    "summary": "This joint cyber security advisory provides insights into People's Republic of China (PRC) state-sponsored cyber threat actors, detailing how they gain and maintain persistent access, and the capabilities they possess. It offers threat hunting guidance and mitigation strategies to help safeguard networks.",
     "severity": "Critical",
-    "vendor": "Fortinet",
-    "cve": "CVE-2025-12345"
+    "vendor": "N/A",
+    "cve": "N/A"
   },
   {
-    "title": "Exchange zero-day vulnerability",
-    "link": "https://www.cyber.gov.au/advisories/exchange-zero-day",
+    "title": "Multiple vulnerabilities affecting NetScaler ADC and NetScaler Gateway devices",
+    "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/multiple-vulnerabilities-affecting-netscaler-adc-and-netscaler-gateway-devices",
     "date": "2025-08-27",
-    "summary": "Microsoft Exchange servers are impacted by a zero-day...",
-    "severity": "High",
-    "vendor": "Microsoft",
-    "cve": "CVE-2025-54321"
+    "summary": "ASD’s ACSC is aware of multiple vulnerabilities (CVE-2025-7775, CVE-2025-7776 & CVE-2025-8424) affecting NetScaler ADC (formerly Citrix ADC) and NetScaler Gateway (formerly Citrix Gateway) products. Organisations are strongly encouraged to take immediate action to mitigate and detect compromise on relevant systems.",
+    "severity": "Critical",
+    "vendor": "Citrix",
+    "cve": "CVE-2025-7775, CVE-2025-7776, CVE-2025-8424"
+  },
+  {
+    "title": "Scattered Spider",
+    "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/scattered-spider",
+    "date": "2025-07-30",
+    "summary": "This joint Cybersecurity Advisory is in response to recent activity by Scattered Spider threat actors against the commercial facilities sectors, subsectors, and other sectors. This advisory provides tactics, techniques, and procedures (TTPs) obtained through FBI investigations as recently as June 2025.",
+    "severity": "Medium",
+    "vendor": "N/A",
+    "cve": "N/A"
+  },
+  {
+    "title": "Scammers impersonating the ASD's ACSC",
+    "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/scammers-impersonating-the-asds-acsc",
+    "date": "2025-06-13",
+    "summary": "Scammers are impersonating the ASD's ACSC sending out phishing emails to the public with the email content suggesting to download a malicious antivirus program.",
+    "severity": "Medium",
+    "vendor": "N/A",
+    "cve": "N/A"
   }
 ]
