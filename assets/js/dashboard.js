@@ -2,7 +2,23 @@ const advisoriesUrl = 'data/advisories.json';
 let advisories = [];
 let selectedSeverities = [];
 
-// Fetch advisories JSON
+// Check if advisory is within last business day
+function isNewAdvisory(advisoryDateStr) {
+  const advisoryDate = new Date(advisoryDateStr);
+  const now = new Date();
+  let lastBusinessDay = new Date(now);
+  const day = now.getDay();
+
+  if (day === 0) lastBusinessDay.setDate(now.getDate() - 2); // Sunday -> Friday
+  else if (day === 1) lastBusinessDay.setDate(now.getDate() - 3); // Monday -> Friday
+  else lastBusinessDay.setDate(now.getDate() - 1); // Other weekdays
+
+  lastBusinessDay.setHours(0,0,0,0);
+  advisoryDate.setHours(0,0,0,0);
+  return advisoryDate >= lastBusinessDay;
+}
+
+// Load advisories JSON
 async function loadAdvisories() {
   const response = await fetch(advisoriesUrl);
   advisories = await response.json();
@@ -30,8 +46,11 @@ function renderDashboard() {
   filtered.forEach(a => {
     const card = document.createElement('div');
     card.classList.add('card-item');
+    if (isNewAdvisory(a.date)) card.classList.add('new');
+
+    const newBadge = isNewAdvisory(a.date) ? `<span class="new-badge">NEW</span>` : '';
     card.innerHTML = `
-      <h3>${a.title}</h3>
+      <h3>${a.title} ${newBadge}</h3>
       <p><strong>Vendor:</strong> ${a.vendor}</p>
       <p><strong>CVE:</strong> ${a.cve}</p>
       <p class="severity"><strong>Severity:</strong> ${a.severity}</p>
@@ -48,9 +67,10 @@ function renderDashboard() {
   document.querySelector('.card.high').textContent = `High: ${advisories.filter(a => a.severity === 'High').length}`;
   document.querySelector('.card.medium').textContent = `Medium: ${advisories.filter(a => a.severity === 'Medium').length}`;
   document.querySelector('.card.low').textContent = `Low: ${advisories.filter(a => a.severity === 'Low').length}`;
+  document.querySelector('.card.new').textContent = `New: ${advisories.filter(a => isNewAdvisory(a.date)).length}`;
 }
 
-// Render severity chart
+// Render chart
 function renderCharts() {
   const ctx = document.getElementById('severityChart').getContext('2d');
   const data = {
@@ -72,7 +92,7 @@ function renderCharts() {
   });
 }
 
-// Search and other filters
+// Search and filter events
 document.getElementById('search').addEventListener('input', renderDashboard);
 document.getElementById('vendorFilter').addEventListener('input', renderDashboard);
 document.getElementById('cveFilter').addEventListener('input', renderDashboard);
@@ -82,11 +102,11 @@ document.getElementById('darkModeToggle').addEventListener('change', (e) => {
   document.body.classList.toggle('dark', e.target.checked);
 });
 
-// Severity cards filter logic
+// Severity card filter logic
 document.querySelectorAll('#severityCards .card[data-severity]').forEach(card => {
   card.addEventListener('click', () => {
     const severity = card.dataset.severity;
-    if (severity === 'All') return; // Total is not a filter
+    if (severity === 'All') return;
     if (selectedSeverities.includes(severity)) {
       selectedSeverities = selectedSeverities.filter(s => s !== severity);
       card.classList.remove('selected');
@@ -98,7 +118,7 @@ document.querySelectorAll('#severityCards .card[data-severity]').forEach(card =>
   });
 });
 
-// Clear severity selection
+// Clear selection
 document.getElementById('clearSeverity').addEventListener('click', () => {
   selectedSeverities = [];
   document.querySelectorAll('#severityCards .card').forEach(c => c.classList.remove('selected'));
