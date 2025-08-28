@@ -84,6 +84,7 @@ header h1 {
 .card.high { background: #f59e0b; color: white; }
 .card.medium { background: #facc15; color: black; }
 .card.low { background: #22c55e; color: white; }
+.card.new { background: #3b82f6; color: white; }
 
 .filters {
   display: flex;
@@ -124,8 +125,31 @@ header h1 {
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
+.card-item.new {
+  border: 2px solid #ef4444;
+  box-shadow: 0 6px 15px rgba(239,68,68,0.4);
+  transform: translateY(-2px);
+}
+
 .card-item .severity {
   font-weight: bold;
+}
+
+.new-badge {
+  background: #ef4444;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.4rem;
+  margin-left: 0.5rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
 
 a {
