@@ -153,4 +153,10 @@ a {
   text-decoration: none;
 }
 a:hover {
-  tex
+  text-decoration: underline;
+}
+
+.charts {
+  max-width: 600px;
+  margin: 2rem auto;
+}
