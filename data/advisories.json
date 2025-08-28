@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Critical vulnerability in Fortinet",
+    "link": "https://www.cyber.gov.au/advisories/fortinet-critical",
+    "date": "2025-08-28",
+    "summary": "A critical vulnerability affects Fortinet devices...",
+    "severity": "Critical",
+    "vendor": "Fortinet",
+    "cve": "CVE-2025-12345"
+  },
+  {
+    "title": "Exchange zero-day vulnerability",
+    "link": "https://www.cyber.gov.au/advisories/exchange-zero-day",
+    "date": "2025-08-27",
+    "summary": "Microsoft Exchange servers are impacted by a zero-day...",
+    "severity": "High",
+    "vendor": "Microsoft",
+    "cve": "CVE-2025-54321"
+  }
+]
