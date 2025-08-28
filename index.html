@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SecuRadar Dashboard</title>
-<link rel="stylesheet" href="assets/css/dashboard.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecuRadar - ASD Advisories Dashboard</title>
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+  <header>
+    <h1>SecuRadar</h1>
+    <span class="badge">ASD Advisories Only</span>
+    <label class="theme-toggle">
+      <input type="checkbox" id="darkModeToggle">
+      <span>Dark Mode</span>
+    </label>
+  </header>
 
-<header>
-  <h1>SecuRadar</h1>
-  <p>Vulnerability Advisories Dashboard</p>
-  <div class="stats">
-    <div id="total">Total: 0</div>
-    <div id="critical">Critical: 0</div>
-    <div id="last-updated">Last Updated: -</div>
-  </div>
-</header>
+  <section class="summary-cards">
+    <div class="card total">Total: 0</div>
+    <div class="card critical">Critical: 0</div>
+    <div class="card high">High: 0</div>
+    <div class="card medium">Medium: 0</div>
+    <div class="card low">Low: 0</div>
+  </section>
 
-<main>
-  <div class="controls">
-    <input type="text" id="search-title" placeholder="Search title/summary..." />
-    <input type="text" id="search-vendor" placeholder="Search vendor..." />
-    <input type="text" id="search-cve" placeholder="Search CVE ID..." />
-    <select id="severity-filter">
+  <section class="filters">
+    <input type="text" id="search" placeholder="Search title, summary, vendor, CVE">
+    <select id="severityFilter">
       <option value="">All Severities</option>
       <option value="Critical">Critical</option>
       <option value="High">High</option>
       <option value="Medium">Medium</option>
       <option value="Low">Low</option>
     </select>
-  </div>
-  <table id="advisories-table">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Vendor</th>
-        <th>CVE</th>
-        <th>Date</th>
-        <th>Severity</th>
-        <th>Link</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td colspan="6">Loading advisories...</td></tr>
-    </tbody>
-  </table>
-</main>
+    <input type="text" id="vendorFilter" placeholder="Filter by Vendor">
+    <input type="text" id="cveFilter" placeholder="Filter by CVE ID">
+  </section>
 
-<script src="assets/js/dashboard.js"></script>
+  <section class="cards-grid" id="advisoriesGrid">
+    <!-- Advisory cards will be injected here -->
+  </section>
+
+  <section class="charts">
+    <canvas id="severityChart"></canvas>
+  </section>
+
+  <script src="assets/js/dashboard.js"></script>
 </body>
 </html>
