@@ -1,5 +1,6 @@
 const advisoriesUrl = 'data/advisories.json';
 let advisories = [];
+let selectedSeverities = [];
 
 // Fetch advisories JSON
 async function loadAdvisories() {
@@ -15,13 +16,12 @@ function renderDashboard() {
   grid.innerHTML = '';
 
   const searchValue = document.getElementById('search').value.toLowerCase();
-  const severityFilter = document.getElementById('severityFilter').value;
   const vendorFilter = document.getElementById('vendorFilter').value.toLowerCase();
   const cveFilter = document.getElementById('cveFilter').value.toLowerCase();
 
   const filtered = advisories.filter(a => {
     const matchesSearch = a.title.toLowerCase().includes(searchValue) || a.summary.toLowerCase().includes(searchValue);
-    const matchesSeverity = severityFilter ? a.severity === severityFilter : true;
+    const matchesSeverity = selectedSeverities.length > 0 ? selectedSeverities.includes(a.severity) : true;
     const matchesVendor = vendorFilter ? (a.vendor || '').toLowerCase().includes(vendorFilter) : true;
     const matchesCVE = cveFilter ? (a.cve || '').toLowerCase().includes(cveFilter) : true;
     return matchesSearch && matchesSeverity && matchesVendor && matchesCVE;
@@ -67,21 +67,3 @@ function renderCharts() {
     }]
   };
   new Chart(ctx, {
-    type: 'pie',
-    data: data
-  });
-}
-
-// Filter inputs
-document.getElementById('search').addEventListener('input', renderDashboard);
-document.getElementById('severityFilter').addEventListener('change', renderDashboard);
-document.getElementById('vendorFilter').addEventListener('input', renderDashboard);
-document.getElementById('cveFilter').addEventListener('input', renderDashboard);
-
-// Dark mode toggle
-document.getElementById('darkModeToggle').addEventListener('change', (e) => {
-  document.body.classList.toggle('dark', e.target.checked);
-});
-
-// Initial load
-loadAdvisories();
