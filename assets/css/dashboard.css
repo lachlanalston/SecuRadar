@@ -82,12 +82,43 @@ header h1 {
   flex-wrap: wrap;
 }
 
-.filters input, .filters select {
+.filters input {
   padding: 0.5rem;
   border-radius: 0.4rem;
   border: 1px solid #d1d5db;
   flex: 1;
   min-width: 150px;
+}
+
+.severity-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.severity-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.4rem;
+  background: var(--card-bg);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+.severity-btn.selected {
+  color: white;
+}
+
+.severity-btn[data-severity="Critical"].selected { background: #ef4444; }
+.severity-btn[data-severity="High"].selected { background: #f59e0b; }
+.severity-btn[data-severity="Medium"].selected { background: #facc15; color: black; }
+.severity-btn[data-severity="Low"].selected { background: #22c55e; }
+
+#clearSeverity {
+  background: #9ca3af;
+  color: white;
 }
 
 .cards-grid {
@@ -122,10 +153,4 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
-}
-
-.charts {
-  max-width: 600px;
-  margin: 2rem auto;
-}
+  tex
