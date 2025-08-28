@@ -1,6 +1,7 @@
 const advisoriesUrl = 'data/advisories.json';
 let advisories = [];
 
+// Fetch advisories JSON
 async function loadAdvisories() {
   const response = await fetch(advisoriesUrl);
   advisories = await response.json();
@@ -8,7 +9,7 @@ async function loadAdvisories() {
   renderCharts();
 }
 
-// Dashboard rendering
+// Render dashboard cards
 function renderDashboard() {
   const grid = document.getElementById('advisoriesGrid');
   grid.innerHTML = '';
@@ -49,7 +50,7 @@ function renderDashboard() {
   document.querySelector('.card.low').textContent = `Low: ${advisories.filter(a => a.severity === 'Low').length}`;
 }
 
-// Charts
+// Render severity chart
 function renderCharts() {
   const ctx = document.getElementById('severityChart').getContext('2d');
   const data = {
@@ -71,7 +72,16 @@ function renderCharts() {
   });
 }
 
-// Filters
+// Filter inputs
 document.getElementById('search').addEventListener('input', renderDashboard);
 document.getElementById('severityFilter').addEventListener('change', renderDashboard);
-document.getElementById('vendorFilter').addEventListener('input',
+document.getElementById('vendorFilter').addEventListener('input', renderDashboard);
+document.getElementById('cveFilter').addEventListener('input', renderDashboard);
+
+// Dark mode toggle
+document.getElementById('darkModeToggle').addEventListener('change', (e) => {
+  document.body.classList.toggle('dark', e.target.checked);
+});
+
+// Initial load
+loadAdvisories();
