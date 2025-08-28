@@ -1,0 +1,34 @@
+name: Test RSS Feed Update
+
+on:
+  workflow_dispatch:  # Manual trigger
+  schedule:
+    # Optional: run daily at 6am UTC for testing
+    - cron: '0 6 * * *'
+
+jobs:
+  fetch-test-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install feedparser
+
+      - name: Run test feed script
+        run: python scripts/fetch_cisa.py
+
+      - name: Commit and push updated JSON
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/test_advisories.json
+          git commit -m "Update test CISA advisories [skip ci]" || echo "No changes to commit"
+          git push
