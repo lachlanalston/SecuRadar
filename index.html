@@ -17,26 +17,20 @@
     </label>
   </header>
 
-  <section class="summary-cards">
-    <div class="card total">Total: 0</div>
-    <div class="card critical">Critical: 0</div>
-    <div class="card high">High: 0</div>
-    <div class="card medium">Medium: 0</div>
-    <div class="card low">Low: 0</div>
+  <!-- Severity filter cards -->
+  <section class="summary-cards" id="severityCards">
+    <div class="card total" data-severity="All">Total: 0</div>
+    <div class="card critical" data-severity="Critical">Critical: 0</div>
+    <div class="card high" data-severity="High">High: 0</div>
+    <div class="card medium" data-severity="Medium">Medium: 0</div>
+    <div class="card low" data-severity="Low">Low: 0</div>
+    <div class="card clear" id="clearSeverity">Clear</div>
   </section>
 
   <section class="filters">
     <input type="text" id="search" placeholder="Search title, summary, vendor, CVE">
     <input type="text" id="vendorFilter" placeholder="Filter by Vendor">
     <input type="text" id="cveFilter" placeholder="Filter by CVE ID">
-
-    <div class="severity-buttons">
-      <button class="severity-btn" data-severity="Critical">Critical</button>
-      <button class="severity-btn" data-severity="High">High</button>
-      <button class="severity-btn" data-severity="Medium">Medium</button>
-      <button class="severity-btn" data-severity="Low">Low</button>
-      <button id="clearSeverity">Clear</button>
-    </div>
   </section>
 
   <section class="cards-grid" id="advisoriesGrid">
