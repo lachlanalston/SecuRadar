@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SecuRadar Dashboard</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
-    .advisory-card { background: #fff; padding: 15px; margin-bottom: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    h3 { margin: 0 0 5px 0; }
-    a { color: #1e90ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecuRadar Dashboard</title>
+<link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
 <body>
-  <h1>SecuRadar: Recent Advisories</h1>
-  <div id="advisories-container">Loading advisories...</div>
-  <script src="script.js"></script>
+
+<header>
+  <h1>SecuRadar</h1>
+  <p>Vulnerability Advisories Dashboard</p>
+  <div class="stats">
+    <div id="total">Total: 0</div>
+    <div id="critical">Critical: 0</div>
+    <div id="last-updated">Last Updated: -</div>
+  </div>
+</header>
+
+<main>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search advisories..." />
+    <select id="severity-filter">
+      <option value="">All Severities</option>
+      <option value="Critical">Critical</option>
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+  </div>
+  <table id="advisories-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Severity</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="4">Loading advisories...</td></tr>
+    </tbody>
+  </table>
+</main>
+
+<script src="assets/js/dashboard.js"></script>
 </body>
 </html>
