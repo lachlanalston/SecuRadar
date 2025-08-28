@@ -42,7 +42,7 @@ function renderDashboard() {
     grid.appendChild(card);
   });
 
-  // Update summary cards
+  // Update summary counts
   document.querySelector('.card.total').textContent = `Total: ${advisories.length}`;
   document.querySelector('.card.critical').textContent = `Critical: ${advisories.filter(a => a.severity === 'Critical').length}`;
   document.querySelector('.card.high').textContent = `High: ${advisories.filter(a => a.severity === 'High').length}`;
@@ -82,25 +82,26 @@ document.getElementById('darkModeToggle').addEventListener('change', (e) => {
   document.body.classList.toggle('dark', e.target.checked);
 });
 
-// Severity buttons logic
-document.querySelectorAll('.severity-btn[data-severity]').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const severity = btn.dataset.severity;
+// Severity cards filter logic
+document.querySelectorAll('#severityCards .card[data-severity]').forEach(card => {
+  card.addEventListener('click', () => {
+    const severity = card.dataset.severity;
+    if (severity === 'All') return; // Total is not a filter
     if (selectedSeverities.includes(severity)) {
       selectedSeverities = selectedSeverities.filter(s => s !== severity);
-      btn.classList.remove('selected');
+      card.classList.remove('selected');
     } else {
       selectedSeverities.push(severity);
-      btn.classList.add('selected');
+      card.classList.add('selected');
     }
     renderDashboard();
   });
 });
 
-// Clear button
+// Clear severity selection
 document.getElementById('clearSeverity').addEventListener('click', () => {
   selectedSeverities = [];
-  document.querySelectorAll('.severity-btn').forEach(btn => btn.classList.remove('selected'));
+  document.querySelectorAll('#severityCards .card').forEach(c => c.classList.remove('selected'));
   renderDashboard();
 });
 
