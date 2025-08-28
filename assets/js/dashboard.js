@@ -67,3 +67,42 @@ function renderCharts() {
     }]
   };
   new Chart(ctx, {
+    type: 'pie',
+    data: data
+  });
+}
+
+// Search and other filters
+document.getElementById('search').addEventListener('input', renderDashboard);
+document.getElementById('vendorFilter').addEventListener('input', renderDashboard);
+document.getElementById('cveFilter').addEventListener('input', renderDashboard);
+
+// Dark mode toggle
+document.getElementById('darkModeToggle').addEventListener('change', (e) => {
+  document.body.classList.toggle('dark', e.target.checked);
+});
+
+// Severity buttons logic
+document.querySelectorAll('.severity-btn[data-severity]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const severity = btn.dataset.severity;
+    if (selectedSeverities.includes(severity)) {
+      selectedSeverities = selectedSeverities.filter(s => s !== severity);
+      btn.classList.remove('selected');
+    } else {
+      selectedSeverities.push(severity);
+      btn.classList.add('selected');
+    }
+    renderDashboard();
+  });
+});
+
+// Clear button
+document.getElementById('clearSeverity').addEventListener('click', () => {
+  selectedSeverities = [];
+  document.querySelectorAll('.severity-btn').forEach(btn => btn.classList.remove('selected'));
+  renderDashboard();
+});
+
+// Initial load
+loadAdvisories();
