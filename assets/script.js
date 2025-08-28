@@ -15,6 +15,13 @@ async function loadAdvisories() {
     const res = await fetch("data/advisories.json");
     advisories = await res.json();
     updateDashboard();
+
+    // Update "Last Updated" timestamp
+    const now = new Date();
+    const lastUpdatedEl = document.getElementById("lastUpdated");
+    if (lastUpdatedEl) {
+      lastUpdatedEl.textContent = "Last updated: " + now.toLocaleString();
+    }
   } catch (err) {
     console.error("Failed to load advisories:", err);
     document.getElementById("advisories").innerHTML =
@@ -85,3 +92,9 @@ document.getElementById("toDate").addEventListener("change", updateDashboard);
 
 // Initial load
 loadAdvisories();
+
+// Auto-refresh every 1 minute (60,000 ms)
+setInterval(() => {
+  console.log("Auto-refreshing advisories...");
+  loadAdvisories();
+}, 60000);
