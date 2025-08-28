@@ -19,12 +19,12 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests feedparser
 
-      - name: Fetch ASD Advisories via RSS2JSON
+      - name: Fetch ASD Advisories
         run: python scripts/fetch_advisories.py
 
-      - name: Commit and push updated JSON
+      - name: Commit and push JSON
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
