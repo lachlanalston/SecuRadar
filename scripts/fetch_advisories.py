@@ -1,44 +1,29 @@
-import feedparser
 import json
 import os
 from datetime import datetime
 import requests
-from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
 
-RSS_URL = "https://www.cyber.gov.au/rss/advisories"
+RSS2JSON_URL = "https://api.rss2json.com/v1/api.json?rss_url=https://www.cyber.gov.au/rss/advisories"
 
-print("Starting SecuRadar fetch...")
-
-# Setup requests session with retries
-session = requests.Session()
-retry = Retry(
-    total=5,                # Retry up to 5 times
-    backoff_factor=5,       # Wait 5s, 10s, 15s… between retries
-    status_forcelist=[500, 502, 503, 504]
-)
-adapter = HTTPAdapter(max_retries=retry)
-session.mount("http://", adapter)
-session.mount("https://", adapter)
+print("Starting SecuRadar fetch via RSS2JSON...")
 
 try:
-    response = session.get(RSS_URL, timeout=60, headers={"User-Agent": "SecuRadar/1.0"})
+    response = requests.get(RSS2JSON_URL, timeout=30, headers={"User-Agent": "SecuRadar/1.0"})
     response.raise_for_status()
+    data = response.json()
 except requests.RequestException as e:
     print("Failed to fetch feed:", e)
     exit(1)
 
-# Parse feed
-feed = feedparser.parse(response.text)
-
+# Convert RSS2JSON items to our format
 advisories = []
-for entry in feed.entries:
+for item in data.get("items", []):
     advisories.append({
-        "title": entry.title,
-        "link": entry.link,
-        "date": entry.published,
-        "summary": entry.summary,
-        "severity": entry.get("advisory_severity", "Unknown")
+        "title": item.get("title"),
+        "link": item.get("link"),
+        "date": item.get("pubDate"),
+        "summary": item.get("content"),
+        "severity": "Unknown"  # RSS2JSON doesn't provide severity, can add parsing if needed
     })
 
 # Ensure data folder exists
