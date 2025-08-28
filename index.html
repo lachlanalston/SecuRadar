@@ -20,7 +20,9 @@
 
 <main>
   <div class="controls">
-    <input type="text" id="search" placeholder="Search advisories..." />
+    <input type="text" id="search-title" placeholder="Search title/summary..." />
+    <input type="text" id="search-vendor" placeholder="Search vendor..." />
+    <input type="text" id="search-cve" placeholder="Search CVE ID..." />
     <select id="severity-filter">
       <option value="">All Severities</option>
       <option value="Critical">Critical</option>
@@ -33,13 +35,15 @@
     <thead>
       <tr>
         <th>Title</th>
+        <th>Vendor</th>
+        <th>CVE</th>
         <th>Date</th>
         <th>Severity</th>
         <th>Link</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td colspan="4">Loading advisories...</td></tr>
+      <tr><td colspan="6">Loading advisories...</td></tr>
     </tbody>
   </table>
 </main>
