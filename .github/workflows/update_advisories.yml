@@ -2,9 +2,8 @@ name: Update Advisories
 
 on:
   schedule:
-    # Every 5 minutes
     - cron: '*/5 * * * *'
-  workflow_dispatch: # Manual trigger option
+  workflow_dispatch:
 
 jobs:
   update-json:
@@ -20,9 +19,9 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install feedparser requests
+        run: pip install requests
 
-      - name: Fetch ASD Advisories
+      - name: Fetch ASD Advisories via RSS2JSON
         run: python scripts/fetch_advisories.py
 
       - name: Commit and push updated JSON
