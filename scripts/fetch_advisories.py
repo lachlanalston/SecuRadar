@@ -10,11 +10,11 @@ RSS_URL = "https://www.cyber.gov.au/rss/advisories"
 
 print("Starting SecuRadar fetch...")
 
-# Setup session with retries
+# Setup requests session with retries
 session = requests.Session()
 retry = Retry(
-    total=5,                # Number of retries
-    backoff_factor=5,       # Exponential backoff (seconds)
+    total=5,                # Retry up to 5 times
+    backoff_factor=5,       # Wait 5s, 10s, 15s… between retries
     status_forcelist=[500, 502, 503, 504]
 )
 adapter = HTTPAdapter(max_retries=retry)
@@ -22,7 +22,7 @@ session.mount("http://", adapter)
 session.mount("https://", adapter)
 
 try:
-    response = session.get(RSS_URL, timeout=30, headers={"User-Agent": "SecuRadar/1.0"})
+    response = session.get(RSS_URL, timeout=60, headers={"User-Agent": "SecuRadar/1.0"})
     response.raise_for_status()
 except requests.RequestException as e:
     print("Failed to fetch feed:", e)
@@ -44,7 +44,7 @@ for entry in feed.entries:
 # Ensure data folder exists
 os.makedirs("data", exist_ok=True)
 
-# Save JSON
+# Save JSON for dashboard
 with open("data/advisories.json", "w", encoding="utf-8") as f:
     json.dump(advisories, f, indent=2, ensure_ascii=False)
 
