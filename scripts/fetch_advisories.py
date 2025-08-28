@@ -8,17 +8,21 @@ from requests.packages.urllib3.util.retry import Retry
 
 RSS_URL = "https://www.cyber.gov.au/rss/advisories"
 
-# Setup requests session with retries
+print("Starting SecuRadar fetch...")
+
+# Setup session with retries
 session = requests.Session()
-retry = Retry(total=5, backoff_factor=2, status_forcelist=[500, 502, 503, 504])
+retry = Retry(
+    total=5,                # Number of retries
+    backoff_factor=5,       # Exponential backoff (seconds)
+    status_forcelist=[500, 502, 503, 504]
+)
 adapter = HTTPAdapter(max_retries=retry)
 session.mount("http://", adapter)
 session.mount("https://", adapter)
 
-print("Fetching ASD RSS feed...")
-
 try:
-    response = session.get(RSS_URL, timeout=10)
+    response = session.get(RSS_URL, timeout=30, headers={"User-Agent": "SecuRadar/1.0"})
     response.raise_for_status()
 except requests.RequestException as e:
     print("Failed to fetch feed:", e)
@@ -27,7 +31,6 @@ except requests.RequestException as e:
 # Parse feed
 feed = feedparser.parse(response.text)
 
-# Convert to JSON structure
 advisories = []
 for entry in feed.entries:
     advisories.append({
@@ -41,8 +44,8 @@ for entry in feed.entries:
 # Ensure data folder exists
 os.makedirs("data", exist_ok=True)
 
-# Save JSON for dashboard
+# Save JSON
 with open("data/advisories.json", "w", encoding="utf-8") as f:
     json.dump(advisories, f, indent=2, ensure_ascii=False)
 
-print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Fetched {len(advisories)} advisories")
+print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Fetched {len(advisories)} advisories successfully")
