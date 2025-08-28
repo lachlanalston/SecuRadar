@@ -2,12 +2,30 @@ import feedparser
 import json
 import os
 from datetime import datetime
+import requests
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
 
-# ASD RSS feed
 RSS_URL = "https://www.cyber.gov.au/rss/advisories"
 
-# Parse the feed
-feed = feedparser.parse(RSS_URL)
+# Setup requests session with retries
+session = requests.Session()
+retry = Retry(total=5, backoff_factor=2, status_forcelist=[500, 502, 503, 504])
+adapter = HTTPAdapter(max_retries=retry)
+session.mount("http://", adapter)
+session.mount("https://", adapter)
+
+print("Fetching ASD RSS feed...")
+
+try:
+    response = session.get(RSS_URL, timeout=10)
+    response.raise_for_status()
+except requests.RequestException as e:
+    print("Failed to fetch feed:", e)
+    exit(1)
+
+# Parse feed
+feed = feedparser.parse(response.text)
 
 # Convert to JSON structure
 advisories = []
@@ -15,7 +33,7 @@ for entry in feed.entries:
     advisories.append({
         "title": entry.title,
         "link": entry.link,
-        "date": entry.published,           # e.g., "Thu, 28 Aug 2025 10:00:00 GMT"
+        "date": entry.published,
         "summary": entry.summary,
         "severity": entry.get("advisory_severity", "Unknown")
     })
@@ -23,7 +41,7 @@ for entry in feed.entries:
 # Ensure data folder exists
 os.makedirs("data", exist_ok=True)
 
-# Save JSON for the dashboard
+# Save JSON for dashboard
 with open("data/advisories.json", "w", encoding="utf-8") as f:
     json.dump(advisories, f, indent=2, ensure_ascii=False)
 
