@@ -198,27 +198,59 @@ function escapeHtml(str) {
     .replace(/"/g, '&quot;');
 }
 
-// ── Data loading ─────────────────────────────────────────────
+// ── Data loading & auto-poll ─────────────────────────────────
 
-async function loadAdvisories() {
+const POLL_INTERVAL_MS = 5 * 60 * 1000; // re-check every 5 minutes
+let lastSeenUpdated = null;
+
+async function loadAdvisories(isPolling = false) {
   try {
-    const res  = await fetch('data/advisories.json');
+    // Cache-bust so the browser doesn't serve a stale file
+    const res  = await fetch(`data/advisories.json?_=${Date.now()}`);
     const data = await res.json();
 
-    allAdvisories = Array.isArray(data) ? data : (data.advisories || []);
+    const incoming = Array.isArray(data) ? null : data.last_updated;
 
-    if (!Array.isArray(data) && data.last_updated) {
-      document.getElementById('lastUpdated').textContent =
-        `Updated ${timeAgo(data.last_updated)}`;
+    // Skip re-render on poll if nothing changed
+    if (isPolling && incoming && incoming === lastSeenUpdated) {
+      updateLastUpdatedLabel(incoming);
+      return;
     }
 
+    lastSeenUpdated = incoming;
+    allAdvisories   = Array.isArray(data) ? data : (data.advisories || []);
+
+    updateLastUpdatedLabel(incoming);
     renderSourceFilters();
     renderAll();
+
+    if (isPolling) showRefreshToast();
   } catch (err) {
-    document.getElementById('advisoriesGrid').innerHTML =
-      `<div class="error-state">Failed to load advisories. ${err.message}</div>`;
+    if (!isPolling) {
+      document.getElementById('advisoriesGrid').innerHTML =
+        `<div class="error-state">Failed to load advisories. ${err.message}</div>`;
+    }
   }
 }
+
+function updateLastUpdatedLabel(isoStr) {
+  if (!isoStr) return;
+  document.getElementById('lastUpdated').textContent = `Updated ${timeAgo(isoStr)}`;
+}
+
+function showRefreshToast() {
+  const toast = document.createElement('div');
+  toast.className = 'refresh-toast';
+  toast.textContent = 'Dashboard refreshed';
+  document.body.appendChild(toast);
+  setTimeout(() => toast.classList.add('show'), 10);
+  setTimeout(() => {
+    toast.classList.remove('show');
+    setTimeout(() => toast.remove(), 300);
+  }, 2500);
+}
+
+setInterval(() => loadAdvisories(true), POLL_INTERVAL_MS);
 
 // ── Event listeners ──────────────────────────────────────────
 
