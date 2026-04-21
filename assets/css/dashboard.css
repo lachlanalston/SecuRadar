@@ -439,10 +439,13 @@ main { padding: 1.5rem 1.75rem 2.5rem; max-width: 1400px; margin: 0 auto; }
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: .625rem;
+  gap: .4rem .625rem;
+  flex-wrap: wrap;
 }
 
-.card-badges { display: flex; gap: .4rem; flex-shrink: 0; align-items: center; }
+.card-badges { display: flex; gap: .4rem; flex-wrap: wrap; align-items: center; flex: 1 1 auto; }
+
+.card-date { flex-shrink: 0; }
 
 .badge-severity {
   font-size: .7rem;
