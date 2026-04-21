@@ -1,104 +1,219 @@
-let advisories = [];
+let allAdvisories = [];
 let selectedSeverities = [];
 
-function isNewAdvisory(advisoryDateStr) {
-  const advisoryDate = new Date(advisoryDateStr);
-  const now = new Date();
-  const diffTime = now - advisoryDate;
-  const diffDays = diffTime / (1000 * 60 * 60 * 24);
-  return diffDays <= 1.5; // approx last 24–36 hours
+const SEVERITY_ORDER = { Critical: 0, High: 1, Medium: 2, Low: 3 };
+
+function isNew(dateStr) {
+  if (!dateStr) return false;
+  return (Date.now() - new Date(dateStr).getTime()) <= 36 * 60 * 60 * 1000;
+}
+
+function formatDate(dateStr) {
+  if (!dateStr) return '—';
+  const d = new Date(dateStr);
+  return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+function timeAgo(isoStr) {
+  if (!isoStr) return '';
+  const diff = Date.now() - new Date(isoStr).getTime();
+  const mins = Math.floor(diff / 60000);
+  if (mins < 2)   return 'just now';
+  if (mins < 60)  return `${mins}m ago`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24)   return `${hrs}h ago`;
+  const days = Math.floor(hrs / 24);
+  return `${days}d ago`;
 }
 
 async function loadAdvisories() {
   try {
-    const res = await fetch('data/advisories.json');
-    advisories = await res.json();
-    renderDashboard();
+    const res  = await fetch('data/advisories.json');
+    const data = await res.json();
+
+    // Support both old array format and new { last_updated, advisories } format
+    if (Array.isArray(data)) {
+      allAdvisories = data;
+    } else {
+      allAdvisories = data.advisories || [];
+      if (data.last_updated) {
+        document.getElementById('lastUpdated').textContent =
+          `Updated ${timeAgo(data.last_updated)}`;
+      }
+    }
+
+    renderAll();
   } catch (err) {
-    console.error('Failed to load advisories:', err);
+    document.getElementById('advisoriesGrid').innerHTML =
+      `<div class="error-state">Failed to load advisories. ${err.message}</div>`;
   }
 }
 
-function renderDashboard() {
-  const grid = document.getElementById('advisoriesGrid');
-  grid.innerHTML = '';
+function getFiltered() {
+  const search = document.getElementById('search').value.toLowerCase().trim();
+  const vendor = document.getElementById('vendorFilter').value.toLowerCase().trim();
+  const cve    = document.getElementById('cveFilter').value.toLowerCase().trim();
+  const sort   = document.getElementById('sortBy').value;
 
-  const searchValue = document.getElementById('search').value.toLowerCase();
-  const vendorFilter = document.getElementById('vendorFilter').value.toLowerCase();
-  const cveFilter = document.getElementById('cveFilter').value.toLowerCase();
+  let list = allAdvisories.filter(a => {
+    const matchSearch = !search ||
+      (a.title   || '').toLowerCase().includes(search) ||
+      (a.summary || '').toLowerCase().includes(search) ||
+      (a.vendor  || '').toLowerCase().includes(search) ||
+      (a.cve     || '').toLowerCase().includes(search);
+    const matchVendor = !vendor || (a.vendor || '').toLowerCase().includes(vendor);
+    const matchCVE    = !cve    || (a.cve    || '').toLowerCase().includes(cve);
 
-  const filtered = advisories.filter(a => {
-    const matchesSearch = a.title.toLowerCase().includes(searchValue) || a.summary.toLowerCase().includes(searchValue);
-    const matchesVendor = vendorFilter ? (a.vendor || '').toLowerCase().includes(vendorFilter) : true;
-    const matchesCVE = cveFilter ? (a.cve || '').toLowerCase().includes(cveFilter) : true;
-
-    let matchesSeverity = true;
+    let matchSeverity = true;
     if (selectedSeverities.length > 0) {
-      matchesSeverity = selectedSeverities.some(s =>
-        s === 'New' ? isNewAdvisory(a.date) : a.severity === s
+      matchSeverity = selectedSeverities.some(s =>
+        s === 'New' ? isNew(a.date) : a.severity === s
       );
     }
-
-    return matchesSearch && matchesVendor && matchesCVE && matchesSeverity;
+    return matchSearch && matchVendor && matchCVE && matchSeverity;
   });
 
-  filtered.forEach(a => {
-    const card = document.createElement('div');
-    card.classList.add('card-item');
-    if (isNewAdvisory(a.date)) card.classList.add('new');
-
-    const newBadge = isNewAdvisory(a.date) ? `<span class="new-badge">NEW</span>` : '';
-    card.innerHTML = `
-      <h3>${a.title} ${newBadge}</h3>
-      <p><strong>Vendor:</strong> ${a.vendor}</p>
-      <p><strong>CVE:</strong> ${a.cve}</p>
-      <p><strong>Severity:</strong> ${a.severity}</p>
-      <p><strong>Date:</strong> ${a.date}</p>
-      <p>${a.summary}</p>
-      <a href="${a.link}" target="_blank">View Advisory</a>
-    `;
-    grid.appendChild(card);
+  list.sort((a, b) => {
+    if (sort === 'date-asc')  return new Date(a.date) - new Date(b.date);
+    if (sort === 'severity')  return (SEVERITY_ORDER[a.severity] ?? 9) - (SEVERITY_ORDER[b.severity] ?? 9);
+    return new Date(b.date) - new Date(a.date); // date-desc default
   });
 
-  // Update summary counts
-  document.querySelector('.card.total').textContent = `Total: ${advisories.length}`;
-  document.querySelector('.card.critical').textContent = `Critical: ${advisories.filter(a => a.severity === 'Critical').length}`;
-  document.querySelector('.card.high').textContent = `High: ${advisories.filter(a => a.severity === 'High').length}`;
-  document.querySelector('.card.medium').textContent = `Medium: ${advisories.filter(a => a.severity === 'Medium').length}`;
-  document.querySelector('.card.low').textContent = `Low: ${advisories.filter(a => a.severity === 'Low').length}`;
-  document.querySelector('.card.new').textContent = `New: ${advisories.filter(a => isNewAdvisory(a.date)).length}`;
+  return list;
 }
 
-// Event listeners
-document.getElementById('search').addEventListener('input', renderDashboard);
-document.getElementById('vendorFilter').addEventListener('input', renderDashboard);
-document.getElementById('cveFilter').addEventListener('input', renderDashboard);
+function renderStats() {
+  const a = allAdvisories;
+  document.getElementById('countTotal').textContent    = a.length;
+  document.getElementById('countCritical').textContent = a.filter(x => x.severity === 'Critical').length;
+  document.getElementById('countHigh').textContent     = a.filter(x => x.severity === 'High').length;
+  document.getElementById('countMedium').textContent   = a.filter(x => x.severity === 'Medium').length;
+  document.getElementById('countLow').textContent      = a.filter(x => x.severity === 'Low').length;
+  document.getElementById('countNew').textContent      = a.filter(x => isNew(x.date)).length;
+}
 
-document.getElementById('darkModeToggle').addEventListener('change', (e) => {
-  document.body.classList.toggle('dark', e.target.checked);
+function renderCards(list) {
+  const grid = document.getElementById('advisoriesGrid');
+
+  if (!list.length) {
+    grid.innerHTML = `
+      <div class="empty-state">
+        <span class="empty-icon">🔍</span>
+        <strong>No advisories found</strong>
+        <p>Try adjusting your filters or search terms.</p>
+      </div>`;
+    return;
+  }
+
+  grid.innerHTML = list.map(a => {
+    const newBadge = isNew(a.date) ? `<span class="badge-new">New</span>` : '';
+    const cveText  = a.cve && a.cve !== 'N/A' ? a.cve : null;
+    const vendor   = a.vendor && a.vendor !== 'N/A' ? a.vendor : null;
+
+    return `
+      <article class="advisory-card" data-severity="${a.severity || ''}">
+        <div class="card-top">
+          <div class="card-badges">
+            <span class="badge-severity ${a.severity || ''}">${a.severity || 'Unknown'}</span>
+            ${newBadge}
+          </div>
+          <span class="card-date">${formatDate(a.date)}</span>
+        </div>
+        <a class="card-title" href="${a.link || '#'}" target="_blank" rel="noopener">
+          ${escapeHtml(a.title || 'Untitled')}
+        </a>
+        <div class="card-meta">
+          ${vendor   ? `<span class="meta-item"><span class="meta-label">Vendor</span>${escapeHtml(vendor)}</span>` : ''}
+          ${cveText  ? `<span class="meta-item"><span class="meta-label">CVE</span>${escapeHtml(cveText)}</span>` : ''}
+        </div>
+        <p class="card-summary">${escapeHtml(a.summary || '')}</p>
+        <div class="card-footer">
+          <a class="view-link" href="${a.link || '#'}" target="_blank" rel="noopener">
+            View advisory →
+          </a>
+        </div>
+      </article>`;
+  }).join('');
+}
+
+function renderResultsBar(count) {
+  document.getElementById('resultCount').textContent =
+    `${count} ${count === 1 ? 'advisory' : 'advisories'}`;
+
+  const tags = [];
+  const search = document.getElementById('search').value.trim();
+  const vendor = document.getElementById('vendorFilter').value.trim();
+  const cve    = document.getElementById('cveFilter').value.trim();
+
+  if (search) tags.push(`"${search}"`);
+  if (vendor) tags.push(`Vendor: ${vendor}`);
+  if (cve)    tags.push(`CVE: ${cve}`);
+  selectedSeverities.forEach(s => tags.push(s));
+
+  document.getElementById('activeFilters').innerHTML =
+    tags.map(t => `<span class="filter-tag">${escapeHtml(t)}</span>`).join('');
+}
+
+function renderAll() {
+  renderStats();
+  const list = getFiltered();
+  renderCards(list);
+  renderResultsBar(list.length);
+}
+
+function escapeHtml(str) {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+// ── Event listeners ──────────────────────────────────────────
+
+document.getElementById('search').addEventListener('input', renderAll);
+document.getElementById('vendorFilter').addEventListener('input', renderAll);
+document.getElementById('cveFilter').addEventListener('input', renderAll);
+document.getElementById('sortBy').addEventListener('change', renderAll);
+
+document.getElementById('clearAll').addEventListener('click', () => {
+  document.getElementById('search').value      = '';
+  document.getElementById('vendorFilter').value = '';
+  document.getElementById('cveFilter').value    = '';
+  document.getElementById('sortBy').value       = 'date-desc';
+  selectedSeverities = [];
+  document.querySelectorAll('.stat-card').forEach(c => c.classList.remove('active'));
+  renderAll();
 });
 
-document.querySelectorAll('#severityCards .card[data-severity]').forEach(card => {
+document.querySelectorAll('.stat-card[data-severity]').forEach(card => {
   card.addEventListener('click', () => {
-    const severity = card.dataset.severity;
-    if (severity === 'All') return;
-
-    if (selectedSeverities.includes(severity)) {
-      selectedSeverities = selectedSeverities.filter(s => s !== severity);
-      card.classList.remove('selected');
+    const sev = card.dataset.severity;
+    if (sev === 'All') {
+      selectedSeverities = [];
+      document.querySelectorAll('.stat-card').forEach(c => c.classList.remove('active'));
     } else {
-      selectedSeverities.push(severity);
-      card.classList.add('selected');
+      if (selectedSeverities.includes(sev)) {
+        selectedSeverities = selectedSeverities.filter(s => s !== sev);
+        card.classList.remove('active');
+      } else {
+        selectedSeverities.push(sev);
+        card.classList.add('active');
+      }
     }
-    renderDashboard();
+    renderAll();
   });
 });
 
-document.getElementById('clearSeverity').addEventListener('click', () => {
-  selectedSeverities = [];
-  document.querySelectorAll('#severityCards .card').forEach(c => c.classList.remove('selected'));
-  renderDashboard();
+document.getElementById('themeToggle').addEventListener('click', () => {
+  const html = document.documentElement;
+  const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
+  html.dataset.theme = next;
+  localStorage.setItem('securadar-theme', next);
 });
 
-// Load data on page load
+// Restore saved theme preference
+const savedTheme = localStorage.getItem('securadar-theme');
+if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+
 loadAdvisories();
