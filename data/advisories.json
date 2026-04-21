@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-21T17:03:27Z",
+  "last_updated": "2026-04-21T18:39:38Z",
   "advisories": [
     {
       "id": "d3209b09",
@@ -44,8 +44,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2026-04-20",
       "due_date": "2026-05-04",
-      "summary": "PaperCut NG/MF contains an improper authentication vulnerability that could allow remote attackers to bypass authentication on affected installations via the SecurityRequestFilter class. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-      "severity": "Low",
+      "summary": "PaperCut NG/MF contains an improper authentication vulnerability that could allow remote attackers to bypass authentication on affected installations via the SecurityRequestFilter class. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "PaperCut — NG/MF",
       "cve": "CVE-2023-27351"
     },
@@ -92,8 +92,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2026-04-20",
       "due_date": "2026-05-04",
-      "summary": "JetBrains TeamCity contains a relative path traversal vulnerability that could allow limited admin actions to be performed. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-      "severity": "Low",
+      "summary": "JetBrains TeamCity contains a relative path traversal vulnerability that could allow limited admin actions to be performed. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "JetBrains — TeamCity",
       "cve": "CVE-2024-27199"
     },
@@ -175,7 +175,7 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2026-04-13",
       "due_date": "2026-04-27",
-      "summary": "Microsoft Exchange Server contains a deserialization of untrusted data that allows an authenticated attacker to achieve remote code execution. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "summary": "Microsoft Exchange Server contains a deserialization of untrusted data that allows an authenticated attacker to achieve remote code execution. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
       "severity": "Critical",
       "vendor": "Microsoft — Exchange Server",
       "cve": "CVE-2023-21529"
@@ -1000,7 +1000,7 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2026-01-26",
       "due_date": "2026-02-16",
-      "summary": "SmarterTools SmarterMail contains an unrestricted upload of file with dangerous type vulnerability that could allow an unauthenticated attacker to upload arbitrary files to any location on the mail server, potentially enabling remote code execution. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "summary": "SmarterTools SmarterMail contains an unrestricted upload of file with dangerous type vulnerability that could allow an unauthenticated attacker to upload arbitrary files to any location on the mail server, potentially enabling remote code execution. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
       "severity": "Critical",
       "vendor": "SmarterTools — SmarterMail",
       "cve": "CVE-2025-52691"
