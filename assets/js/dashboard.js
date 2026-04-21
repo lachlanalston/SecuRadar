@@ -165,6 +165,9 @@ function renderCards(list) {
     const corrobBadge = corroboration.length
       ? `<span class="badge-corroboration" title="Also reported by: ${escapeHtml(corroboration.join(', '))}">⚑ ${corroboration.length + 1} sources</span>`
       : '';
+    const patchBadge = a.severity === 'Critical'
+      ? `<span class="badge-patch">Patch: 48h</span>`
+      : '';
 
     return `
       <article class="advisory-card${cardClass}" data-severity="${a.severity || ''}">
@@ -173,6 +176,7 @@ function renderCards(list) {
             <span class="badge-severity ${a.severity || ''}">${a.severity || 'Unknown'}</span>
             ${recencyBadge}
             ${corrobBadge}
+            ${patchBadge}
           </div>
           <span class="card-date">${formatDate(a.date)}</span>
         </div>

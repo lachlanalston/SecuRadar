@@ -145,6 +145,7 @@ def fetch_cisa_kev() -> list[dict]:
             "title":    title,
             "link":     link,
             "date":     date,
+            "due_date": v.get("dueDate"),
             "summary":  summary[:500] + "…" if len(summary) > 500 else summary,
             "severity": severity,
             "vendor":   f"{vendor} — {product}".strip(" —") if product else vendor,
