@@ -3,6 +3,7 @@ import json
 import re
 import hashlib
 import requests
+from curl_cffi import requests as cffi_requests
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -158,10 +159,15 @@ def main():
     seen_links: set[str] = set()
     items: list[dict] = []
 
-    # RSS feeds — fetch via requests so TLS negotiation matches a real browser,
-    # then hand raw bytes to feedparser (avoids urllib's weaker TLS stack)
-    session = requests.Session()
-    session.headers.update({
+    # ASD feeds: use curl-cffi to impersonate Chrome's exact TLS fingerprint
+    # (JA3 + HTTP/2). cyber.gov.au uses Cloudflare which silently drops
+    # connections with non-browser TLS signatures from cloud provider IPs.
+    # Other feeds use plain requests (already working fine).
+    asd_session = cffi_requests.Session()
+
+    # Standard requests session for non-ASD feeds
+    std_session = requests.Session()
+    std_session.headers.update({
         "User-Agent": USER_AGENT,
         "Accept": "application/rss+xml, application/xml, text/xml, */*",
     })
@@ -171,7 +177,10 @@ def main():
         source = feed_cfg["source"]
         print(f"Fetching {url} …")
         try:
-            r = session.get(url, timeout=30)
+            if source == "ASD":
+                r = asd_session.get(url, impersonate="chrome124", timeout=30)
+            else:
+                r = std_session.get(url, timeout=30)
             r.raise_for_status()
             feed = feedparser.parse(r.content)
         except Exception as e:
