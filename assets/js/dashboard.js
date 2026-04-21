@@ -60,7 +60,8 @@ function getFiltered() {
       (a.title   || '').toLowerCase().includes(search) ||
       (a.summary || '').toLowerCase().includes(search) ||
       (a.vendor  || '').toLowerCase().includes(search) ||
-      (a.cve     || '').toLowerCase().includes(search);
+      (a.cve     || '').toLowerCase().includes(search) ||
+      (a.source  || '').toLowerCase().includes(search);
     const matchVendor = !vendor || (a.vendor || '').toLowerCase().includes(vendor);
     const matchCVE    = !cve    || (a.cve    || '').toLowerCase().includes(cve);
 
@@ -109,6 +110,7 @@ function renderCards(list) {
     const newBadge = isNew(a.date) ? `<span class="badge-new">New</span>` : '';
     const cveText  = a.cve && a.cve !== 'N/A' ? a.cve : null;
     const vendor   = a.vendor && a.vendor !== 'N/A' ? a.vendor : null;
+    const sourceKey = (a.source || '').replace(/\s+/g, '-').toLowerCase();
 
     return `
       <article class="advisory-card" data-severity="${a.severity || ''}">
@@ -123,6 +125,7 @@ function renderCards(list) {
           ${escapeHtml(a.title || 'Untitled')}
         </a>
         <div class="card-meta">
+          ${a.source ? `<span class="meta-item"><span class="badge-source source-${sourceKey}">${escapeHtml(a.source)}</span></span>` : ''}
           ${vendor   ? `<span class="meta-item"><span class="meta-label">Vendor</span>${escapeHtml(vendor)}</span>` : ''}
           ${cveText  ? `<span class="meta-item"><span class="meta-label">CVE</span>${escapeHtml(cveText)}</span>` : ''}
         </div>
