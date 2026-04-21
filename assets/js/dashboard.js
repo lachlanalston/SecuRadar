@@ -3,6 +3,10 @@ let selectedSeverities = [];
 let selectedSources    = [];
 let cveSourceMap       = {};
 let viewMode           = localStorage.getItem('securadar-view') || 'grid';
+let selectedTimeframe  = 'all';
+let filterPatchTuesday = false;
+
+const TIMEFRAME_MS = { '24h': 864e5, '7d': 7*864e5, '30d': 30*864e5, '90d': 90*864e5 };
 
 const SEVERITY_ORDER = { Critical: 0, High: 1, Medium: 2, Low: 3 };
 
@@ -116,12 +120,21 @@ function renderSourceFilters() {
   const sources = [...new Set(allAdvisories.map(a => a.source).filter(Boolean))].sort();
   const container = document.getElementById('sourceFilters');
 
-  container.innerHTML = sources.map(s => {
-    const active = selectedSources.includes(s) ? ' active' : '';
-    return `<button class="source-btn${active}" data-source="${escapeHtml(s)}">${escapeHtml(s)}</button>`;
-  }).join('');
+  const ptActive = filterPatchTuesday ? ' active' : '';
+  container.innerHTML =
+    `<button class="source-btn pt-filter-btn${ptActive}" id="ptFilterBtn">📅 Patch Tuesday</button>` +
+    sources.map(s => {
+      const active = selectedSources.includes(s) ? ' active' : '';
+      return `<button class="source-btn${active}" data-source="${escapeHtml(s)}">${escapeHtml(s)}</button>`;
+    }).join('');
 
-  container.querySelectorAll('.source-btn').forEach(btn => {
+  container.querySelector('#ptFilterBtn').addEventListener('click', () => {
+    filterPatchTuesday = !filterPatchTuesday;
+    renderSourceFilters();
+    renderAll();
+  });
+
+  container.querySelectorAll('.source-btn[data-source]').forEach(btn => {
     btn.addEventListener('click', () => {
       const src = btn.dataset.source;
       if (selectedSources.includes(src)) {
@@ -144,6 +157,8 @@ function getFiltered() {
   const cve    = document.getElementById('cveFilter').value.toLowerCase().trim();
   const sort   = document.getElementById('sortBy').value;
 
+  const cutoff = TIMEFRAME_MS[selectedTimeframe];
+
   let list = allAdvisories.filter(a => {
     const matchSearch = !search ||
       (a.title   || '').toLowerCase().includes(search) ||
@@ -162,9 +177,11 @@ function getFiltered() {
       );
     }
 
-    const matchSource = selectedSources.length === 0 || selectedSources.includes(a.source || '');
+    const matchSource    = selectedSources.length === 0 || selectedSources.includes(a.source || '');
+    const matchTimeframe = !cutoff || (!!a.date && (Date.now() - new Date(a.date).getTime()) <= cutoff);
+    const matchPT        = !filterPatchTuesday || isPatchTuesdayDate(a.date);
 
-    return matchSearch && matchVendor && matchCVE && matchSeverity && matchSource;
+    return matchSearch && matchVendor && matchCVE && matchSeverity && matchSource && matchTimeframe && matchPT;
   });
 
   list.sort((a, b) => {
@@ -277,6 +294,11 @@ function renderResultsBar(count) {
   if (cve)    tags.push(`CVE: ${cve}`);
   selectedSeverities.forEach(s => tags.push(s));
   selectedSources.forEach(s => tags.push(s));
+  if (selectedTimeframe !== 'all') {
+    const labels = { '24h': 'Last 24h', '7d': 'Last 7 days', '30d': 'Last 30 days', '90d': 'Last 90 days' };
+    tags.push(labels[selectedTimeframe]);
+  }
+  if (filterPatchTuesday) tags.push('Patch Tuesday');
 
   document.getElementById('activeFilters').innerHTML =
     tags.map(t => `<span class="filter-tag">${escapeHtml(t)}</span>`).join('');
@@ -359,16 +381,23 @@ document.getElementById('search').addEventListener('input', renderAll);
 document.getElementById('vendorFilter').addEventListener('input', renderAll);
 document.getElementById('cveFilter').addEventListener('input', renderAll);
 document.getElementById('sortBy').addEventListener('change', renderAll);
+document.getElementById('timeframeFilter').addEventListener('change', e => {
+  selectedTimeframe = e.target.value;
+  renderAll();
+});
 
 document.getElementById('clearAll').addEventListener('click', () => {
-  document.getElementById('search').value       = '';
-  document.getElementById('vendorFilter').value  = '';
-  document.getElementById('cveFilter').value     = '';
-  document.getElementById('sortBy').value        = 'date-desc';
+  document.getElementById('search').value          = '';
+  document.getElementById('vendorFilter').value    = '';
+  document.getElementById('cveFilter').value       = '';
+  document.getElementById('sortBy').value          = 'date-desc';
+  document.getElementById('timeframeFilter').value = 'all';
   selectedSeverities = [];
   selectedSources    = [];
+  selectedTimeframe  = 'all';
+  filterPatchTuesday = false;
   document.querySelectorAll('.stat-card').forEach(c => c.classList.remove('active'));
-  document.querySelectorAll('.source-btn').forEach(b => b.classList.remove('active'));
+  renderSourceFilters();
   renderAll();
 });
 

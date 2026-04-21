@@ -89,6 +89,13 @@
       </div>
       <input type="text" id="vendorFilter" placeholder="Vendor" autocomplete="off">
       <input type="text" id="cveFilter"    placeholder="CVE ID"  autocomplete="off">
+      <select id="timeframeFilter">
+        <option value="all">All time</option>
+        <option value="24h">Last 24 hours</option>
+        <option value="7d">Last 7 days</option>
+        <option value="30d">Last 30 days</option>
+        <option value="90d">Last 90 days</option>
+      </select>
       <select id="sortBy">
         <option value="date-desc">Newest first</option>
         <option value="date-asc">Oldest first</option>
