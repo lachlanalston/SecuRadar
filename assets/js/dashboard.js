@@ -234,7 +234,7 @@ function renderCards(list) {
       : '';
 
     return `
-      <article class="advisory-card${cardClass}" data-severity="${a.severity || ''}">
+      <article class="advisory-card${cardClass}" data-severity="${a.severity || ''}" data-id="${a.id}">
         <div class="card-top">
           <div class="card-badges">
             <span class="badge-severity ${a.severity || ''}">${a.severity || 'Unknown'}</span>
@@ -420,5 +420,165 @@ setTimeout(() => {
   renderPatchTuesdayPill();
   setInterval(renderPatchTuesdayPill, 24 * 60 * 60 * 1000);
 }, msUntilMidnight);
+
+// ── Corroboration helpers ────────────────────────────────────
+
+function getCorroboratingAdvisories(cveStr, ownSource) {
+  if (!cveStr || cveStr === 'N/A') return [];
+  const cves = cveStr.split(/[,\s]+/).map(s => s.trim().toUpperCase()).filter(s => s.startsWith('CVE-'));
+  const seen = new Set();
+  const results = [];
+  for (const adv of allAdvisories) {
+    if (adv.source === ownSource || !adv.cve || adv.cve === 'N/A') continue;
+    const advCves = adv.cve.split(/[,\s]+/).map(s => s.trim().toUpperCase()).filter(s => s.startsWith('CVE-'));
+    if (cves.some(c => advCves.includes(c)) && !seen.has(adv.id)) {
+      seen.add(adv.id);
+      results.push(adv);
+    }
+  }
+  return results;
+}
+
+// ── Detail panel ─────────────────────────────────────────────
+
+function openPanel(advisory) {
+  const panel   = document.getElementById('detailPanel');
+  const overlay = document.getElementById('panelOverlay');
+
+  const sourceKey = (advisory.source || '').replace(/\s+/g, '-').toLowerCase();
+  document.getElementById('panelBadges').innerHTML = `
+    <span class="badge-severity ${advisory.severity || ''}">${advisory.severity || 'Unknown'}</span>
+    ${advisory.source ? `<span class="badge-source source-${sourceKey}">${escapeHtml(advisory.source)}</span>` : ''}
+    ${isPatchTuesdayDate(advisory.date) ? '<span class="badge-pt">Patch Tuesday</span>' : ''}
+    ${isHot(advisory.date) ? '<span class="badge-hot">Today</span>' : isNew(advisory.date) ? '<span class="badge-new">New</span>' : ''}
+  `;
+
+  const corrobAdvisories = getCorroboratingAdvisories(advisory.cve, advisory.source);
+
+  const metaRows = [
+    `<div class="panel-row"><span class="panel-label">Date</span><span class="panel-value">${formatDate(advisory.date)}</span></div>`,
+    advisory.vendor && advisory.vendor !== 'N/A'
+      ? `<div class="panel-row"><span class="panel-label">Vendor</span><span class="panel-value">${escapeHtml(advisory.vendor)}</span></div>` : '',
+    advisory.cve && advisory.cve !== 'N/A'
+      ? `<div class="panel-row"><span class="panel-label">CVE(s)</span><span class="panel-value is-cve">${escapeHtml(advisory.cve)}</span></div>` : '',
+    advisory.due_date
+      ? `<div class="panel-row is-due"><span class="panel-label">Due</span><span class="panel-value">${formatDate(advisory.due_date)}</span></div>` : '',
+  ].filter(Boolean).join('');
+
+  const corrobHtml = corrobAdvisories.length ? `
+    <div class="panel-section">
+      <h3 class="panel-section-title">Also reported by</h3>
+      <div class="panel-corroboration-list">
+        ${corrobAdvisories.map(a => {
+          const sk = (a.source || '').replace(/\s+/g, '-').toLowerCase();
+          return `<a class="panel-corroboration-item" href="${a.link || '#'}" target="_blank" rel="noopener">
+            <span class="badge-source source-${sk}">${escapeHtml(a.source)}</span>
+            <span class="panel-corroboration-title">${escapeHtml(a.title)}</span>
+            <span class="panel-corroboration-arrow">→</span>
+          </a>`;
+        }).join('')}
+      </div>
+    </div>` : '';
+
+  document.getElementById('panelBody').innerHTML = `
+    <h2 class="panel-title">${escapeHtml(advisory.title || 'Untitled')}</h2>
+    <div class="panel-section">${metaRows}</div>
+    <div class="panel-section">
+      <h3 class="panel-section-title">Summary</h3>
+      <p class="panel-summary">${escapeHtml(advisory.summary || '')}</p>
+    </div>
+    ${corrobHtml}
+    <div class="panel-actions">
+      <a class="panel-cta" href="${advisory.link || '#'}" target="_blank" rel="noopener">View full advisory →</a>
+    </div>
+  `;
+
+  panel.classList.add('open');
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closePanel() {
+  document.getElementById('detailPanel').classList.remove('open');
+  document.getElementById('panelOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('panelClose').addEventListener('click', closePanel);
+document.getElementById('panelOverlay').addEventListener('click', closePanel);
+
+// ── Sources popover ──────────────────────────────────────────
+
+let activePopover = null;
+
+function closePopover() {
+  if (activePopover) {
+    activePopover.remove();
+    activePopover = null;
+  }
+}
+
+function showSourcesPopover(anchorEl, advisory) {
+  closePopover();
+  const corrobAdvisories = getCorroboratingAdvisories(advisory.cve, advisory.source);
+  if (!corrobAdvisories.length) return;
+
+  const pop = document.createElement('div');
+  pop.className = 'sources-popover';
+  pop.innerHTML = `
+    <p class="popover-title">Reported by ${corrobAdvisories.length + 1} sources</p>
+    ${[advisory, ...corrobAdvisories].map(a => {
+      const sk = (a.source || '').replace(/\s+/g, '-').toLowerCase();
+      return `<a class="popover-source-item" href="${a.link || '#'}" target="_blank" rel="noopener">
+        <span class="badge-source source-${sk}">${escapeHtml(a.source)}</span>
+        <span class="popover-source-title">${escapeHtml(a.title)}</span>
+      </a>`;
+    }).join('')}
+  `;
+  document.body.appendChild(pop);
+  activePopover = pop;
+
+  const rect = anchorEl.getBoundingClientRect();
+  const popW = 340;
+  let left = rect.left;
+  if (left + popW > window.innerWidth - 12) left = window.innerWidth - popW - 12;
+  if (left < 8) left = 8;
+  const spaceBelow = window.innerHeight - rect.bottom - 8;
+  const popH = pop.offsetHeight;
+  const top = spaceBelow >= popH ? rect.bottom + 6 : rect.top - popH - 6;
+
+  pop.style.left = `${left}px`;
+  pop.style.top  = `${top}px`;
+
+  setTimeout(() => document.addEventListener('click', closePopover, { once: true }), 0);
+}
+
+// ── Card click delegation ────────────────────────────────────
+
+document.getElementById('advisoriesGrid').addEventListener('click', e => {
+  const badge = e.target.closest('.badge-corroboration');
+  if (badge) {
+    e.stopPropagation();
+    closePopover();
+    const id = badge.closest('.advisory-card')?.dataset.id;
+    const advisory = allAdvisories.find(a => a.id === id);
+    if (advisory) showSourcesPopover(badge, advisory);
+    return;
+  }
+
+  if (e.target.closest('a')) return;
+
+  const card = e.target.closest('.advisory-card');
+  if (!card) return;
+  const advisory = allAdvisories.find(a => a.id === card.dataset.id);
+  if (advisory) openPanel(advisory);
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closePanel();
+    closePopover();
+  }
+});
 
 loadAdvisories();
