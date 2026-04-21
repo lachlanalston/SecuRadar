@@ -270,7 +270,7 @@ main { padding: 1.5rem 1.75rem 2.5rem; max-width: 1400px; margin: 0 auto; }
   pointer-events: none;
 }
 
-.search-wrap input { padding-left: 2.5rem !important; }
+.search-wrap input { width: 100%; padding-left: 2.5rem !important; }
 
 .filters-bar input,
 .filters-bar select {

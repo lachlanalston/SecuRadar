@@ -66,19 +66,19 @@ function renderPatchTuesdayPill() {
 
   let label, cls;
   if (days === 0) {
-    label = 'PT Today';
+    label = 'Patch Tuesday Today';
     cls   = 'pt-today';
   } else if (days === 1) {
-    label = 'PT Tomorrow';
+    label = 'Patch Tuesday Tomorrow';
     cls   = 'pt-soon';
   } else if (days <= 3) {
-    label = `PT in ${days}d`;
+    label = `Patch Tuesday in ${days}d`;
     cls   = 'pt-soon';
   } else if (days <= 7) {
-    label = `PT in ${days}d`;
+    label = `Patch Tuesday in ${days}d`;
     cls   = 'pt-upcoming';
   } else {
-    label = `PT in ${days}d`;
+    label = `Patch Tuesday in ${days}d`;
     cls   = 'pt-far';
   }
 
