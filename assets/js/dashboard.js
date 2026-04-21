@@ -1,6 +1,7 @@
 let allAdvisories   = [];
 let selectedSeverities = [];
 let selectedSources    = [];
+let cveSourceMap       = {}; // CVE ID → Set of source names
 
 const SEVERITY_ORDER = { Critical: 0, High: 1, Medium: 2, Low: 3 };
 
@@ -29,6 +30,30 @@ function timeAgo(isoStr) {
   const hrs = Math.floor(mins / 60);
   if (hrs < 24)  return `${hrs}h ago`;
   return `${Math.floor(hrs / 24)}d ago`;
+}
+
+// ── Cross-source CVE index ───────────────────────────────────
+
+function buildCveSourceMap() {
+  cveSourceMap = {};
+  for (const a of allAdvisories) {
+    if (!a.cve || a.cve === 'N/A' || !a.source) continue;
+    for (const cve of a.cve.split(/[,\s]+/).map(s => s.trim().toUpperCase()).filter(s => s.startsWith('CVE-'))) {
+      if (!cveSourceMap[cve]) cveSourceMap[cve] = new Set();
+      cveSourceMap[cve].add(a.source);
+    }
+  }
+}
+
+function getCorroboratingSources(cveStr, ownSource) {
+  if (!cveStr || cveStr === 'N/A') return [];
+  const others = new Set();
+  for (const cve of cveStr.split(/[,\s]+/).map(s => s.trim().toUpperCase()).filter(s => s.startsWith('CVE-'))) {
+    if (cveSourceMap[cve]) {
+      cveSourceMap[cve].forEach(s => { if (s !== ownSource) others.add(s); });
+    }
+  }
+  return [...others];
 }
 
 // ── Source filter buttons ────────────────────────────────────
@@ -133,9 +158,13 @@ function renderCards(list) {
         ? `<span class="badge-new">New</span>`
         : '';
 
-    const cveText   = a.cve    && a.cve    !== 'N/A' ? a.cve    : null;
-    const vendor    = a.vendor && a.vendor !== 'N/A' ? a.vendor : null;
-    const sourceKey = (a.source || '').replace(/\s+/g, '-').toLowerCase();
+    const cveText    = a.cve    && a.cve    !== 'N/A' ? a.cve    : null;
+    const vendor     = a.vendor && a.vendor !== 'N/A' ? a.vendor : null;
+    const sourceKey  = (a.source || '').replace(/\s+/g, '-').toLowerCase();
+    const corroboration = getCorroboratingSources(a.cve, a.source);
+    const corrobBadge = corroboration.length
+      ? `<span class="badge-corroboration" title="Also reported by: ${escapeHtml(corroboration.join(', '))}">⚑ ${corroboration.length + 1} sources</span>`
+      : '';
 
     return `
       <article class="advisory-card${cardClass}" data-severity="${a.severity || ''}">
@@ -143,6 +172,7 @@ function renderCards(list) {
           <div class="card-badges">
             <span class="badge-severity ${a.severity || ''}">${a.severity || 'Unknown'}</span>
             ${recencyBadge}
+            ${corrobBadge}
           </div>
           <span class="card-date">${formatDate(a.date)}</span>
         </div>
@@ -221,6 +251,7 @@ async function loadAdvisories(isPolling = false) {
     allAdvisories   = Array.isArray(data) ? data : (data.advisories || []);
 
     updateLastUpdatedLabel(incoming);
+    buildCveSourceMap();
     renderSourceFilters();
     renderAll();
 
