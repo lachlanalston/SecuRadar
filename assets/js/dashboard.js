@@ -33,6 +33,59 @@ function timeAgo(isoStr) {
   return `${Math.floor(hrs / 24)}d ago`;
 }
 
+// ── Patch Tuesday ────────────────────────────────────────────
+
+function getPatchTuesday(year, month) {
+  const firstDay = new Date(year, month, 1);
+  const daysUntilTue = (2 - firstDay.getDay() + 7) % 7;
+  return new Date(year, month, 1 + daysUntilTue + 7); // second Tuesday
+}
+
+function getNextPatchTuesday() {
+  const now   = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  let pt      = getPatchTuesday(today.getFullYear(), today.getMonth());
+  if (today > pt) pt = getPatchTuesday(today.getFullYear(), today.getMonth() + 1);
+  return pt;
+}
+
+function isPatchTuesdayDate(dateStr) {
+  if (!dateStr) return false;
+  const d = new Date(dateStr + 'T12:00:00');
+  if (d.getDay() !== 2) return false;
+  const pt = getPatchTuesday(d.getFullYear(), d.getMonth());
+  return d.getDate() === pt.getDate();
+}
+
+function renderPatchTuesdayPill() {
+  const pill  = document.getElementById('ptPill');
+  const now   = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const pt    = getNextPatchTuesday();
+  const days  = Math.round((pt - today) / (1000 * 60 * 60 * 24));
+
+  let label, cls;
+  if (days === 0) {
+    label = 'PT Today';
+    cls   = 'pt-today';
+  } else if (days === 1) {
+    label = 'PT Tomorrow';
+    cls   = 'pt-soon';
+  } else if (days <= 3) {
+    label = `PT in ${days}d`;
+    cls   = 'pt-soon';
+  } else if (days <= 7) {
+    label = `PT in ${days}d`;
+    cls   = 'pt-upcoming';
+  } else {
+    label = `PT in ${days}d`;
+    cls   = 'pt-far';
+  }
+
+  pill.textContent = label;
+  pill.className   = `pt-pill ${cls}`;
+}
+
 // ── Cross-source CVE index ───────────────────────────────────
 
 function buildCveSourceMap() {
@@ -176,6 +229,9 @@ function renderCards(list) {
     const patchBadge = a.severity === 'Critical'
       ? `<span class="badge-patch">Patch: 48h</span>`
       : '';
+    const ptBadge = isPatchTuesdayDate(a.date)
+      ? `<span class="badge-pt">Patch Tuesday</span>`
+      : '';
 
     return `
       <article class="advisory-card${cardClass}" data-severity="${a.severity || ''}">
@@ -185,6 +241,7 @@ function renderCards(list) {
             ${recencyBadge}
             ${corrobBadge}
             ${patchBadge}
+            ${ptBadge}
           </div>
           <span class="card-date">${formatDate(a.date)}</span>
         </div>
@@ -355,5 +412,13 @@ document.getElementById('themeToggle').addEventListener('click', () => {
 
 const savedTheme = localStorage.getItem('securadar-theme');
 if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+
+renderPatchTuesdayPill();
+// refresh pill at midnight in case page is left open overnight
+const msUntilMidnight = new Date(new Date().setHours(24,0,0,0)) - Date.now();
+setTimeout(() => {
+  renderPatchTuesdayPill();
+  setInterval(renderPatchTuesdayPill, 24 * 60 * 60 * 1000);
+}, msUntilMidnight);
 
 loadAdvisories();
