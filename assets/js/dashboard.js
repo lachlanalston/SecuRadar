@@ -1,53 +1,63 @@
-let allAdvisories = [];
+let allAdvisories   = [];
 let selectedSeverities = [];
+let selectedSources    = [];
 
 const SEVERITY_ORDER = { Critical: 0, High: 1, Medium: 2, Low: 3 };
 
+const HOT_MS  = 24 * 60 * 60 * 1000;       // < 24 hours — pulsing highlight
+const NEW_MS  = 7  * 24 * 60 * 60 * 1000;  // < 7 days — warm tint
+
+function isHot(dateStr) {
+  return !!dateStr && (Date.now() - new Date(dateStr).getTime()) <= HOT_MS;
+}
+
 function isNew(dateStr) {
-  if (!dateStr) return false;
-  return (Date.now() - new Date(dateStr).getTime()) <= 36 * 60 * 60 * 1000;
+  return !!dateStr && (Date.now() - new Date(dateStr).getTime()) <= NEW_MS;
 }
 
 function formatDate(dateStr) {
   if (!dateStr) return '—';
-  const d = new Date(dateStr);
-  return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
+  return new Date(dateStr).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
 }
 
 function timeAgo(isoStr) {
   if (!isoStr) return '';
   const diff = Date.now() - new Date(isoStr).getTime();
   const mins = Math.floor(diff / 60000);
-  if (mins < 2)   return 'just now';
-  if (mins < 60)  return `${mins}m ago`;
+  if (mins < 2)  return 'just now';
+  if (mins < 60) return `${mins}m ago`;
   const hrs = Math.floor(mins / 60);
-  if (hrs < 24)   return `${hrs}h ago`;
-  const days = Math.floor(hrs / 24);
-  return `${days}d ago`;
+  if (hrs < 24)  return `${hrs}h ago`;
+  return `${Math.floor(hrs / 24)}d ago`;
 }
 
-async function loadAdvisories() {
-  try {
-    const res  = await fetch('data/advisories.json');
-    const data = await res.json();
+// ── Source filter buttons ────────────────────────────────────
 
-    // Support both old array format and new { last_updated, advisories } format
-    if (Array.isArray(data)) {
-      allAdvisories = data;
-    } else {
-      allAdvisories = data.advisories || [];
-      if (data.last_updated) {
-        document.getElementById('lastUpdated').textContent =
-          `Updated ${timeAgo(data.last_updated)}`;
+function renderSourceFilters() {
+  const sources = [...new Set(allAdvisories.map(a => a.source).filter(Boolean))].sort();
+  const container = document.getElementById('sourceFilters');
+
+  container.innerHTML = sources.map(s => {
+    const active = selectedSources.includes(s) ? ' active' : '';
+    return `<button class="source-btn${active}" data-source="${escapeHtml(s)}">${escapeHtml(s)}</button>`;
+  }).join('');
+
+  container.querySelectorAll('.source-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const src = btn.dataset.source;
+      if (selectedSources.includes(src)) {
+        selectedSources = selectedSources.filter(s => s !== src);
+        btn.classList.remove('active');
+      } else {
+        selectedSources.push(src);
+        btn.classList.add('active');
       }
-    }
-
-    renderAll();
-  } catch (err) {
-    document.getElementById('advisoriesGrid').innerHTML =
-      `<div class="error-state">Failed to load advisories. ${err.message}</div>`;
-  }
+      renderAll();
+    });
+  });
 }
+
+// ── Filtering & sorting ──────────────────────────────────────
 
 function getFiltered() {
   const search = document.getElementById('search').value.toLowerCase().trim();
@@ -62,6 +72,7 @@ function getFiltered() {
       (a.vendor  || '').toLowerCase().includes(search) ||
       (a.cve     || '').toLowerCase().includes(search) ||
       (a.source  || '').toLowerCase().includes(search);
+
     const matchVendor = !vendor || (a.vendor || '').toLowerCase().includes(vendor);
     const matchCVE    = !cve    || (a.cve    || '').toLowerCase().includes(cve);
 
@@ -71,17 +82,22 @@ function getFiltered() {
         s === 'New' ? isNew(a.date) : a.severity === s
       );
     }
-    return matchSearch && matchVendor && matchCVE && matchSeverity;
+
+    const matchSource = selectedSources.length === 0 || selectedSources.includes(a.source || '');
+
+    return matchSearch && matchVendor && matchCVE && matchSeverity && matchSource;
   });
 
   list.sort((a, b) => {
-    if (sort === 'date-asc')  return new Date(a.date) - new Date(b.date);
-    if (sort === 'severity')  return (SEVERITY_ORDER[a.severity] ?? 9) - (SEVERITY_ORDER[b.severity] ?? 9);
-    return new Date(b.date) - new Date(a.date); // date-desc default
+    if (sort === 'date-asc') return new Date(a.date) - new Date(b.date);
+    if (sort === 'severity') return (SEVERITY_ORDER[a.severity] ?? 9) - (SEVERITY_ORDER[b.severity] ?? 9);
+    return new Date(b.date) - new Date(a.date);
   });
 
   return list;
 }
+
+// ── Render ───────────────────────────────────────────────────
 
 function renderStats() {
   const a = allAdvisories;
@@ -107,17 +123,26 @@ function renderCards(list) {
   }
 
   grid.innerHTML = list.map(a => {
-    const newBadge = isNew(a.date) ? `<span class="badge-new">New</span>` : '';
-    const cveText  = a.cve && a.cve !== 'N/A' ? a.cve : null;
-    const vendor   = a.vendor && a.vendor !== 'N/A' ? a.vendor : null;
+    const hot  = isHot(a.date);
+    const nov  = !hot && isNew(a.date);
+    const cardClass = hot ? ' is-hot' : nov ? ' is-new' : '';
+
+    const recencyBadge = hot
+      ? `<span class="badge-hot">Today</span>`
+      : nov
+        ? `<span class="badge-new">New</span>`
+        : '';
+
+    const cveText   = a.cve    && a.cve    !== 'N/A' ? a.cve    : null;
+    const vendor    = a.vendor && a.vendor !== 'N/A' ? a.vendor : null;
     const sourceKey = (a.source || '').replace(/\s+/g, '-').toLowerCase();
 
     return `
-      <article class="advisory-card" data-severity="${a.severity || ''}">
+      <article class="advisory-card${cardClass}" data-severity="${a.severity || ''}">
         <div class="card-top">
           <div class="card-badges">
             <span class="badge-severity ${a.severity || ''}">${a.severity || 'Unknown'}</span>
-            ${newBadge}
+            ${recencyBadge}
           </div>
           <span class="card-date">${formatDate(a.date)}</span>
         </div>
@@ -152,6 +177,7 @@ function renderResultsBar(count) {
   if (vendor) tags.push(`Vendor: ${vendor}`);
   if (cve)    tags.push(`CVE: ${cve}`);
   selectedSeverities.forEach(s => tags.push(s));
+  selectedSources.forEach(s => tags.push(s));
 
   document.getElementById('activeFilters').innerHTML =
     tags.map(t => `<span class="filter-tag">${escapeHtml(t)}</span>`).join('');
@@ -165,11 +191,33 @@ function renderAll() {
 }
 
 function escapeHtml(str) {
-  return str
+  return String(str)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
+}
+
+// ── Data loading ─────────────────────────────────────────────
+
+async function loadAdvisories() {
+  try {
+    const res  = await fetch('data/advisories.json');
+    const data = await res.json();
+
+    allAdvisories = Array.isArray(data) ? data : (data.advisories || []);
+
+    if (!Array.isArray(data) && data.last_updated) {
+      document.getElementById('lastUpdated').textContent =
+        `Updated ${timeAgo(data.last_updated)}`;
+    }
+
+    renderSourceFilters();
+    renderAll();
+  } catch (err) {
+    document.getElementById('advisoriesGrid').innerHTML =
+      `<div class="error-state">Failed to load advisories. ${err.message}</div>`;
+  }
 }
 
 // ── Event listeners ──────────────────────────────────────────
@@ -180,12 +228,14 @@ document.getElementById('cveFilter').addEventListener('input', renderAll);
 document.getElementById('sortBy').addEventListener('change', renderAll);
 
 document.getElementById('clearAll').addEventListener('click', () => {
-  document.getElementById('search').value      = '';
-  document.getElementById('vendorFilter').value = '';
-  document.getElementById('cveFilter').value    = '';
-  document.getElementById('sortBy').value       = 'date-desc';
+  document.getElementById('search').value       = '';
+  document.getElementById('vendorFilter').value  = '';
+  document.getElementById('cveFilter').value     = '';
+  document.getElementById('sortBy').value        = 'date-desc';
   selectedSeverities = [];
+  selectedSources    = [];
   document.querySelectorAll('.stat-card').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.source-btn').forEach(b => b.classList.remove('active'));
   renderAll();
 });
 
@@ -215,7 +265,6 @@ document.getElementById('themeToggle').addEventListener('click', () => {
   localStorage.setItem('securadar-theme', next);
 });
 
-// Restore saved theme preference
 const savedTheme = localStorage.getItem('securadar-theme');
 if (savedTheme) document.documentElement.dataset.theme = savedTheme;
 

@@ -197,6 +197,35 @@ main { padding: 1.5rem 1.75rem 2.5rem; max-width: 1400px; margin: 0 auto; }
 .stat-new     .stat-dot   { background: var(--new-color); }
 .stat-new     .stat-value  { color: var(--new-color); }
 
+/* ── Source filters ────────────────────────────────────────── */
+.source-filters {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin-bottom: .875rem;
+  min-height: 2rem;
+}
+
+.source-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 20px;
+  padding: .35rem .85rem;
+  font-size: .78rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all .15s;
+  white-space: nowrap;
+}
+.source-btn:hover { border-color: var(--accent); color: var(--accent); }
+.source-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
 /* ── Filters ───────────────────────────────────────────────── */
 .filters-bar {
   display: flex;
@@ -339,6 +368,28 @@ main { padding: 1.5rem 1.75rem 2.5rem; max-width: 1400px; margin: 0 auto; }
 .advisory-card[data-severity="Medium"]   { border-left-color: var(--medium); }
 .advisory-card[data-severity="Low"]      { border-left-color: var(--low); }
 
+/* New = within 7 days — subtle warm tint to stand out from older items */
+.advisory-card.is-new {
+  background: color-mix(in srgb, var(--surface) 94%, #f59e0b 6%);
+}
+[data-theme="dark"] .advisory-card.is-new {
+  background: color-mix(in srgb, var(--surface) 90%, #92400e 10%);
+}
+
+/* Hot = within 24 hours — pulsing glow, unmissable */
+.advisory-card.is-hot {
+  background: color-mix(in srgb, var(--surface) 90%, #f59e0b 10%);
+  animation: hot-pulse 2.5s ease-in-out infinite;
+}
+[data-theme="dark"] .advisory-card.is-hot {
+  background: color-mix(in srgb, var(--surface) 82%, #92400e 18%);
+}
+
+@keyframes hot-pulse {
+  0%, 100% { box-shadow: var(--shadow-sm); }
+  50%       { box-shadow: 0 0 0 3px rgba(245,158,11,.35), var(--shadow); }
+}
+
 .card-top {
   display: flex;
   align-items: flex-start;
@@ -363,14 +414,31 @@ main { padding: 1.5rem 1.75rem 2.5rem; max-width: 1400px; margin: 0 auto; }
 .badge-severity.Low      { background: var(--low-bg);      color: var(--low); }
 
 .badge-new {
-  background: var(--new-bg);
-  color: var(--new-color);
+  background: rgba(245,158,11,.15);
+  color: #d97706;
   font-size: .7rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .06em;
   padding: .25rem .55rem;
   border-radius: 20px;
+}
+
+.badge-hot {
+  background: #f59e0b;
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  padding: .25rem .55rem;
+  border-radius: 20px;
+  animation: badge-flash 1.8s ease-in-out infinite;
+}
+
+@keyframes badge-flash {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: .7; }
 }
 
 .card-date {
