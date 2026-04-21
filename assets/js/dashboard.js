@@ -463,6 +463,8 @@ function openPanel(advisory) {
       ? `<div class="panel-row"><span class="panel-label">CVE(s)</span><span class="panel-value is-cve">${escapeHtml(advisory.cve)}</span></div>` : '',
     advisory.due_date
       ? `<div class="panel-row is-due"><span class="panel-label">Due</span><span class="panel-value">${formatDate(advisory.due_date)}</span></div>` : '',
+    advisory.severity === 'Critical'
+      ? `<div class="panel-row is-patch"><span class="panel-label">Patch</span><span class="panel-value"><span class="panel-patch-badge">⚠ Required within 48 hours</span></span></div>` : '',
   ].filter(Boolean).join('');
 
   const corrobHtml = corrobAdvisories.length ? `
