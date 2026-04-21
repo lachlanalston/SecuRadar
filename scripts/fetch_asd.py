@@ -158,12 +158,25 @@ def main():
     seen_links: set[str] = set()
     items: list[dict] = []
 
-    # RSS feeds
+    # RSS feeds — fetch via requests so TLS negotiation matches a real browser,
+    # then hand raw bytes to feedparser (avoids urllib's weaker TLS stack)
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": USER_AGENT,
+        "Accept": "application/rss+xml, application/xml, text/xml, */*",
+    })
+
     for feed_cfg in RSS_FEEDS:
         url    = feed_cfg["url"]
         source = feed_cfg["source"]
         print(f"Fetching {url} …")
-        feed = feedparser.parse(url, request_headers={"User-Agent": USER_AGENT})
+        try:
+            r = session.get(url, timeout=30)
+            r.raise_for_status()
+            feed = feedparser.parse(r.content)
+        except Exception as e:
+            print(f"  Error: {e} — skipping")
+            continue
         if feed.bozo and feed.bozo_exception:
             print(f"  Warning: {feed.bozo_exception}")
         count = 0
