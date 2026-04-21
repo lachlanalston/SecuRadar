@@ -1,7 +1,8 @@
-let allAdvisories   = [];
+let allAdvisories      = [];
 let selectedSeverities = [];
 let selectedSources    = [];
-let cveSourceMap       = {}; // CVE ID → Set of source names
+let cveSourceMap       = {};
+let viewMode           = localStorage.getItem('securadar-view') || 'grid';
 
 const SEVERITY_ORDER = { Critical: 0, High: 1, Medium: 2, Low: 3 };
 
@@ -134,6 +135,13 @@ function renderStats() {
   document.getElementById('countNew').textContent      = a.filter(x => isNew(x.date)).length;
 }
 
+function applyViewMode() {
+  const grid = document.getElementById('advisoriesGrid');
+  grid.classList.toggle('list-view', viewMode === 'list');
+  document.getElementById('viewGrid').classList.toggle('active', viewMode === 'grid');
+  document.getElementById('viewList').classList.toggle('active', viewMode === 'list');
+}
+
 function renderCards(list) {
   const grid = document.getElementById('advisoriesGrid');
 
@@ -218,6 +226,7 @@ function renderResultsBar(count) {
 }
 
 function renderAll() {
+  applyViewMode();
   renderStats();
   const list = getFiltered();
   renderCards(list);
@@ -323,6 +332,18 @@ document.querySelectorAll('.stat-card[data-severity]').forEach(card => {
     }
     renderAll();
   });
+});
+
+document.getElementById('viewGrid').addEventListener('click', () => {
+  viewMode = 'grid';
+  localStorage.setItem('securadar-view', 'grid');
+  renderAll();
+});
+
+document.getElementById('viewList').addEventListener('click', () => {
+  viewMode = 'list';
+  localStorage.setItem('securadar-view', 'list');
+  renderAll();
 });
 
 document.getElementById('themeToggle').addEventListener('click', () => {
