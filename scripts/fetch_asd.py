@@ -19,8 +19,8 @@ USER_AGENT = (
 RSS_FEEDS = [
     {"url": "https://www.cyber.gov.au/rss/alerts",        "source": "ASD"},
     {"url": "https://www.cyber.gov.au/rss/advisories",     "source": "ASD"},
-    {"url": "https://www.cisa.gov/uscert/ncas/alerts.xml", "source": "CISA"},
-    {"url": "https://www.ncsc.gov.uk/feeds/all.xml",       "source": "NCSC UK"},
+    {"url": "https://www.ncsc.gov.uk/api/1/services/v1/guidance-rss-feed.xml", "source": "NCSC UK"},
+    {"url": "https://www.ncsc.gov.uk/api/1/services/v1/report-rss-feed.xml",  "source": "NCSC UK"},
 ]
 
 CISA_KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
