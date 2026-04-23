@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-04-23T22:08:24Z",
+  "last_updated": "2026-04-23T23:13:19Z",
   "advisories": [
+    {
+      "id": "da565c9a",
+      "source": "ASD",
+      "title": "Defending against China-nexus covert networks of compromised devices",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/defending-against-china-nexus-covert-networks-of-compromised-devices",
+      "date": "2026-04-24",
+      "summary": "This advisory outlines the shift in tactics, techniques and procedures used by China-nexus cyber actors to target organisations, as well as recommended mitigations.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "8ef6950e",
       "source": "CISA KEV",
