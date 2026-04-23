@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-04-23T17:21:52Z",
+  "last_updated": "2026-04-23T18:42:15Z",
   "advisories": [
+    {
+      "id": "8ef6950e",
+      "source": "CISA KEV",
+      "title": "Marimo Remote Code Execution Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-04-23",
+      "due_date": "2026-05-07",
+      "summary": "Marimo contains an pre-authorization remote code execution vulnerability, allowing an unauthenticated attacked to shell access and execute arbitrary system commands. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Critical",
+      "vendor": "Marimo — Marimo",
+      "cve": "CVE-2026-39987"
+    },
     {
       "id": "eb4f488d",
       "source": "CISA KEV",
