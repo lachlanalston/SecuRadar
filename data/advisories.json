@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-24T17:30:16Z",
+  "last_updated": "2026-04-24T18:54:13Z",
   "advisories": [
     {
       "id": "f3780174",
@@ -22,6 +22,54 @@
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
+    },
+    {
+      "id": "ea3654ff",
+      "source": "CISA KEV",
+      "title": "D-Link DIR-823X Command Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-04-24",
+      "due_date": "2026-05-08",
+      "summary": "D-Link DIR-823X contains a command injection vulnerability that allows an authorized attacker to execute arbitrary commands on remote devices by sending a POST request to /goform/set_prohibiting via the corresponding function. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product…",
+      "severity": "Low",
+      "vendor": "D-Link — DIR-823X",
+      "cve": "CVE-2025-29635"
+    },
+    {
+      "id": "0ede77fa",
+      "source": "CISA KEV",
+      "title": "Samsung MagicINFO 9 Server Path Traversal Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-04-24",
+      "due_date": "2026-05-08",
+      "summary": "Samsung MagicINFO 9 Server contains a path traversal vulnerability that could allow an attacker to write arbitrary files as system authority. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Samsung — MagicINFO 9 Server",
+      "cve": "CVE-2024-7399"
+    },
+    {
+      "id": "9bec1d06",
+      "source": "CISA KEV",
+      "title": "SimpleHelp Path Traversal Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-04-24",
+      "due_date": "2026-05-08",
+      "summary": "SimpleHelp contains a path traversal vulnerability that allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited to execute arbitrary code on the host in the context of the SimpleHelp server user. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "SimpleHelp  — SimpleHelp",
+      "cve": "CVE-2024-57728"
+    },
+    {
+      "id": "5213bda8",
+      "source": "CISA KEV",
+      "title": "SimpleHelp Missing Authorization Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-04-24",
+      "due_date": "2026-05-08",
+      "summary": "SimpleHelp contains a missing authorization vulnerability that could allow low-privileged technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges to the server admin role. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "SimpleHelp  — SimpleHelp",
+      "cve": "CVE-2024-57726"
     },
     {
       "id": "8ef6950e",
