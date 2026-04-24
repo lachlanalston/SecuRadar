@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-04-24T00:08:35Z",
+  "last_updated": "2026-04-24T03:57:57Z",
   "advisories": [
+    {
+      "id": "f3780174",
+      "source": "ASD",
+      "title": "HIGH ALERT: New steps for organisations running Cisco Firepower and Secure Firewall products",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/new-steps-for-organisations-running-cisco-firepower-and-secure-firewall-products",
+      "date": "2026-04-24",
+      "summary": "ASD partners CISA and NCSC have identified new malware affecting Cisco Firepower and Secure Firewall products.",
+      "severity": "High",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "da565c9a",
       "source": "ASD",
