@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T21:33:55Z",
+  "last_updated": "2026-04-27T22:53:36Z",
   "advisories": [
     {
       "id": "f3780174",
@@ -192,17 +192,6 @@
       "cve": "CVE-2024-27199"
     },
     {
-      "id": "c38ba88b",
-      "source": "ASD",
-      "title": "Russian GRU targeting Western logistics entities and technology companies",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/russian-gru-targeting-western-logistics-entities-and-technology-companies",
-      "date": "2026-04-17",
-      "summary": "This joint cybersecurity advisory (CSA) highlights a Russian state-sponsored cyber campaign targeting Western logistics entities and technology companies.",
-      "severity": "High",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "299936e9",
       "source": "CISA KEV",
       "title": "Apache ActiveMQ Improper Input Validation Vulnerability",
@@ -357,17 +346,6 @@
       "severity": "Low",
       "vendor": "TrueConf — Client",
       "cve": "CVE-2026-3502"
-    },
-    {
-      "id": "101d4bdb",
-      "source": "ASD",
-      "title": "HIGH ALERT: Ongoing targeting of online code repositories",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories",
-      "date": "2026-04-01",
-      "summary": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of increased targeting of online code repositories, with threat actors employing various tactics to scan for and extract secrets, access private code bases, and modify packages to infect users. The ASD’s ACSC does not have information to indicate that a specific industry or sector is being targeted, with this advisory providing general awareness of an observed increase in activity.",
-      "severity": "High",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "af565473",
@@ -610,17 +588,6 @@
       "cve": "CVE-2026-1603"
     },
     {
-      "id": "835bd1ad",
-      "source": "ASD",
-      "title": "CRITICAL ALERT: Exploitation of Cisco SD-WAN appliances",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/exploitation-of-cisco-sd-wan-appliances",
-      "date": "2026-03-06",
-      "summary": "Malicious cyber threat actors are targeting SD-WANs of organisations, globally. The purpose of this Alert is to provide mitigations for the ongoing exploitation of Cisco Software-Defined Wide Area Network (SD-WAN) technology, including via CVE-2026-20127, CVE-206-20128 and CVE-2026-20122.",
-      "severity": "Critical",
-      "vendor": "N/A",
-      "cve": "CVE-2026-20127, CVE-2026-20122"
-    },
-    {
       "id": "a9149267",
       "source": "ASD",
       "title": "INC Ransom Affiliate Model Enabling Targeting of Critical Networks",
@@ -714,6 +681,17 @@
       "severity": "Low",
       "vendor": "Qualcomm — Multiple Chipsets",
       "cve": "CVE-2026-21385"
+    },
+    {
+      "id": "835bd1ad",
+      "source": "ASD",
+      "title": "CRITICAL ALERT: Exploitation of Cisco SD-WAN appliances",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/exploitation-of-cisco-sd-wan-appliances",
+      "date": "2026-02-25",
+      "summary": "Malicious cyber threat actors are targeting SD-WANs of organisations, globally. The purpose of this Alert is to provide mitigations for the ongoing exploitation of Cisco Software-Defined Wide Area Network (SD-WAN) technology, including via CVE-2026-20127, CVE-206-20128 and CVE-2026-20122.",
+      "severity": "Critical",
+      "vendor": "N/A",
+      "cve": "CVE-2026-20127, CVE-2026-20122"
     },
     {
       "id": "6424f623",
@@ -2096,6 +2074,17 @@
       "cve": "CVE-2025-10585"
     },
     {
+      "id": "101d4bdb",
+      "source": "ASD",
+      "title": "HIGH ALERT: Ongoing targeting of online code repositories",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories",
+      "date": "2025-09-19",
+      "summary": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of increased targeting of online code repositories, with threat actors employing various tactics to scan for and extract secrets, access private code bases, and modify packages to infect users. The ASD’s ACSC does not have information to indicate that a specific industry or sector is being targeted, with this advisory providing general awareness of an observed increase in activity.",
+      "severity": "High",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "09cb9af5",
       "source": "CISA KEV",
       "title": "Dassault Systèmes DELMIA Apriso Deserialization of Untrusted Data Vulnerability",
@@ -2862,6 +2851,17 @@
       "severity": "Low",
       "vendor": "Samsung — MagicINFO 9 Server",
       "cve": "CVE-2025-4632"
+    },
+    {
+      "id": "c38ba88b",
+      "source": "ASD",
+      "title": "Russian GRU targeting Western logistics entities and technology companies",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/russian-gru-targeting-western-logistics-entities-and-technology-companies",
+      "date": "2025-05-21",
+      "summary": "This joint cybersecurity advisory (CSA) highlights a Russian state-sponsored cyber campaign targeting Western logistics entities and technology companies.",
+      "severity": "High",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "2039b88b",
