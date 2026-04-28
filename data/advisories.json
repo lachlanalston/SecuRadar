@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-04-28T15:44:36Z",
+  "last_updated": "2026-04-28T17:47:39Z",
   "advisories": [
+    {
+      "id": "751a58a8",
+      "source": "CISA KEV",
+      "title": "ConnectWise ScreenConnect Path Traversal Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-04-28",
+      "due_date": "2026-05-12",
+      "summary": "ConnectWise ScreenConnect contains a path traversal vulnerability which could allow an attacker to execute remote code or directly impact confidential data and critical systems. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Critical",
+      "vendor": "ConnectWise — ScreenConnect",
+      "cve": "CVE-2024-1708"
+    },
+    {
+      "id": "d100c69f",
+      "source": "CISA KEV",
+      "title": "Microsoft Windows Protection Mechanism Failure Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-04-28",
+      "due_date": "2026-05-12",
+      "summary": "Microsoft Windows Shell contains a protection mechanism failure vulnerability that allows an unauthorized attacker to perform spoofing over a network. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Microsoft — Windows",
+      "cve": "CVE-2026-32202"
+    },
     {
       "id": "f3780174",
       "source": "ASD",
