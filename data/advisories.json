@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-05-01T03:38:23Z",
+  "last_updated": "2026-05-01T06:37:16Z",
   "advisories": [
+    {
+      "id": "3c957c01",
+      "source": "ASD",
+      "title": "CRITICAL ALERT: Active exploitation of cPanel/WHM critical vulnerability",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-cpanel-whm-critical-vulnerability",
+      "date": "2026-05-01",
+      "summary": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of exploitation of a vulnerability affecting the cPanel/ WebHost Manager (CVE-2026-4194) administration control interfaces for website and server management. This vulnerability has received a CVSS4.0 base score of 9.3.",
+      "severity": "Critical",
+      "vendor": "Critical Alert: Active Exploitation Of Cpanel/Whm Critical",
+      "cve": "CVE-2026-4194"
+    },
     {
       "id": "d4c903cf",
       "source": "CISA KEV",
