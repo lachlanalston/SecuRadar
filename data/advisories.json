@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-01T17:08:38Z",
+  "last_updated": "2026-05-01T18:38:26Z",
   "advisories": [
     {
       "id": "3c957c01",
@@ -11,6 +11,18 @@
       "severity": "Critical",
       "vendor": "Critical Alert: Active Exploitation Of Cpanel/Whm Critical",
       "cve": "CVE-2026-4194"
+    },
+    {
+      "id": "1aa247ad",
+      "source": "CISA KEV",
+      "title": "Linux Kernel Incorrect Resource Transfer Between Spheres Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-01",
+      "due_date": "2026-05-15",
+      "summary": "Linux Kernel contains an incorrect resource transfer between spheres vulnerability that could allow for privilege escalation. Required action: \"Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Critical",
+      "vendor": "Linux — Kernel",
+      "cve": "CVE-2026-31431"
     },
     {
       "id": "d4c903cf",
