@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06T13:13:41Z",
+  "last_updated": "2026-05-06T15:41:06Z",
   "advisories": [
     {
       "id": "3c957c01",
@@ -525,6 +525,17 @@
       "severity": "Low",
       "vendor": "Apple — Multiple Products",
       "cve": "CVE-2025-31277"
+    },
+    {
+      "id": "adfa17f8",
+      "source": "NCSC UK",
+      "title": "How to secure your online meetings",
+      "link": "https://www.ncsc.gov.uk/guidance/how-to-secure-your-online-meetings",
+      "date": "2026-03-19",
+      "summary": "Advice for small and medium-sized organisations on choosing, setting up and using online meeting services safely.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "34cccab5",
@@ -1437,6 +1448,17 @@
       "cve": "CVE-2025-58360"
     },
     {
+      "id": "317c73c0",
+      "source": "NCSC UK",
+      "title": "Provisioning and managing certificates in the Web PKI",
+      "link": "https://www.ncsc.gov.uk/guidance/provisioning-and-managing-certificates-in-the-web-pki",
+      "date": "2025-12-10",
+      "summary": "How service owners should securely provision and manage certificates in the Web PKI.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "8e4e4346",
       "source": "CISA KEV",
       "title": "RARLAB WinRAR Path Traversal Vulnerability",
@@ -1497,6 +1519,17 @@
       "cve": "CVE-2025-55182"
     },
     {
+      "id": "033a635f",
+      "source": "NCSC UK",
+      "title": "New Vulnerability Monitoring Service (VMS) from GDS now available in MyNCSC",
+      "link": "https://www.ncsc.gov.uk/collection/myncsc-help-centre/vms-myncsc",
+      "date": "2025-12-03",
+      "summary": "We are excited to announce that the Vulnerability Monitoring Service (VMS) - from the Government Digital Service (GDS) is now available in MyNCSC.",
+      "severity": "Medium",
+      "vendor": "New",
+      "cve": "N/A"
+    },
+    {
       "id": "ce9e1dde",
       "source": "CISA KEV",
       "title": "OpenPLC ScadaBR Unrestricted Upload of File with Dangerous Type Vulnerability",
@@ -1543,6 +1576,17 @@
       "severity": "Low",
       "vendor": "OpenPLC — ScadaBR",
       "cve": "CVE-2021-26829"
+    },
+    {
+      "id": "28df0c71",
+      "source": "NCSC UK",
+      "title": "Choosing a managed service provider (MSP)",
+      "link": "https://www.ncsc.gov.uk/guidance/choosing-a-managed-service-provider-msp",
+      "date": "2025-11-24",
+      "summary": "An SME’s guide to selecting and working with managed service providers.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "eb39deff",
@@ -2140,6 +2184,17 @@
       "date": "2025-09-19",
       "summary": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of increased targeting of online code repositories, with threat actors employing various tactics to scan for and extract secrets, access private code bases, and modify packages to infect users. The ASD’s ACSC does not have information to indicate that a specific industry or sector is being targeted, with this advisory providing general awareness of an observed increase in activity.",
       "severity": "High",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "c8c95bc5",
+      "source": "NCSC UK",
+      "title": "External attack surface management (EASM) buyer's guide",
+      "link": "https://www.ncsc.gov.uk/guidance/external-attack-surface-management-buyers-guide",
+      "date": "2025-09-18",
+      "summary": "A guide to choosing the right EASM product for your organisation, and the security features you need to consider.",
+      "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
     },
@@ -2744,6 +2799,17 @@
       "cve": "CVE-2025-43200"
     },
     {
+      "id": "180113d2",
+      "source": "NCSC UK",
+      "title": "New DNS Check service in MyNCSC is being expanded to include more DNS related issues",
+      "link": "https://www.ncsc.gov.uk/collection/myncsc-help-centre/dns-check-service-expanded",
+      "date": "2025-06-10",
+      "summary": "",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "4a36aaa3",
       "source": "CISA KEV",
       "title": " Microsoft Windows External Control of File Name or Path Vulnerability",
@@ -2919,6 +2985,17 @@
       "date": "2025-05-21",
       "summary": "This joint cybersecurity advisory (CSA) highlights a Russian state-sponsored cyber campaign targeting Western logistics entities and technology companies.",
       "severity": "High",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "f81a0950",
+      "source": "NCSC UK",
+      "title": "Decommissioning assets",
+      "link": "https://www.ncsc.gov.uk/guidance/decommissioning-assets",
+      "date": "2025-05-20",
+      "summary": "How to retire digital assets (such as data, software, or hardware) from operation.",
+      "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
     },
@@ -3101,6 +3178,28 @@
       "severity": "Low",
       "vendor": "TeleMessage — TM SGNL",
       "cve": "CVE-2025-47729"
+    },
+    {
+      "id": "725c2b6d",
+      "source": "NCSC UK",
+      "title": "Software Security Code of Practice - Assurance Principles and Claims (APCs)",
+      "link": "https://www.ncsc.gov.uk/guidance/software-security-code-of-practice-assurance-principles-claims",
+      "date": "2025-05-07",
+      "summary": "Helps vendors measure how well they meet the Software Security Code of Practice, and suggests remedial actions should they fall short.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "ef9dfe6a",
+      "source": "NCSC UK",
+      "title": "Impact of AI on cyber threat from now to 2027",
+      "link": "https://www.ncsc.gov.uk/report/impact-ai-cyber-threat-now-2027",
+      "date": "2025-05-07",
+      "summary": "An NCSC assessment highlighting the impacts on cyber threat from AI developments between now and 2027.",
+      "severity": "High",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "342775b7",
@@ -3367,6 +3466,17 @@
       "cve": "CVE-2025-22457"
     },
     {
+      "id": "92321194",
+      "source": "NCSC UK",
+      "title": "New feature: View and manage Early Warning findings in MyNCSC",
+      "link": "https://www.ncsc.gov.uk/collection/myncsc-help-centre/new-feature-view-manage-early-warning-findings",
+      "date": "2025-04-03",
+      "summary": "MyNCSC is excited to announce that, after a successful pilot, you can view and manage Early Warning findings for your organisation within the MyNCSC platform.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "15e6593b",
       "source": "CISA KEV",
       "title": "Apache Tomcat Path Equivalence Vulnerability",
@@ -3437,6 +3547,17 @@
       "severity": "Low",
       "vendor": "reviewdog — action-setup GitHub Action",
       "cve": "CVE-2025-30154"
+    },
+    {
+      "id": "61ed536b",
+      "source": "NCSC UK",
+      "title": "Timelines for migration to post-quantum cryptography",
+      "link": "https://www.ncsc.gov.uk/guidance/pqc-migration-timelines",
+      "date": "2025-03-20",
+      "summary": "Activities which organisations must carry out to migrate safely to post-quantum cryptography in the coming years.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "2303e74c",
@@ -3521,6 +3642,17 @@
       "severity": "Low",
       "vendor": "Apple — Multiple Products",
       "cve": "CVE-2025-24201"
+    },
+    {
+      "id": "a3235034",
+      "source": "NCSC UK",
+      "title": "New DNS Check service now available in MyNCSC",
+      "link": "https://www.ncsc.gov.uk/collection/myncsc-help-centre/new-dns-check-service-available",
+      "date": "2025-03-11",
+      "summary": "MyNCSC is excited to announce the launch of its new service DNS Check.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "32fe87c0",
@@ -3967,6 +4099,17 @@
       "cve": "CVE-2025-0994"
     },
     {
+      "id": "75703cee",
+      "source": "NCSC UK",
+      "title": "Network security fundamentals",
+      "link": "https://www.ncsc.gov.uk/guidance/network-security-fundamentals",
+      "date": "2025-02-06",
+      "summary": "How to design, use, and maintain secure networks.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "fe71895a",
       "source": "CISA KEV",
       "title": "Sophos XG Firewall Buffer Overflow Vulnerability",
@@ -4039,6 +4182,17 @@
       "cve": "CVE-2024-53104"
     },
     {
+      "id": "478918e2",
+      "source": "NCSC UK",
+      "title": "Guidance on digital forensics and protective monitoring specifications for producers of network devices and appliances",
+      "link": "https://www.ncsc.gov.uk/guidance/guidance-on-digital-forensics-protective-monitoring",
+      "date": "2025-02-04",
+      "summary": "Outlining the expectations for the minimum requirement for forensic visibility, to help network defenders secure organisational networks both before and after a compromise.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "3eb35fec",
       "source": "CISA KEV",
       "title": "Paessler PRTG Network Monitor Local File Inclusion Vulnerability",
@@ -4097,6 +4251,17 @@
       "severity": "Low",
       "vendor": "Apple — Multiple Products",
       "cve": "CVE-2025-24085"
+    },
+    {
+      "id": "b04fc8b3",
+      "source": "NCSC UK",
+      "title": "A method to assess 'forgivable' vs 'unforgivable' vulnerabilities",
+      "link": "https://www.ncsc.gov.uk/report/a-method-to-assess-forgivable-vs-unforgivable-vulnerabilities",
+      "date": "2025-01-28",
+      "summary": "Research from the NCSC designed to eradicate vulnerability classes and make the top-level mitigations easier to implement.",
+      "severity": "Medium",
+      "vendor": "A Method To Assess 'Forgivable' Vs 'Unforgivable'",
+      "cve": "N/A"
     },
     {
       "id": "ee437abc",
@@ -4399,6 +4564,17 @@
       "cve": "CVE-2024-49138"
     },
     {
+      "id": "be1e20ab",
+      "source": "NCSC UK",
+      "title": "Asset Discovery on MyNCSC",
+      "link": "https://www.ncsc.gov.uk/collection/myncsc-help-centre/asset-discovery-update",
+      "date": "2024-12-04",
+      "summary": "Asset Discovery is now available to all Organisation Administrators using MyNCSC. This page explains how Asset Discovery could enhance awareness of your shadow IT.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "fa5b0943",
       "source": "CISA KEV",
       "title": "CyberPanel Incorrect Default Permissions Vulnerability",
@@ -4555,6 +4731,17 @@
       "cve": "CVE-2024-1212"
     },
     {
+      "id": "2a6da2f3",
+      "source": "NCSC UK",
+      "title": "Mail Check update",
+      "link": "https://www.ncsc.gov.uk/collection/myncsc-help-centre/mail-check-update",
+      "date": "2024-11-14",
+      "summary": "",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "edab8fac",
       "source": "CISA KEV",
       "title": "Palo Alto Networks Expedition SQL Injection Vulnerability",
@@ -4687,6 +4874,17 @@
       "cve": "CVE-2024-5910"
     },
     {
+      "id": "b940737c",
+      "source": "NCSC UK",
+      "title": "Guidance for brands to help advertising partners counter malvertising",
+      "link": "https://www.ncsc.gov.uk/guidance/guidance-brands-advertising-partners-counter-malvertising",
+      "date": "2024-11-06",
+      "summary": "Advice to make it harder for cyber criminals to deliver malicious advertising, and reduce the risk of cyber-facilitated fraud.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "7cbc88cf",
       "source": "CISA KEV",
       "title": "PTZOptics PT30X-SDI/NDI Cameras Authentication Bypass Vulnerability",
@@ -4781,6 +4979,17 @@
       "severity": "Critical",
       "vendor": "Veeam — Backup & Replication",
       "cve": "CVE-2024-40711"
+    },
+    {
+      "id": "6116c4f9",
+      "source": "NCSC UK",
+      "title": "Guidance on effective communications in a cyber incident",
+      "link": "https://www.ncsc.gov.uk/guidance/effective-communications-in-a-cyber-incident",
+      "date": "2024-10-16",
+      "summary": "Supporting organisations of all sizes to manage their communications strategy before, during and after a cyber security incident.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "2e67e649",
@@ -5839,6 +6048,17 @@
       "cve": "CVE-2014-100005"
     },
     {
+      "id": "0d3b55df",
+      "source": "NCSC UK",
+      "title": "Guidance for organisations considering payment in ransomware incidents",
+      "link": "https://www.ncsc.gov.uk/guidance/organisations-considering-payment-in-ransomware-incidents",
+      "date": "2024-05-14",
+      "summary": "Advice for organisations experiencing a ransomware attack and the partner organisations supporting them.",
+      "severity": "Critical",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "02cceb5f",
       "source": "CISA KEV",
       "title": "Microsoft Windows MSHTML Platform Security Feature Bypass Vulnerability",
@@ -6055,6 +6275,17 @@
       "cve": "CVE-2023-48788"
     },
     {
+      "id": "5313b22b",
+      "source": "NCSC UK",
+      "title": "Responding to a cyber incident – a guide for CEOs",
+      "link": "https://www.ncsc.gov.uk/guidance/ceos-responding-cyber-incidents",
+      "date": "2024-03-21",
+      "summary": "Guidance to help CEOs in public and private sector organisations manage a cyber incident.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "a58ea334",
       "source": "CISA KEV",
       "title": "JetBrains TeamCity Authentication Bypass Vulnerability",
@@ -6149,6 +6380,17 @@
       "severity": "Critical",
       "vendor": "ConnectWise — ScreenConnect",
       "cve": "CVE-2024-1709"
+    },
+    {
+      "id": "c5268505",
+      "source": "NCSC UK",
+      "title": "Private Branch Exchange (PBX) best practice",
+      "link": "https://www.ncsc.gov.uk/guidance/private-branch-exchange-best-practice",
+      "date": "2024-02-20",
+      "summary": "Protecting your organisation’s telephony systems from cyber attacks and telecoms fraud.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "5e76d53f",
@@ -6257,6 +6499,17 @@
       "severity": "Critical",
       "vendor": "Ivanti — Connect Secure, Policy Secure, and Neurons",
       "cve": "CVE-2024-21893"
+    },
+    {
+      "id": "e9774df5",
+      "source": "NCSC UK",
+      "title": "The near-term impact of AI on the cyber threat",
+      "link": "https://www.ncsc.gov.uk/report/impact-of-ai-on-cyber-threat",
+      "date": "2024-01-24",
+      "summary": "An NCSC assessment focusing on how AI will impact the efficacy of cyber operations and the implications for the cyber threat over the next two years.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "d058f6e7",
@@ -7567,6 +7820,17 @@
       "cve": "CVE-2021-29256"
     },
     {
+      "id": "5d9f49f7",
+      "source": "NCSC UK",
+      "title": "ACD - The Sixth Year",
+      "link": "https://www.ncsc.gov.uk/report/acd-the-sixth-year",
+      "date": "2023-07-06",
+      "summary": "Key findings and full report from the 6th year of the Active Cyber Defence (ACD) programme.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "c89e4d82",
       "source": "CISA KEV",
       "title": "D-Link DIR-859 Router Command Execution Vulnerability",
@@ -7721,6 +7985,17 @@
       "severity": "Low",
       "vendor": "Zyxel — Multiple Network-Attached Storage (NAS) Devices",
       "cve": "CVE-2023-27992"
+    },
+    {
+      "id": "f6c0949e",
+      "source": "NCSC UK",
+      "title": "Cyber Threat Report: UK Legal Sector",
+      "link": "https://www.ncsc.gov.uk/report/cyber-threat-report-uk-legal-sector",
+      "date": "2023-06-22",
+      "summary": "An updated report from the NCSC explaining how UK law firms - of all sizes - can protect themselves from common cyber threats.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "a0c50bfb",
@@ -8117,6 +8392,17 @@
       "severity": "Low",
       "vendor": "Google — Chromium Skia",
       "cve": "CVE-2023-2136"
+    },
+    {
+      "id": "879d8fba",
+      "source": "NCSC UK",
+      "title": "The threat from commercial cyber proliferation",
+      "link": "https://www.ncsc.gov.uk/report/commercial-cyber-proliferation-assessment",
+      "date": "2023-04-19",
+      "summary": "Report informing readers about the threat to UK industry and society from commercial cyber tools and services.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "5f61a5f9",
@@ -11203,6 +11489,28 @@
       "cve": "CVE-2022-22947"
     },
     {
+      "id": "47dc9670",
+      "source": "NCSC UK",
+      "title": "Organisational use of Enterprise Connected Devices",
+      "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
+      "date": "2022-05-10",
+      "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "55d2b8f7",
+      "source": "NCSC UK",
+      "title": "ACD - The Fifth Year",
+      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
+      "date": "2022-05-10",
+      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "2f89c3a4",
       "source": "CISA KEV",
       "title": "F5 BIG-IP Missing Authentication Vulnerability",
@@ -11213,6 +11521,17 @@
       "severity": "Critical",
       "vendor": "F5 — BIG-IP",
       "cve": "CVE-2022-1388"
+    },
+    {
+      "id": "83c53fdb",
+      "source": "NCSC UK",
+      "title": "Threat report on application stores",
+      "link": "https://www.ncsc.gov.uk/report/threat-report-on-application-stores",
+      "date": "2022-05-04",
+      "summary": "This report outlines the risks associated with the use of official and third party app stores.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "ea6b614d",
@@ -11273,6 +11592,17 @@
       "severity": "Low",
       "vendor": "OpenSSL — OpenSSL",
       "cve": "CVE-2014-0160"
+    },
+    {
+      "id": "a44289aa",
+      "source": "NCSC UK",
+      "title": "Malware analysis report on SparrowDoor malware",
+      "link": "https://www.ncsc.gov.uk/report/mar-sparrowdoor",
+      "date": "2022-04-25",
+      "summary": "A technical analysis of a new variant of the SparrowDoor malware.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "6a4ec610",
@@ -13073,6 +13403,17 @@
       "severity": "Critical",
       "vendor": "Hewlett Packard (HP) — OpenView Network Node Manager",
       "cve": "CVE-2005-2773"
+    },
+    {
+      "id": "379f3be3",
+      "source": "NCSC UK",
+      "title": "Vendor Security Assessment",
+      "link": "https://www.ncsc.gov.uk/report/vendor-security-assessment",
+      "date": "2022-03-22",
+      "summary": "Assessing the security of network equipment.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "61804bf2",
@@ -15629,6 +15970,17 @@
       "severity": "Critical",
       "vendor": "Zoho — ManageEngine ServiceDesk Plus (SDP) / SupportCenter Plus",
       "cve": "CVE-2021-44077"
+    },
+    {
+      "id": "f4e4df82",
+      "source": "NCSC UK",
+      "title": "Decrypting diversity: Diversity and inclusion in cyber security report 2021",
+      "link": "https://www.ncsc.gov.uk/report/decrypting-diversity-2021-diversity-and-inclusion-in-cyber-security",
+      "date": "2021-11-23",
+      "summary": "The 2nd joint report between the NCSC and KPMG UK benchmarks against the 2020 findings to gauge what progress has been made.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "152df41b",
@@ -19121,6 +19473,94 @@
       "severity": "Medium",
       "vendor": "Zyxel — Multiple Products",
       "cve": "CVE-2020-29583"
+    },
+    {
+      "id": "c5f503a4",
+      "source": "NCSC UK",
+      "title": "Active Cyber Defence (ACD) - the fourth year",
+      "link": "https://www.ncsc.gov.uk/report/acd-report-year-four",
+      "date": "2021-05-10",
+      "summary": "The year four report covers 2020 and aims to highlight the achievements and efforts made by the Active Cyber Defence programme.",
+      "severity": "High",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "f75107a0",
+      "source": "NCSC UK",
+      "title": "Active Cyber Defence (ACD) - The Third Year",
+      "link": "https://www.ncsc.gov.uk/report/acd-report-year-three",
+      "date": "2021-02-19",
+      "summary": "The year three report covers 2019 and aims to highlight the achievements and efforts made by the Active Cyber Defence programme.",
+      "severity": "High",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "0ee3154f",
+      "source": "NCSC UK",
+      "title": "Technical report: Responsible use of the Border Gateway Protocol (BGP) for ISP interworking",
+      "link": "https://www.ncsc.gov.uk/report/responsible-use-of-bgp-for-isp-interworking",
+      "date": "2021-01-20",
+      "summary": "Technical report on best practice use of this fundamental data routing protocol.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "30a48019",
+      "source": "NCSC UK",
+      "title": "Decrypting diversity: Diversity and inclusion in cyber security report 2020",
+      "link": "https://www.ncsc.gov.uk/report/diversity-and-inclusion-in-cyber-security-report",
+      "date": "2020-07-28",
+      "summary": "Joint report between the NCSC and KPMG UK is the first in a series to benchmark and track levels of diversity and inclusion in the cyber security industry.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "bc3c4411",
+      "source": "NCSC UK",
+      "title": "The cyber threat to sports organisations",
+      "link": "https://www.ncsc.gov.uk/report/the-cyber-threat-to-sports-organisations",
+      "date": "2020-07-23",
+      "summary": "The NCSC report highlights the cyber threats faced by the sports sector and suggests how to stop or lessen their impact on organisations.",
+      "severity": "High",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "728473d9",
+      "source": "NCSC UK",
+      "title": "Summary of the NCSC analysis of May 2020 US sanction",
+      "link": "https://www.ncsc.gov.uk/report/summary-of-ncsc-analysis-of-us-may-2020-sanction",
+      "date": "2020-07-14",
+      "summary": "A summary of the NCSC’s analysis of the May 2020 US sanction which caused the NCSC to modify the scope of its security mitigation strategy for Huawei.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "7d5d571a",
+      "source": "NCSC UK",
+      "title": "High level privacy and security design for NHS COVID-19 contact tracing app",
+      "link": "https://www.ncsc.gov.uk/report/nhs-covid-19-app-privacy-security-report",
+      "date": "2020-05-04",
+      "summary": "NCSC technical paper about the privacy and security design of the NHS contact tracing app developed to help slow the spread of coronavirus.",
+      "severity": "High",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "15051fd6",
+      "source": "NCSC UK",
+      "title": "Summary of NCSC’s security analysis for the UK telecoms sector",
+      "link": "https://www.ncsc.gov.uk/report/summary-of-ncsc-security-analysis-for-the-uk-telecoms-sector",
+      "date": "2020-01-28",
+      "summary": "A summary of the NCSC’s security analysis for the UK telecoms sector",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     }
   ]
 }
