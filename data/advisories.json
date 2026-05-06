@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-05-06T22:13:43Z",
+  "last_updated": "2026-05-06T23:26:41Z",
   "advisories": [
+    {
+      "id": "c53d3eb6",
+      "source": "ASD",
+      "title": "ClickFix distributing Vidar Stealer via WordPress targeting Australian infrastructure",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/clickfix-distributing-vidar-stealer-via-wordpress-targeting-australian-infrastructure",
+      "date": "2026-05-07",
+      "summary": "Threat actors are targeting Australian networks with a social engineering technique, ClickFix, to distribute malware through compromised WordPress websites. This advisory provides an overview of the activity, an assessment of the threat, observed indicators, detections and recommended mitigations.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "fed24c9a",
       "source": "CISA KEV",
