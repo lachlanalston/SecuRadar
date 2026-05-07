@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T15:12:52Z",
+  "last_updated": "2026-05-07T17:16:30Z",
   "advisories": [
     {
       "id": "c53d3eb6",
@@ -11,6 +11,18 @@
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
+    },
+    {
+      "id": "ddcab6b1",
+      "source": "CISA KEV",
+      "title": "Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-07",
+      "due_date": "2026-05-10",
+      "summary": "Ivanti Endpoint Manager Mobile (EPMM) contains an improper input validation vulnerability that allows a remotely authenticated user with administrative access to achieve remote code execution. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Critical",
+      "vendor": "Ivanti — Endpoint Manager Mobile (EPMM)",
+      "cve": "CVE-2026-6973"
     },
     {
       "id": "fed24c9a",
