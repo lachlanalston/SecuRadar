@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-05-08T16:51:13Z",
+  "last_updated": "2026-05-08T18:11:01Z",
   "advisories": [
+    {
+      "id": "3ce5863b",
+      "source": "CISA KEV",
+      "title": "BerriAI LiteLLM SQL Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-08",
+      "due_date": "2026-05-11",
+      "summary": "BerriAI LiteLLM contains a SQL injection vulnerability that allows an attacker to read data from the proxy's database and potentially modify it, leading to unauthorised access to the proxy and the credentials it manages. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "BerriAI — LiteLLM",
+      "cve": "CVE-2026-42208"
+    },
     {
       "id": "c53d3eb6",
       "source": "ASD",
