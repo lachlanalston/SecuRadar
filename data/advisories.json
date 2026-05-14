@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-05-14T16:28:12Z",
+  "last_updated": "2026-05-14T18:18:16Z",
   "advisories": [
+    {
+      "id": "3cc327d1",
+      "source": "CISA KEV",
+      "title": "Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-14",
+      "due_date": "2026-05-17",
+      "summary": "Cisco Catalyst SD-WAN Controller & Manager contain an authentication bypass vulnerability that allows an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system. Required action: Please adhere to CISA’s guidelines to assess exposure and mitigate risks associated with Cisco SD-WAN devices as outlined in CISA’s Emergency Directive 26-03 (URL listed below in Notes) and CISA’s Hunt & Hardening Guidance for Cisco SD-WAN Devices (URL listed …",
+      "severity": "Low",
+      "vendor": "Cisco — Catalyst SD-WAN",
+      "cve": "CVE-2026-20182"
+    },
     {
       "id": "3ce5863b",
       "source": "CISA KEV",
@@ -90,7 +102,7 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2026-04-28",
       "due_date": "2026-05-12",
-      "summary": "ConnectWise ScreenConnect contains a path traversal vulnerability which could allow an attacker to execute remote code or directly impact confidential data and critical systems. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "summary": "ConnectWise ScreenConnect contains a path traversal vulnerability which could allow an attacker to execute remote code or directly impact confidential data and critical systems. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
       "severity": "Critical",
       "vendor": "ConnectWise — ScreenConnect",
       "cve": "CVE-2024-1708"
@@ -160,8 +172,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2026-04-24",
       "due_date": "2026-05-08",
-      "summary": "SimpleHelp contains a path traversal vulnerability that allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited to execute arbitrary code on the host in the context of the SimpleHelp server user. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-      "severity": "Low",
+      "summary": "SimpleHelp contains a path traversal vulnerability that allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited to execute arbitrary code on the host in the context of the SimpleHelp server user. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "SimpleHelp  — SimpleHelp",
       "cve": "CVE-2024-57728"
     },
@@ -172,8 +184,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2026-04-24",
       "due_date": "2026-05-08",
-      "summary": "SimpleHelp contains a missing authorization vulnerability that could allow low-privileged technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges to the server admin role. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-      "severity": "Low",
+      "summary": "SimpleHelp contains a missing authorization vulnerability that could allow low-privileged technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges to the server admin role. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "SimpleHelp  — SimpleHelp",
       "cve": "CVE-2024-57726"
     },
