@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-05-15T15:00:23Z",
+  "last_updated": "2026-05-15T17:09:11Z",
   "advisories": [
+    {
+      "id": "f5c71f3a",
+      "source": "CISA KEV",
+      "title": "Microsoft Exchange Server Cross-Site Scripting Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-15",
+      "due_date": "2026-05-29",
+      "summary": "Microsoft Exchange Server contains a cross-site scripting vulnerability during web page generation in Outlook Web Access and when certain interaction conditions are met, arbitrary JavaScript can be executed in the browser context. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Microsoft — Microsoft",
+      "cve": "CVE-2026-42897"
+    },
     {
       "id": "3cc327d1",
       "source": "CISA KEV",
