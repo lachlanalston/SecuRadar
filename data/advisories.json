@@ -1,6 +1,90 @@
 {
-  "last_updated": "2026-05-20T16:27:49Z",
+  "last_updated": "2026-05-20T18:40:13Z",
   "advisories": [
+    {
+      "id": "270ca3a2",
+      "source": "CISA KEV",
+      "title": "Microsoft Windows Buffer Overflow Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-20",
+      "due_date": "2026-06-03",
+      "summary": "Microsoft Windows contains a buffer overflow vulnerability in the Windows Server Service that allows remote attackers to execute arbitrary code via a crafted RPC request that triggers an overflow during path canonicalization. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Microsoft — Windows",
+      "cve": "CVE-2008-4250"
+    },
+    {
+      "id": "961dbb00",
+      "source": "CISA KEV",
+      "title": "Microsoft DirectX NULL Byte Overwrite Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-20",
+      "due_date": "2026-06-03",
+      "summary": "Microsoft DirectX contains a NULL byte overwrite vulnerability in the QuickTime Movie Parser Filter in quartz.dll in DirectShow which could allow remote attackers to execute arbitrary code via a crafted QuickTime media file. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Microsoft — DirectX",
+      "cve": "CVE-2009-1537"
+    },
+    {
+      "id": "93efd55a",
+      "source": "CISA KEV",
+      "title": "Adobe Acrobat and Reader Heap-Based Buffer Overflow Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-20",
+      "due_date": "2026-06-03",
+      "summary": "Adobe Acrobat and Reader contain a heap-based buffer overflow vulnerability which could allow remote attackers to execute arbitrary code via a crafted PDF file that triggers memory corruption. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Adobe — Acrobat and Reader",
+      "cve": "CVE-2009-3459"
+    },
+    {
+      "id": "42c85651",
+      "source": "CISA KEV",
+      "title": "Microsoft Internet Explorer Use-After-Free Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-20",
+      "due_date": "2026-06-03",
+      "summary": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code by accessing a pointer associated with a deleted object. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Microsoft — Internet Explorer",
+      "cve": "CVE-2010-0249"
+    },
+    {
+      "id": "02976048",
+      "source": "CISA KEV",
+      "title": "Microsoft Internet Explorer Use-After-Free Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-20",
+      "due_date": "2026-06-03",
+      "summary": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code via vectors involving access to an invalid pointer after the deletion of an object. The impacted product could be end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue product utilization. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigation…",
+      "severity": "Low",
+      "vendor": "Microsoft — Internet Explorer",
+      "cve": "CVE-2010-0806"
+    },
+    {
+      "id": "c2e3874e",
+      "source": "CISA KEV",
+      "title": "Microsoft Defender Link Following Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-20",
+      "due_date": "2026-06-03",
+      "summary": "Microsoft Defender contains a link following vulnerability that allows an authorized attacker to elevate privileges locally. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Microsoft — Defender",
+      "cve": "CVE-2026-41091"
+    },
+    {
+      "id": "ec22b579",
+      "source": "CISA KEV",
+      "title": "Microsoft Defender Denial of Service Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-20",
+      "due_date": "2026-06-03",
+      "summary": "Microsoft Defender contains an unspecified vulnerability that allows for denial of service. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Microsoft — Defender",
+      "cve": "CVE-2026-45498"
+    },
     {
       "id": "f5c71f3a",
       "source": "CISA KEV",
