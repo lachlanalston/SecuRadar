@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-05-21T18:02:52Z",
+  "last_updated": "2026-05-21T20:19:19Z",
   "advisories": [
+    {
+      "id": "b12e3967",
+      "source": "CISA KEV",
+      "title": "Langflow Origin Validation Error Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-21",
+      "due_date": "2026-06-04",
+      "summary": "Langflow contains an origin validation error vulnerability in which an overly permissive CORS configuration combined with a refresh token cookie configured as SameSite=None allows a malicious webpage to perform cross-origin requests that include credentials and successfully call the refresh endpoint. This could allow the attacker to execute arbitrary code and achieve full system compromise via obtained tokens that permit access to authenticated endpoints. Required action: Apply mitigations per v…",
+      "severity": "Low",
+      "vendor": "Langflow — Langflow",
+      "cve": "CVE-2025-34291"
+    },
+    {
+      "id": "b7db0c63",
+      "source": "CISA KEV",
+      "title": "Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-21",
+      "due_date": "2026-06-04",
+      "summary": "Trend Micro Apex One (on-premise) contains a directory traversal vulnerability that could allow a pre-authenticated local attacker to modify a key table on the server to inject malicious code to deploy to agents on affected installations. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Trend Micro — Apex One",
+      "cve": "CVE-2026-34926"
+    },
     {
       "id": "270ca3a2",
       "source": "CISA KEV",
