@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-05-22T17:52:08Z",
+  "last_updated": "2026-05-22T19:46:31Z",
   "advisories": [
+    {
+      "id": "3210bd0c",
+      "source": "CISA KEV",
+      "title": "Drupal Core SQL Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-22",
+      "due_date": "2026-05-27",
+      "summary": "Drupal Core contains a SQL injection vulnerability that could allow for privilege escalation and remote code execution via specially crafted requests sent with the database abstraction API. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Critical",
+      "vendor": "Drupal — Core",
+      "cve": "CVE-2026-9082"
+    },
     {
       "id": "b12e3967",
       "source": "CISA KEV",
@@ -13002,8 +13014,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2022-03-25",
       "due_date": "2022-04-15",
-      "summary": "An issue was discovered in Webmin. The parameter old in password_change.cgi contains a command injection vulnerability. Required action: Apply updates per vendor instructions.",
-      "severity": "Medium",
+      "summary": "An issue was discovered in Webmin. The parameter old in password_change.cgi contains a command injection vulnerability. Required action: Apply updates per vendor instructions. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "Webmin — Webmin",
       "cve": "CVE-2019-15107"
     },
