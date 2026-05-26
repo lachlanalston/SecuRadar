@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-05-26T16:24:41Z",
+  "last_updated": "2026-05-26T18:41:47Z",
   "advisories": [
+    {
+      "id": "ec15fd9a",
+      "source": "CISA KEV",
+      "title": "LiteSpeed cPanel Plugin Privilege Escalation Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-26",
+      "due_date": "2026-05-29",
+      "summary": "LiteSpeed cPanel Plugin contains privilege escalation vulnerability that is exposed via the user-end cPanel plugin, which can be abused by any cPanel user account to execute arbitrary scripts with root privileges. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "LiteSpeed — cPanel Plugin",
+      "cve": "CVE-2026-48172"
+    },
     {
       "id": "3210bd0c",
       "source": "CISA KEV",
