@@ -1,6 +1,42 @@
 {
-  "last_updated": "2026-05-27T15:43:26Z",
+  "last_updated": "2026-05-27T18:26:44Z",
   "advisories": [
+    {
+      "id": "2f2ea032",
+      "source": "CISA KEV",
+      "title": "Nx Console Embedded Malicious Code Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-27",
+      "due_date": "2026-06-10",
+      "summary": "Nx Console contains an embedded malicious code vulnerability that allowed a malicious version of Nx Console to be published. The compromised extension fetched an obfuscated payload that could harvested credentials from multiple sources on disk and in memory. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Critical",
+      "vendor": "Nx — Nx Console",
+      "cve": "CVE-2026-48027"
+    },
+    {
+      "id": "c53949d6",
+      "source": "CISA KEV",
+      "title": "TanStack Unspecified Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-27",
+      "due_date": "2026-06-10",
+      "summary": "TanStack contains an unspecified vulnerability that allowed malicious versions of the product to be published to the npm registry to publish credential-stealing malware under a trusted identity. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "TanStack — TanStack",
+      "cve": "CVE-2026-45321"
+    },
+    {
+      "id": "c8955aca",
+      "source": "CISA KEV",
+      "title": "Daemon Tools Lite Embedded Malicious Code Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-27",
+      "due_date": "2026-05-30",
+      "summary": "Daemon Tools contains an unspecified vulnerability that has a high impact on confidentiality, integrity, and availability. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "High",
+      "vendor": "Daemon — Daemon Tools Lite",
+      "cve": "CVE-2026-8398"
+    },
     {
       "id": "ec15fd9a",
       "source": "CISA KEV",
