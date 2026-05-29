@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-05-29T17:33:52Z",
+  "last_updated": "2026-05-29T20:26:27Z",
   "advisories": [
+    {
+      "id": "b60c32e8",
+      "source": "CISA KEV",
+      "title": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-05-29",
+      "due_date": "2026-06-01",
+      "summary": "Palo Alto Networks PAN-OS contains an authentication bypass vulnerability that allows attackers to bypass security restrictions and establish an unauthorized VPN connection. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Palo Alto Networks — PAN-OS",
+      "cve": "CVE-2026-0257"
+    },
     {
       "id": "2f2ea032",
       "source": "CISA KEV",
