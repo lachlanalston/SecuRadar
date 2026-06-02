@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-06-02T17:23:42Z",
+  "last_updated": "2026-06-02T20:24:50Z",
   "advisories": [
+    {
+      "id": "4091d1dc",
+      "source": "CISA KEV",
+      "title": "Linux Kernel Improper Authentication Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-02",
+      "due_date": "2026-06-05",
+      "summary": "Linux Kernel contains an improper authentication vulnerability which could allow for privilege escalation via the cgroups v1 release_agent feature. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Linux — Kernel",
+      "cve": "CVE-2022-0492"
+    },
+    {
+      "id": "a4ef9c0e",
+      "source": "CISA KEV",
+      "title": "Android Framework Integer Overflow Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-02",
+      "due_date": "2026-06-05",
+      "summary": "Android Framework contains an integer overflow vulnerability that allows for code execution that could allow for local privilege escalation. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Android — Framework",
+      "cve": "CVE-2025-48595"
+    },
     {
       "id": "a8844e7f",
       "source": "CISA KEV",
