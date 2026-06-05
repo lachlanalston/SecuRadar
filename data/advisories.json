@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-06-05T17:19:44Z",
+  "last_updated": "2026-06-05T19:17:02Z",
   "advisories": [
+    {
+      "id": "30017399",
+      "source": "CISA KEV",
+      "title": "SolarWinds Serv-U Uncontrolled Resource Consumption Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-05",
+      "due_date": "2026-06-19",
+      "summary": "SolarWinds Serv-U contains an uncontrolled resource consumption vulnerability that allows specially crafted POST requests using the Content-Encoding: deflate header to crash the Serv-U service without authentication. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Critical",
+      "vendor": "SolarWinds — Serv-U",
+      "cve": "CVE-2026-28318"
+    },
     {
       "id": "b3e8aa53",
       "source": "CISA KEV",
