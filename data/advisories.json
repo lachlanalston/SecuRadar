@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-06-08T14:33:59Z",
+  "last_updated": "2026-06-08T17:54:08Z",
   "advisories": [
+    {
+      "id": "a4e72458",
+      "source": "CISA KEV",
+      "title": "BerriAI LiteLLM Command Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-08",
+      "due_date": "2026-06-22",
+      "summary": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "BerriAI — LiteLLM",
+      "cve": "CVE-2026-42271"
+    },
     {
       "id": "30017399",
       "source": "CISA KEV",
