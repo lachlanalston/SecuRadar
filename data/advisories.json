@@ -1,6 +1,42 @@
 {
-  "last_updated": "2026-06-09T16:35:59Z",
+  "last_updated": "2026-06-09T19:14:09Z",
   "advisories": [
+    {
+      "id": "dcfe0c43",
+      "source": "CISA KEV",
+      "title": "Google Chromium V8 Out-of-Bounds Read and Write Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-09",
+      "due_date": "2026-06-23",
+      "summary": "Google Chromium V8 out-of-bounds read and write vulnerability that could allow a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Google — Chromium V8",
+      "cve": "CVE-2026-11645"
+    },
+    {
+      "id": "eacbf727",
+      "source": "CISA KEV",
+      "title": "Arista Extensible Operating System Incomplete Comparison with Missing Factors Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-09",
+      "due_date": "2026-06-23",
+      "summary": "Arista Extensible Operating System (EOS) contains an incomplete comparison with missing factors vulnerability when the switch incorrectly decapsulate and forwards other unexpected tunneled packet with a destination IP matching its configured decapsulation IP. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Arista — Extensible Operating System",
+      "cve": "CVE-2026-7473"
+    },
+    {
+      "id": "8b34e1b9",
+      "source": "CISA KEV",
+      "title": "Cisco Catalyst SD-WAN Manager Improper Encoding or Escaping of Output Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-09",
+      "due_date": "2026-06-23",
+      "summary": "Cisco Catalyst SD-WAN Manager formerly SD-WAN vManage contains an improper encoding or escaping of output vulnerability. This vulnerability could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to the affected system. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+      "severity": "Low",
+      "vendor": "Cisco — Catalyst SD-WAN Manager",
+      "cve": "CVE-2026-20245"
+    },
     {
       "id": "a4e72458",
       "source": "CISA KEV",
