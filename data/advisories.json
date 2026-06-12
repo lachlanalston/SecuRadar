@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-06-12T14:19:40Z",
+  "last_updated": "2026-06-12T17:22:08Z",
   "advisories": [
+    {
+      "id": "b7b632aa",
+      "source": "CISA KEV",
+      "title": "Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-12",
+      "due_date": "2026-06-15",
+      "summary": "Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise PeopleTools. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidan…",
+      "severity": "Critical",
+      "vendor": "Oracle —  PeopleSoft Enterprise PeopleTools",
+      "cve": "CVE-2026-35273"
+    },
     {
       "id": "b5003406",
       "source": "CISA KEV",
