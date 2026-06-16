@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-06-16T18:15:33Z",
+  "last_updated": "2026-06-16T21:25:54Z",
   "advisories": [
+    {
+      "id": "dee6c902",
+      "source": "CISA KEV",
+      "title": "Widget Factory Joomla Content Editor Improper Access Control Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-16",
+      "due_date": "2026-06-19",
+      "summary": "Widget Factory Joomla Content Editor contains an improper access control vulnerability which could allow for upload and execution of PHP code via the creation of new editor profiles for unauthenticated users.  Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance f…",
+      "severity": "Low",
+      "vendor": "Widget Factory — Joomla Content Editor",
+      "cve": "CVE-2026-48907"
+    },
     {
       "id": "b10e81e7",
       "source": "CISA KEV",
