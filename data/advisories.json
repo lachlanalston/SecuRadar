@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-06-18T05:17:19Z",
+  "last_updated": "2026-06-18T09:53:54Z",
   "advisories": [
+    {
+      "id": "8db2b790",
+      "source": "ASD",
+      "title": "CRITICAL ALERT: Reported widespread credential exposure affecting Fortinet Firewalls and VPN Gateways",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/Reported-widespread-credential-exposure-affecting-Fortinet-Firewalls-and-VPN-Gateways",
+      "date": "2026-06-18",
+      "summary": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of public reporting of a malicious campaign against Fortinet Firewalls and VPN Gateways",
+      "severity": "Critical",
+      "vendor": "Fortinet Firewalls And Vpn Gateways",
+      "cve": "N/A"
+    },
     {
       "id": "dee6c902",
       "source": "CISA KEV",
