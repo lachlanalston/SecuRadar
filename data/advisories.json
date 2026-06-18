@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-18T16:33:03Z",
+  "last_updated": "2026-06-18T19:29:00Z",
   "advisories": [
     {
       "id": "8db2b790",
@@ -11,6 +11,18 @@
       "severity": "Critical",
       "vendor": "Fortinet Firewalls And Vpn Gateways",
       "cve": "N/A"
+    },
+    {
+      "id": "e528db9e",
+      "source": "CISA KEV",
+      "title": "Splunk Enterprise Missing Authentication for Critical Function Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-18",
+      "due_date": "2026-06-21",
+      "summary": "Splunk Enterprise contains a missing authentication for critical function vulnerability which could allow an unauthenticated user to create or truncate arbitrary files through a PostgreSQL sidecar service endpoint. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guida…",
+      "severity": "Critical",
+      "vendor": "Splunk — Enterprise",
+      "cve": "CVE-2026-20253"
     },
     {
       "id": "dee6c902",
