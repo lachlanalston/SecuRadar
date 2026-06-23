@@ -1,6 +1,54 @@
 {
-  "last_updated": "2026-06-23T16:09:12Z",
+  "last_updated": "2026-06-23T18:19:56Z",
   "advisories": [
+    {
+      "id": "7ffc3cb0",
+      "source": "CISA KEV",
+      "title": "Lantronix EDS5000 Code Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-23",
+      "due_date": "2026-06-26",
+      "summary": "Lantronix EDS5000 contains a code injection vulnerability that could allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud se…",
+      "severity": "Low",
+      "vendor": "Lantronix — EDS5000",
+      "cve": "CVE-2025-67038"
+    },
+    {
+      "id": "ee83c426",
+      "source": "CISA KEV",
+      "title": "Ubiquiti UniFi OS Improper Input Validation Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-23",
+      "due_date": "2026-06-26",
+      "summary": "Ubiquiti UniFi OS contains an improper input validation vulnerability which could allow a malicious actor with access to the network to conduct command injection. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the pro…",
+      "severity": "Low",
+      "vendor": "Ubiquiti — UniFi OS",
+      "cve": "CVE-2026-34910"
+    },
+    {
+      "id": "0b526b74",
+      "source": "CISA KEV",
+      "title": "Ubiquiti UniFi OS Path Traversal Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-23",
+      "due_date": "2026-06-26",
+      "summary": "Ubiquiti UniFi OS contains a path traversal vulnerability which could allow a malicious actor with access to the network to access files on the underlying system that could be manipulated to access an underlying account. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04…",
+      "severity": "Low",
+      "vendor": "Ubiquiti — UniFi OS",
+      "cve": "CVE-2026-34909"
+    },
+    {
+      "id": "3f602ea2",
+      "source": "CISA KEV",
+      "title": "Ubiquiti UniFi OS Improper Access Control Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-06-23",
+      "due_date": "2026-06-26",
+      "summary": "Ubiquiti UniFi OS contains an improper access control vulnerability which could allow a malicious actor with access to the network to make unauthorized changes to the system. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue us…",
+      "severity": "Low",
+      "vendor": "Ubiquiti — UniFi OS",
+      "cve": "CVE-2026-34908"
+    },
     {
       "id": "8db2b790",
       "source": "ASD",
