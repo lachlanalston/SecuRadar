@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T16:52:51Z",
+  "last_updated": "2026-06-29T19:04:33Z",
   "advisories": [
     {
       "id": "44f76cf7",
@@ -675,8 +675,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2026-04-22",
       "due_date": "2026-05-06",
-      "summary": "Microsoft Defender contains an insufficient granularity of access control vulnerability that could allow an authorized attacker to escalate privileges locally. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-      "severity": "Low",
+      "summary": "Microsoft Defender contains an insufficient granularity of access control vulnerability that could allow an authorized attacker to escalate privileges locally. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "Microsoft — Defender",
       "cve": "CVE-2026-33825"
     },
