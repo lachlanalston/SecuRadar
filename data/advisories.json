@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-07-01T17:14:02Z",
+  "last_updated": "2026-07-01T19:17:49Z",
   "advisories": [
+    {
+      "id": "1ee265ad",
+      "source": "CISA KEV",
+      "title": "Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-01",
+      "due_date": "2026-07-04",
+      "summary": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if …",
+      "severity": "Low",
+      "vendor": "Microsoft — SharePoint Server",
+      "cve": "CVE-2026-45659"
+    },
     {
       "id": "b349df54",
       "source": "CISA KEV",
