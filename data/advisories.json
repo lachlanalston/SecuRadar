@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02T00:07:05Z",
+  "last_updated": "2026-07-02T04:39:28Z",
   "advisories": [
     {
       "id": "1ee265ad",
@@ -2703,17 +2703,6 @@
       "severity": "Low",
       "vendor": "Google — Chromium V8",
       "cve": "CVE-2025-10585"
-    },
-    {
-      "id": "101d4bdb",
-      "source": "ASD",
-      "title": "HIGH ALERT: Ongoing targeting of online code repositories",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/ongoing-targeting-of-online-code-repositories",
-      "date": "2025-09-19",
-      "summary": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of increased targeting of online code repositories, with threat actors employing various tactics to scan for and extract secrets, access private code bases, and modify packages to infect users. The ASD’s ACSC does not have information to indicate that a specific industry or sector is being targeted, with this advisory providing general awareness of an observed increase in activity.",
-      "severity": "High",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "c8c95bc5",
