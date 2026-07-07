@@ -1,6 +1,54 @@
 {
-  "last_updated": "2026-07-07T17:33:06Z",
+  "last_updated": "2026-07-07T19:55:39Z",
   "advisories": [
+    {
+      "id": "3a9e0ffd",
+      "source": "CISA KEV",
+      "title": "JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-07",
+      "due_date": "2026-07-10",
+      "summary": "JoomShaper SP Page Builder contains an unrestricted upload of file with dangerous type vulnerability that allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP code. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26…",
+      "severity": "Low",
+      "vendor": "JoomShaper — SP Page Builder",
+      "cve": "CVE-2026-48908"
+    },
+    {
+      "id": "84d7fceb",
+      "source": "CISA KEV",
+      "title": "Langflow Authorization Bypass Through User-Controlled Key Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-07",
+      "due_date": "2026-07-10",
+      "summary": "Langflow contains an authorization bypass through user-controlled key vulnerability which allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow ID in the request. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 …",
+      "severity": "Low",
+      "vendor": "Langflow — Langflow",
+      "cve": "CVE-2026-55255"
+    },
+    {
+      "id": "d96dd7d0",
+      "source": "CISA KEV",
+      "title": "Joomlack Page Builder Improper Access Control Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-07",
+      "due_date": "2026-07-10",
+      "summary": "Joomlack Page Builder contains an improper access control vulnerability that could allow for remote code execution via unauthenticated arbitrary file upload. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product …",
+      "severity": "Critical",
+      "vendor": "Joomlack — Page Builder",
+      "cve": "CVE-2026-56290"
+    },
+    {
+      "id": "2ded1530",
+      "source": "CISA KEV",
+      "title": "Adobe ColdFusion Path Traversal Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-07",
+      "due_date": "2026-07-10",
+      "summary": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are un…",
+      "severity": "Low",
+      "vendor": "Adobe — ColdFusion",
+      "cve": "CVE-2026-48282"
+    },
     {
       "id": "1ee265ad",
       "source": "CISA KEV",
