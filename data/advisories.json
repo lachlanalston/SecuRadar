@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-07T12:27:08Z",
+  "last_updated": "2026-07-07T15:26:42Z",
   "advisories": [
     {
       "id": "1ee265ad",
@@ -3761,8 +3761,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2025-05-05",
       "due_date": "2025-05-26",
-      "summary": "Langflow contains a missing authentication vulnerability in the /api/v1/validate/code endpoint that allows a remote, unauthenticated attacker to execute arbitrary code via crafted HTTP requests. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-      "severity": "Low",
+      "summary": "Langflow contains a missing authentication vulnerability in the /api/v1/validate/code endpoint that allows a remote, unauthenticated attacker to execute arbitrary code via crafted HTTP requests. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "Langflow — Langflow",
       "cve": "CVE-2025-3248"
     },
