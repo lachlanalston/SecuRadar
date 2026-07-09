@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-07-09T03:20:04Z",
+  "last_updated": "2026-07-09T07:05:43Z",
   "advisories": [
+    {
+      "id": "3ab528f2",
+      "source": "ASD",
+      "title": "CRITICAL ALERT: Large-scale exploitation campaign targeting website content management systems (CMS)",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/large-scale-exploitation-campaign-targeting-website-content-management-systems-cms",
+      "date": "2026-07-09",
+      "summary": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) is tracking a large-scale exploitation campaign targeting various vulnerabilities in web content management systems (CMS) globally, including in Australia.",
+      "severity": "Critical",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "3a9e0ffd",
       "source": "CISA KEV",
