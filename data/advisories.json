@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-07-10T15:11:38Z",
+  "last_updated": "2026-07-10T17:18:05Z",
   "advisories": [
+    {
+      "id": "7daa0e17",
+      "source": "CISA KEV",
+      "title": "Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-10",
+      "due_date": "2026-07-13",
+      "summary": "Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to full RCE. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance f…",
+      "severity": "Critical",
+      "vendor": "Balbooa — Forms",
+      "cve": "CVE-2026-56291"
+    },
+    {
+      "id": "a6e6d521",
+      "source": "CISA KEV",
+      "title": "iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-10",
+      "due_date": "2026-07-13",
+      "summary": "iCagenda contains an unrestricted upload of file with dangerous type vulnerability that allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance…",
+      "severity": "Low",
+      "vendor": "iCagenda — iCagenda",
+      "cve": "CVE-2026-48939"
+    },
     {
       "id": "3ab528f2",
       "source": "ASD",
