@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-07-13T15:43:58Z",
+  "last_updated": "2026-07-13T17:54:49Z",
   "advisories": [
+    {
+      "id": "13ef1f59",
+      "source": "CISA KEV",
+      "title": "Cisco IOS Cross-Site Request Forgery Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-13",
+      "due_date": "2026-07-16",
+      "summary": "Cisco IOS 12.4 contains multiple cross-site forgery vulnerabilities that allows remote attackers to execute arbitrary commands via (1) a certain \"show privilege\" command to the /level/15/exec/- URI, and (2) a certain \"alias exec\" command to the /level/15/exec/-/configure/http URI. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage …",
+      "severity": "Low",
+      "vendor": "Cisco — IOS",
+      "cve": "CVE-2008-4128"
+    },
     {
       "id": "7daa0e17",
       "source": "CISA KEV",
