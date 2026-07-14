@@ -1,6 +1,54 @@
 {
-  "last_updated": "2026-07-14T18:03:29Z",
+  "last_updated": "2026-07-14T19:51:25Z",
   "advisories": [
+    {
+      "id": "a93aaa71",
+      "source": "CISA KEV",
+      "title": "Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability ",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-14",
+      "due_date": "2026-07-28",
+      "summary": "Microsoft Active Directory Federation Services contains an insufficient granularity of access control vulnerability that allows an authorized attacker to elevate privileges locally. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discont…",
+      "severity": "Low",
+      "vendor": "Microsoft — Active Directory Federation Services",
+      "cve": "CVE-2026-56155"
+    },
+    {
+      "id": "8183a0bf",
+      "source": "CISA KEV",
+      "title": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-14",
+      "due_date": "2026-07-17",
+      "summary": "Microsoft SharePoint contains a missing authentication for critical function vulnerability that allows an unauthorized attacker to elevate privileges over a network. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the …",
+      "severity": "Critical",
+      "vendor": "Microsoft — SharePoint Server",
+      "cve": "CVE-2026-56164"
+    },
+    {
+      "id": "d334ae83",
+      "source": "CISA KEV",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-14",
+      "due_date": "2026-07-17",
+      "summary": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for…",
+      "severity": "Low",
+      "vendor": "SonicWall — SMA1000 Appliances",
+      "cve": "CVE-2026-15409"
+    },
+    {
+      "id": "0978b0bb",
+      "source": "CISA KEV",
+      "title": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-14",
+      "due_date": "2026-07-17",
+      "summary": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cl…",
+      "severity": "Low",
+      "vendor": "SonicWall — SMA1000 Appliances",
+      "cve": "CVE-2026-15410"
+    },
     {
       "id": "13ef1f59",
       "source": "CISA KEV",
