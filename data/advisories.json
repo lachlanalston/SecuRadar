@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-07-15T03:57:54Z",
+  "last_updated": "2026-07-15T06:22:41Z",
   "advisories": [
+    {
+      "id": "2bb9826d",
+      "source": "ASD",
+      "title": "Improve Router Hygiene to Protect Against Russian State-Sponsored Targeting",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/improve-router-hygiene-to-protect-against-russian-state-sponsored-targeting",
+      "date": "2026-07-14",
+      "summary": "This joint advisory outlines persistent and ongoing malicious cyber activity conducted by Russian state-sponsored cyber actors.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "a93aaa71",
       "source": "CISA KEV",
