@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-07-15T16:01:33Z",
+  "last_updated": "2026-07-15T17:46:57Z",
   "advisories": [
+    {
+      "id": "e2d3c77c",
+      "source": "CISA KEV",
+      "title": "Oracle E-Business Suite Improper Privilege Management Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-15",
+      "due_date": "2026-07-18",
+      "summary": "Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see…",
+      "severity": "Low",
+      "vendor": "Oracle — E-Business Suite",
+      "cve": "CVE-2026-46817"
+    },
+    {
+      "id": "06c0e5e6",
+      "source": "CISA KEV",
+      "title": "KNX Association KNX Protocol Connection Authorization Option 1 Overly Restrictive Account Lockout Mechanism Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-15",
+      "due_date": "2026-07-29",
+      "summary": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without additional security options enabled and set a BCU key to lock the device.  Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (…",
+      "severity": "Low",
+      "vendor": "KNX Association — KNX Protocol Connection Authorization Option 1",
+      "cve": "CVE-2023-4346"
+    },
     {
       "id": "2bb9826d",
       "source": "ASD",
