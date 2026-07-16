@@ -1,6 +1,42 @@
 {
-  "last_updated": "2026-07-16T16:48:41Z",
+  "last_updated": "2026-07-16T18:06:20Z",
   "advisories": [
+    {
+      "id": "1cadbea2",
+      "source": "CISA KEV",
+      "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-16",
+      "due_date": "2026-07-19",
+      "summary": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitiga…",
+      "severity": "Low",
+      "vendor": "Microsoft — SharePoint",
+      "cve": "CVE-2026-58644"
+    },
+    {
+      "id": "2c183c04",
+      "source": "CISA KEV",
+      "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-16",
+      "due_date": "2026-07-19",
+      "summary": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26…",
+      "severity": "Low",
+      "vendor": "Fortinet — FortiSandbox",
+      "cve": "CVE-2026-25089"
+    },
+    {
+      "id": "80fbb06c",
+      "source": "CISA KEV",
+      "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-16",
+      "due_date": "2026-07-19",
+      "summary": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discont…",
+      "severity": "Low",
+      "vendor": "Fortinet — FortiSandbox",
+      "cve": "CVE-2026-39808"
+    },
     {
       "id": "e2d3c77c",
       "source": "CISA KEV",
