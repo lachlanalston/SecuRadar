@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-16T23:25:00Z",
+  "last_updated": "2026-07-17T01:01:25Z",
   "advisories": [
     {
       "id": "1cadbea2",
@@ -62,17 +62,6 @@
       "cve": "CVE-2023-4346"
     },
     {
-      "id": "2bb9826d",
-      "source": "ASD",
-      "title": "Improve Router Hygiene to Protect Against Russian State-Sponsored Targeting",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/improve-router-hygiene-to-protect-against-russian-state-sponsored-targeting",
-      "date": "2026-07-14",
-      "summary": "This joint advisory outlines persistent and ongoing malicious cyber activity conducted by Russian state-sponsored cyber actors.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "a93aaa71",
       "source": "CISA KEV",
       "title": "Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability ",
@@ -119,6 +108,17 @@
       "severity": "Low",
       "vendor": "SonicWall — SMA1000 Appliances",
       "cve": "CVE-2026-15410"
+    },
+    {
+      "id": "2bb9826d",
+      "source": "ASD",
+      "title": "Improve Router Hygiene to Protect Against Russian State-Sponsored Targeting",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/improve-router-hygiene-to-protect-against-russian-state-sponsored-targeting",
+      "date": "2026-07-13",
+      "summary": "This joint advisory outlines persistent and ongoing malicious cyber activity conducted by Russian state-sponsored cyber actors.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "13ef1f59",
@@ -731,17 +731,6 @@
       "cve": "CVE-2026-42208"
     },
     {
-      "id": "c53d3eb6",
-      "source": "ASD",
-      "title": "ClickFix distributing Vidar Stealer via WordPress targeting Australian infrastructure",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/clickfix-distributing-vidar-stealer-via-wordpress-targeting-australian-infrastructure",
-      "date": "2026-05-07",
-      "summary": "Threat actors are targeting Australian networks with a social engineering technique, ClickFix, to distribute malware through compromised WordPress websites. This advisory provides an overview of the activity, an assessment of the threat, observed indicators, detections and recommended mitigations.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "ddcab6b1",
       "source": "CISA KEV",
       "title": "Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability",
@@ -752,6 +741,17 @@
       "severity": "Critical",
       "vendor": "Ivanti — Endpoint Manager Mobile (EPMM)",
       "cve": "CVE-2026-6973"
+    },
+    {
+      "id": "c53d3eb6",
+      "source": "ASD",
+      "title": "ClickFix distributing Vidar Stealer via WordPress targeting Australian infrastructure",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/clickfix-distributing-vidar-stealer-via-wordpress-targeting-australian-infrastructure",
+      "date": "2026-05-06",
+      "summary": "Threat actors are targeting Australian networks with a social engineering technique, ClickFix, to distribute malware through compromised WordPress websites. This advisory provides an overview of the activity, an assessment of the threat, observed indicators, detections and recommended mitigations.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "fed24c9a",
@@ -836,17 +836,6 @@
       "cve": "N/A"
     },
     {
-      "id": "da565c9a",
-      "source": "ASD",
-      "title": "Defending against China-nexus covert networks of compromised devices",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/defending-against-china-nexus-covert-networks-of-compromised-devices",
-      "date": "2026-04-24",
-      "summary": "This advisory outlines the shift in tactics, techniques and procedures used by China-nexus cyber actors to target organisations, as well as recommended mitigations.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "ea3654ff",
       "source": "CISA KEV",
       "title": "D-Link DIR-823X Command Injection Vulnerability",
@@ -893,6 +882,17 @@
       "severity": "Critical",
       "vendor": "SimpleHelp  — SimpleHelp",
       "cve": "CVE-2024-57726"
+    },
+    {
+      "id": "da565c9a",
+      "source": "ASD",
+      "title": "Defending against China-nexus covert networks of compromised devices",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/defending-against-china-nexus-covert-networks-of-compromised-devices",
+      "date": "2026-04-23",
+      "summary": "This advisory outlines the shift in tactics, techniques and procedures used by China-nexus cyber actors to target organisations, as well as recommended mitigations.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "8ef6950e",
