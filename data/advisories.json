@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19T07:26:21Z",
+  "last_updated": "2026-07-19T09:27:43Z",
   "advisories": [
     {
       "id": "1cadbea2",
@@ -3707,17 +3707,6 @@
       "severity": "Low",
       "vendor": "Samsung — MagicINFO 9 Server",
       "cve": "CVE-2025-4632"
-    },
-    {
-      "id": "c38ba88b",
-      "source": "ASD",
-      "title": "Russian GRU targeting Western logistics entities and technology companies",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/russian-gru-targeting-western-logistics-entities-and-technology-companies",
-      "date": "2025-05-21",
-      "summary": "This joint cybersecurity advisory (CSA) highlights a Russian state-sponsored cyber campaign targeting Western logistics entities and technology companies.",
-      "severity": "High",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "f81a0950",
