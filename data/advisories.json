@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T16:25:55Z",
+  "last_updated": "2026-07-23T17:55:12Z",
   "advisories": [
     {
       "id": "1126f712",
@@ -16746,8 +16746,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2021-12-01",
       "due_date": "2021-12-15",
-      "summary": "A crafted request uri-path can cause mod_proxy to forward the request to an origin server choosen by the remote user. This issue affects Apache HTTP Server 2.4.48 and earlier. Required action: Apply updates per vendor instructions.",
-      "severity": "Medium",
+      "summary": "A crafted request uri-path can cause mod_proxy to forward the request to an origin server choosen by the remote user. This issue affects Apache HTTP Server 2.4.48 and earlier. Required action: Apply updates per vendor instructions. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "Apache — Apache",
       "cve": "CVE-2021-40438"
     },
