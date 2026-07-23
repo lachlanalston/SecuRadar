@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-07-23T20:35:19Z",
+  "last_updated": "2026-07-23T22:03:32Z",
   "advisories": [
+    {
+      "id": "6c92faf3",
+      "source": "ASD",
+      "title": "Russian state-supported cyber actors conduct phishing campaign targeting users of Zimbra Collaboration Suite",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/russian-state-supported-cyber-actors-conduct-phishing-campaign-targeting-users-of-zimbra-collaboration-suite",
+      "date": "2026-07-23",
+      "summary": "Read our joint advisory on LAUNDRY BEAR's exploitation of Zimbra Collaboration Suite.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "1126f712",
       "source": "CISA KEV",
