@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T17:04:38Z",
+  "last_updated": "2026-07-24T18:57:34Z",
   "advisories": [
     {
       "id": "6c92faf3",
@@ -330,7 +330,7 @@
       "date": "2026-06-25",
       "due_date": "2026-06-28",
       "summary": "PTC Windchill and FlexPLM contains an improper input validation vulnerability allowing an unauthenticated, remote attacker to execute arbitrary code by sending a malicious request to the network. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud servi…",
-      "severity": "Low",
+      "severity": "Critical",
       "vendor": "PTC — Windchill and FlexPLM",
       "cve": "CVE-2026-12569"
     },
