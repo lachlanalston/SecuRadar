@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T22:32:55Z",
+  "last_updated": "2026-07-26T23:59:29Z",
   "advisories": [
     {
       "id": "6c92faf3",
@@ -908,17 +908,6 @@
       "cve": "CVE-2026-32202"
     },
     {
-      "id": "f3780174",
-      "source": "ASD",
-      "title": "HIGH ALERT: New steps for organisations running Cisco Firepower and Secure Firewall products",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/new-steps-for-organisations-running-cisco-firepower-and-secure-firewall-products",
-      "date": "2026-04-24",
-      "summary": "ASD partners CISA and NCSC have identified new malware affecting Cisco Firepower and Secure Firewall products.",
-      "severity": "High",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "ea3654ff",
       "source": "CISA KEV",
       "title": "D-Link DIR-823X Command Injection Vulnerability",
@@ -965,17 +954,6 @@
       "severity": "Critical",
       "vendor": "SimpleHelp  — SimpleHelp",
       "cve": "CVE-2024-57726"
-    },
-    {
-      "id": "da565c9a",
-      "source": "ASD",
-      "title": "Defending against China-nexus covert networks of compromised devices",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/defending-against-china-nexus-covert-networks-of-compromised-devices",
-      "date": "2026-04-23",
-      "summary": "This advisory outlines the shift in tactics, techniques and procedures used by China-nexus cyber actors to target organisations, as well as recommended mitigations.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "8ef6950e",
