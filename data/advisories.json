@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-07-27T16:19:43Z",
+  "last_updated": "2026-07-27T18:04:58Z",
   "advisories": [
+    {
+      "id": "3f690702",
+      "source": "CISA KEV",
+      "title": "Fortinet FortiOS Exposure of Sensitive Information to an Unauthorized Actor Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-27",
+      "due_date": "2026-08-10",
+      "summary": "Fortinet FortiOS contains an exposure of sensitive information to an unauthorized actor vulnerability. This may allow a remote unauthenticated attacker to bypass the patch developed for the symbolic link persistency mechanism observed in some post-exploit cases, via crafted HTTP requests. An attacker would need first to have compromised the product via another vulnerability, at filesystem level. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with C…",
+      "severity": "Low",
+      "vendor": "Fortinet — FortiOS",
+      "cve": "CVE-2025-68686"
+    },
     {
       "id": "6c92faf3",
       "source": "ASD",
