@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T07:13:24Z",
+  "last_updated": "2026-07-28T10:06:05Z",
   "advisories": [
     {
       "id": "3f690702",
@@ -7080,17 +7080,6 @@
       "cve": "CVE-2023-48788"
     },
     {
-      "id": "5313b22b",
-      "source": "NCSC UK",
-      "title": "Responding to a cyber incident – a guide for CEOs",
-      "link": "https://www.ncsc.gov.uk/guidance/ceos-responding-cyber-incidents",
-      "date": "2024-03-21",
-      "summary": "Guidance to help CEOs in public and private sector organisations manage a cyber incident.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "a58ea334",
       "source": "CISA KEV",
       "title": "JetBrains TeamCity Authentication Bypass Vulnerability",
@@ -7220,6 +7209,17 @@
       "severity": "Low",
       "vendor": "Microsoft — Exchange Server",
       "cve": "CVE-2024-21410"
+    },
+    {
+      "id": "517492a6",
+      "source": "NCSC UK",
+      "title": "AI and cyber security: what you need to know",
+      "link": "https://www.ncsc.gov.uk/guidance/ai-and-cyber-security-what-you-need-to-know",
+      "date": "2024-02-13",
+      "summary": "Understanding the risks - and benefits - of using AI tools.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "7e004461",
