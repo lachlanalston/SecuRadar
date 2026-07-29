@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-07-29T17:47:07Z",
+  "last_updated": "2026-07-29T19:16:17Z",
   "advisories": [
+    {
+      "id": "638d61f4",
+      "source": "CISA KEV",
+      "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-07-29",
+      "due_date": "2026-08-01",
+      "summary": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidan…",
+      "severity": "Low",
+      "vendor": "Cisco — Secure Firewall Management Center (FMC)",
+      "cve": "CVE-2026-20316"
+    },
     {
       "id": "3f690702",
       "source": "CISA KEV",
