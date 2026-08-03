@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-08-03T18:16:24Z",
+  "last_updated": "2026-08-03T20:10:50Z",
   "advisories": [
+    {
+      "id": "20e727ee",
+      "source": "CISA KEV",
+      "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-03",
+      "due_date": "2026-08-06",
+      "summary": "N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable …",
+      "severity": "Low",
+      "vendor": "N-able — N-central",
+      "cve": "CVE-2026-18577"
+    },
     {
       "id": "638d61f4",
       "source": "CISA KEV",
@@ -212,7 +224,7 @@
       "date": "2026-07-14",
       "due_date": "2026-07-17",
       "summary": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for…",
-      "severity": "Low",
+      "severity": "Critical",
       "vendor": "SonicWall — SMA1000 Appliances",
       "cve": "CVE-2026-15409"
     },
@@ -224,7 +236,7 @@
       "date": "2026-07-14",
       "due_date": "2026-07-17",
       "summary": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cl…",
-      "severity": "Low",
+      "severity": "Critical",
       "vendor": "SonicWall — SMA1000 Appliances",
       "cve": "CVE-2026-15410"
     },
