@@ -1,6 +1,42 @@
 {
-  "last_updated": "2026-08-04T17:12:13Z",
+  "last_updated": "2026-08-04T19:06:57Z",
   "advisories": [
+    {
+      "id": "ef71ddd5",
+      "source": "CISA KEV",
+      "title": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-04",
+      "due_date": "2026-08-07",
+      "summary": "N-able N-central contains an authentication bypass using an alternate path or channel that allows for authentication bypass. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. S…",
+      "severity": "Low",
+      "vendor": "N-able — N-central",
+      "cve": "CVE-2026-18556"
+    },
+    {
+      "id": "9f891cbb",
+      "source": "CISA KEV",
+      "title": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-04",
+      "due_date": "2026-08-07",
+      "summary": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. …",
+      "severity": "Critical",
+      "vendor": "Apache — Tomcat",
+      "cve": "CVE-2026-34486"
+    },
+    {
+      "id": "c17c0982",
+      "source": "CISA KEV",
+      "title": "IBM Langflow Code Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-04",
+      "due_date": "2026-08-07",
+      "summary": "Langflow contains a code injection vulnerability that allows unauthenticated attackers to achieve full remote code execution on default Langflow deployments. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product …",
+      "severity": "Critical",
+      "vendor": "IBM — Langflow",
+      "cve": "CVE-2026-9198"
+    },
     {
       "id": "20e727ee",
       "source": "CISA KEV",
@@ -1502,8 +1538,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2026-03-09",
       "due_date": "2026-03-12",
-      "summary": "SolarWinds Web Help Desk contain a deserialization of untrusted data vulnerability in AjaxProxy that could allow an attacker to run commands on the host machine. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-      "severity": "Low",
+      "summary": "SolarWinds Web Help Desk contain a deserialization of untrusted data vulnerability in AjaxProxy that could allow an attacker to run commands on the host machine. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "SolarWinds — Web Help Desk",
       "cve": "CVE-2025-26399"
     },
