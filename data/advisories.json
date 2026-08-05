@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-08-05T15:37:27Z",
+  "last_updated": "2026-08-05T17:37:11Z",
   "advisories": [
+    {
+      "id": "be872746",
+      "source": "CISA KEV",
+      "title": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-05",
+      "due_date": "2026-08-08",
+      "summary": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the p…",
+      "severity": "Critical",
+      "vendor": "JetBrains — TeamCity",
+      "cve": "CVE-2026-63077"
+    },
     {
       "id": "ef71ddd5",
       "source": "CISA KEV",
