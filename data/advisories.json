@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-06T11:40:16Z",
+  "last_updated": "2026-08-06T14:09:09Z",
   "advisories": [
     {
       "id": "be872746",
@@ -3286,8 +3286,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2025-08-12",
       "due_date": "2025-09-02",
-      "summary": "RARLAB WinRAR contains a path traversal vulnerability affecting the Windows version of WinRAR. This vulnerability could allow an attacker to execute arbitrary code by crafting malicious archive files. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-      "severity": "Low",
+      "summary": "RARLAB WinRAR contains a path traversal vulnerability affecting the Windows version of WinRAR. This vulnerability could allow an attacker to execute arbitrary code by crafting malicious archive files. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "RARLAB — WinRAR",
       "cve": "CVE-2025-8088"
     },
@@ -3944,8 +3944,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2025-05-15",
       "due_date": "2025-06-05",
-      "summary": "SAP NetWeaver Visual Composer Metadata Uploader contains a deserialization vulnerability that allows a privileged attacker to compromise the confidentiality, integrity, and availability of the host system by deserializing untrusted or malicious content. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-      "severity": "Low",
+      "summary": "SAP NetWeaver Visual Composer Metadata Uploader contains a deserialization vulnerability that allows a privileged attacker to compromise the confidentiality, integrity, and availability of the host system by deserializing untrusted or malicious content. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "SAP — NetWeaver",
       "cve": "CVE-2025-42999"
     },
@@ -6644,8 +6644,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2024-07-09",
       "due_date": "2024-07-30",
-      "summary": "Rejetto HTTP File Server contains an improper neutralization of special elements used in a template engine vulnerability. This allows a remote, unauthenticated attacker to execute commands on the affected system by sending a specially crafted HTTP request. Required action: Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
-      "severity": "Low",
+      "summary": "Rejetto HTTP File Server contains an improper neutralization of special elements used in a template engine vulnerability. This allows a remote, unauthenticated attacker to execute commands on the affected system by sending a specially crafted HTTP request. Required action: Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "Rejetto — HTTP File Server",
       "cve": "CVE-2024-23692"
     },
