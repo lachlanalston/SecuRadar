@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-08-07T16:54:58Z",
+  "last_updated": "2026-08-07T17:49:54Z",
   "advisories": [
+    {
+      "id": "f5201f0f",
+      "source": "CISA KEV",
+      "title": "Progress LoadMaster Command Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-07",
+      "due_date": "2026-08-10",
+      "summary": "Progress LoadMaster contains a command injection vulnerability that allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in multiple command endpoints. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 2…",
+      "severity": "Low",
+      "vendor": "Progress — LoadMaster",
+      "cve": "CVE-2026-8037"
+    },
     {
       "id": "be872746",
       "source": "CISA KEV",
