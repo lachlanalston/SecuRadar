@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-09T02:07:08Z",
+  "last_updated": "2026-08-09T03:57:44Z",
   "advisories": [
     {
       "id": "f5201f0f",
@@ -932,17 +932,6 @@
       "severity": "Critical",
       "vendor": "Ivanti — Endpoint Manager Mobile (EPMM)",
       "cve": "CVE-2026-6973"
-    },
-    {
-      "id": "c53d3eb6",
-      "source": "ASD",
-      "title": "ClickFix distributing Vidar Stealer via WordPress targeting Australian infrastructure",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/clickfix-distributing-vidar-stealer-via-wordpress-targeting-australian-infrastructure",
-      "date": "2026-05-06",
-      "summary": "Threat actors are targeting Australian networks with a social engineering technique, ClickFix, to distribute malware through compromised WordPress websites. This advisory provides an overview of the activity, an assessment of the threat, observed indicators, detections and recommended mitigations.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "fed24c9a",
