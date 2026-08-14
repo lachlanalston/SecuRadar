@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-14T15:51:40Z",
+  "last_updated": "2026-08-14T16:52:28Z",
   "advisories": [
     {
       "id": "b9fc062a",
@@ -1252,8 +1252,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2026-04-13",
       "due_date": "2026-04-27",
-      "summary": "Microsoft Windows contains a link following vulnerability that allows for privilege escalation Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-      "severity": "Low",
+      "summary": "Microsoft Windows contains a link following vulnerability that allows for privilege escalation Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "Microsoft — Windows",
       "cve": "CVE-2025-60710"
     },
@@ -5031,8 +5031,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2025-02-06",
       "due_date": "2025-02-27",
-      "summary": "CyberoamOS (CROS) contains a SQL injection vulnerability in the WebAdmin that allows an unauthenticated attacker to execute arbitrary SQL statements remotely. Required action: The impacted product is end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue utilization of the product.",
-      "severity": "Low",
+      "summary": "CyberoamOS (CROS) contains a SQL injection vulnerability in the WebAdmin that allows an unauthenticated attacker to execute arbitrary SQL statements remotely. Required action: The impacted product is end-of-life (EoL) and/or end-of-service (EoS). Users should discontinue utilization of the product. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "Sophos — CyberoamOS",
       "cve": "CVE-2020-29574"
     },
@@ -6117,7 +6117,7 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2024-09-18",
       "due_date": "2024-10-09",
-      "summary": "Microsoft SQL Server Reporting Services contains a deserialization vulnerability when handling page requests incorrectly. An authenticated attacker can exploit this vulnerability to execute code in the context of the Report Server service account. Required action: Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
+      "summary": "Microsoft SQL Server Reporting Services contains a deserialization vulnerability when handling page requests incorrectly. An authenticated attacker can exploit this vulnerability to execute code in the context of the Report Server service account. Required action: Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
       "severity": "Critical",
       "vendor": "Microsoft — SQL Server",
       "cve": "CVE-2020-0618"
@@ -10922,8 +10922,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2022-06-27",
       "due_date": "2022-07-18",
-      "summary": "The Red Hat polkit pkexec utility contains an out-of-bounds read and write vulnerability that allows for privilege escalation with administrative rights. Required action: Apply updates per vendor instructions.",
-      "severity": "Low",
+      "summary": "The Red Hat polkit pkexec utility contains an out-of-bounds read and write vulnerability that allows for privilege escalation with administrative rights. Required action: Apply updates per vendor instructions. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "Red Hat — Polkit",
       "cve": "CVE-2021-4034"
     },
@@ -13318,8 +13318,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2022-03-28",
       "due_date": "2022-04-18",
-      "summary": "The Microsoft JScript nd VBScript engines, as used in Internet Explorer and other products, allow attackers to execute remote code or cause a denial of service (memory corruption) via a crafted web site. Required action: Apply updates per vendor instructions.",
-      "severity": "Low",
+      "summary": "The Microsoft JScript nd VBScript engines, as used in Internet Explorer and other products, allow attackers to execute remote code or cause a denial of service (memory corruption) via a crafted web site. Required action: Apply updates per vendor instructions. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "Microsoft — Internet Explorer",
       "cve": "CVE-2016-0189"
     },
@@ -16149,8 +16149,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2022-02-04",
       "due_date": "2022-02-18",
-      "summary": "Microsoft Win32k contains an unspecified vulnerability that allows for privilege escalation. Required action: Apply updates per vendor instructions.",
-      "severity": "Low",
+      "summary": "Microsoft Win32k contains an unspecified vulnerability that allows for privilege escalation. Required action: Apply updates per vendor instructions. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "Microsoft — Win32k",
       "cve": "CVE-2022-21882"
     },
@@ -17972,7 +17972,7 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2021-11-03",
       "due_date": "2022-05-03",
-      "summary": "Fortinet FortiOS contains a default configuration vulnerability that may allow an unauthenticated attacker on the same subnet to intercept sensitive information by impersonating the Lightweight Directory Access Protocol (LDAP) server. Required action: Apply updates per vendor instructions.",
+      "summary": "Fortinet FortiOS contains a default configuration vulnerability that may allow an unauthenticated attacker on the same subnet to intercept sensitive information by impersonating the Lightweight Directory Access Protocol (LDAP) server. Required action: Apply updates per vendor instructions. Known ransomware campaign use.",
       "severity": "Critical",
       "vendor": "Fortinet — FortiOS",
       "cve": "CVE-2019-5591"
@@ -18824,8 +18824,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2021-11-03",
       "due_date": "2022-05-03",
-      "summary": "Microsoft Win32k contains an unspecified vulnerability due to it failing to properly handle objects in memory causing privilege escalation. Successful exploitation allows an attacker to run code in kernel mode. Required action: Apply updates per vendor instructions.",
-      "severity": "Low",
+      "summary": "Microsoft Win32k contains an unspecified vulnerability due to it failing to properly handle objects in memory causing privilege escalation. Successful exploitation allows an attacker to run code in kernel mode. Required action: Apply updates per vendor instructions. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "Microsoft — Win32k",
       "cve": "CVE-2019-0803"
     },
@@ -18980,7 +18980,7 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2021-11-03",
       "due_date": "2022-05-03",
-      "summary": "Microsoft Office contains a memory corruption vulnerability due to the way objects are handled in memory. Successful exploitation allows for remote code execution in the context of the current user. This vulnerability is known to be chained with CVE-2018-0798. Required action: Apply updates per vendor instructions.",
+      "summary": "Microsoft Office contains a memory corruption vulnerability due to the way objects are handled in memory. Successful exploitation allows for remote code execution in the context of the current user. This vulnerability is known to be chained with CVE-2018-0798. Required action: Apply updates per vendor instructions. Known ransomware campaign use.",
       "severity": "Critical",
       "vendor": "Microsoft — Office",
       "cve": "CVE-2018-0802"
@@ -19136,7 +19136,7 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2021-11-03",
       "due_date": "2022-05-03",
-      "summary": "Microsoft Internet Explorer contains a memory corruption vulnerability due to how the Scripting Engine handles objects in memory, leading to remote code execution. Required action: Apply updates per vendor instructions.",
+      "summary": "Microsoft Internet Explorer contains a memory corruption vulnerability due to how the Scripting Engine handles objects in memory, leading to remote code execution. Required action: Apply updates per vendor instructions. Known ransomware campaign use.",
       "severity": "Critical",
       "vendor": "Microsoft — Internet Explorer",
       "cve": "CVE-2020-0968"
