@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-15T13:54:07Z",
+  "last_updated": "2026-08-15T14:21:42Z",
   "advisories": [
     {
       "id": "b9fc062a",
@@ -144,17 +144,6 @@
       "severity": "Low",
       "vendor": "Arista — VeloCloud Orchestrator",
       "cve": "CVE-2026-16812"
-    },
-    {
-      "id": "6c92faf3",
-      "source": "ASD",
-      "title": "Russian state-supported cyber actors conduct phishing campaign targeting users of Zimbra Collaboration Suite",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/russian-state-supported-cyber-actors-conduct-phishing-campaign-targeting-users-of-zimbra-collaboration-suite",
-      "date": "2026-07-23",
-      "summary": "Read our joint advisory on LAUNDRY BEAR's exploitation of Zimbra Collaboration Suite.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "1126f712",
@@ -337,17 +326,6 @@
       "cve": "CVE-2026-15410"
     },
     {
-      "id": "2bb9826d",
-      "source": "ASD",
-      "title": "Improve Router Hygiene to Protect Against Russian State-Sponsored Targeting",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/improve-router-hygiene-to-protect-against-russian-state-sponsored-targeting",
-      "date": "2026-07-13",
-      "summary": "This joint advisory outlines persistent and ongoing malicious cyber activity conducted by Russian state-sponsored cyber actors.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "13ef1f59",
       "source": "CISA KEV",
       "title": "Cisco IOS Cross-Site Request Forgery Vulnerability",
@@ -382,17 +360,6 @@
       "severity": "Low",
       "vendor": "iCagenda — iCagenda",
       "cve": "CVE-2026-48939"
-    },
-    {
-      "id": "3ab528f2",
-      "source": "ASD",
-      "title": "CRITICAL ALERT: Large-scale exploitation campaign targeting website content management systems (CMS)",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/large-scale-exploitation-campaign-targeting-website-content-management-systems-cms",
-      "date": "2026-07-09",
-      "summary": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) is tracking a large-scale exploitation campaign targeting various vulnerabilities in web content management systems (CMS) globally, including in Australia.",
-      "severity": "Critical",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "3a9e0ffd",
@@ -537,17 +504,6 @@
       "severity": "Low",
       "vendor": "Ubiquiti — UniFi OS",
       "cve": "CVE-2026-34908"
-    },
-    {
-      "id": "8db2b790",
-      "source": "ASD",
-      "title": "CRITICAL ALERT: Reported widespread credential exposure affecting Fortinet Firewalls and VPN Gateways",
-      "link": "https://www.cyber.gov.au/about-us/view-all-content/Reported-widespread-credential-exposure-affecting-Fortinet-Firewalls-and-VPN-Gateways",
-      "date": "2026-06-18",
-      "summary": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD's ACSC) is aware of public reporting of a malicious campaign against Fortinet Firewalls and VPN Gateways",
-      "severity": "Critical",
-      "vendor": "Fortinet Firewalls And Vpn Gateways",
-      "cve": "N/A"
     },
     {
       "id": "e528db9e",
