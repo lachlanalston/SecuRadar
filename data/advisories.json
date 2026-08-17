@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-08-17T17:28:46Z",
+  "last_updated": "2026-08-17T17:57:26Z",
   "advisories": [
     {
       "id": "297972eb",
       "source": "CISA KEV",
       "title": "Ray-Project Ray Code Injection Vulnerability",
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-      "date": "2026-08-18",
-      "due_date": "2026-08-21",
+      "date": "2026-08-17",
+      "due_date": "2026-08-20",
       "summary": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Firefox and Safari. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guid…",
       "severity": "Critical",
       "vendor": "Ray-Project — Ray",
