@@ -1,6 +1,54 @@
 {
-  "last_updated": "2026-08-18T16:31:09Z",
+  "last_updated": "2026-08-18T17:26:36Z",
   "advisories": [
+    {
+      "id": "438f8f98",
+      "source": "CISA KEV",
+      "title": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-18",
+      "due_date": "2026-08-21",
+      "summary": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unav…",
+      "severity": "Critical",
+      "vendor": "Microsoft — Internet Key Exchange (IKE) Service Extensions",
+      "cve": "CVE-2026-33824"
+    },
+    {
+      "id": "d6c2f93f",
+      "source": "CISA KEV",
+      "title": "Broadcom VMware vCenter Path Traversal Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-18",
+      "due_date": "2026-08-21",
+      "summary": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if …",
+      "severity": "Low",
+      "vendor": "Broadcom — VMware vCenter",
+      "cve": "CVE-2026-59310"
+    },
+    {
+      "id": "7da62472",
+      "source": "CISA KEV",
+      "title": "Microsoft SharePoint Weak Authentication Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-18",
+      "due_date": "2026-08-21",
+      "summary": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitiga…",
+      "severity": "Low",
+      "vendor": "Microsoft — SharePoint",
+      "cve": "CVE-2026-55040"
+    },
+    {
+      "id": "094788d5",
+      "source": "CISA KEV",
+      "title": "Apple macOS Improper Authentication Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-18",
+      "due_date": "2026-08-21",
+      "summary": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the…",
+      "severity": "Low",
+      "vendor": "Apple — macOS",
+      "cve": "CVE-2026-65400"
+    },
     {
       "id": "297972eb",
       "source": "CISA KEV",
