@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-08-19T04:36:13Z",
+  "last_updated": "2026-08-19T05:29:44Z",
   "advisories": [
+    {
+      "id": "73ecf5b8",
+      "source": "ASD",
+      "title": "HIGH ALERT: Active exploitation of remote monitoring and management platform within Australia",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-remote-monitoring-and-management-platform-within-Australia",
+      "date": "2026-08-19",
+      "summary": "Alert on active exploitation in Australia of N-able and N-central vulnerabilities CVE-2026-18556 and CVE-2026-18577. Assess exposure and apply mitigations.",
+      "severity": "High",
+      "vendor": "N/A",
+      "cve": "CVE-2026-18556, CVE-2026-18577"
+    },
     {
       "id": "438f8f98",
       "source": "CISA KEV",
