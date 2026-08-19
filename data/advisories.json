@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19T16:30:49Z",
+  "last_updated": "2026-08-19T17:26:22Z",
   "advisories": [
     {
       "id": "f76f73ed",
@@ -11,6 +11,18 @@
       "severity": "High",
       "vendor": "N/A",
       "cve": "CVE-2026-18556, CVE-2026-18577"
+    },
+    {
+      "id": "89df6bec",
+      "source": "CISA KEV",
+      "title": "MLflow Server-Side Request Forgery Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-19",
+      "due_date": "2026-09-02",
+      "summary": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue …",
+      "severity": "Low",
+      "vendor": "MLflow — MLflow",
+      "cve": "CVE-2026-64849"
     },
     {
       "id": "438f8f98",
