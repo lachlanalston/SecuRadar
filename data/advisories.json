@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-08-20T16:34:50Z",
+  "last_updated": "2026-08-20T17:28:19Z",
   "advisories": [
+    {
+      "id": "420c2ad6",
+      "source": "CISA KEV",
+      "title": "TrueConf Server Code Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-20",
+      "due_date": "2026-09-03",
+      "summary": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment and execute arbitrary code on the host system. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (se…",
+      "severity": "Low",
+      "vendor": "TrueConf — Server",
+      "cve": "CVE-2026-72530"
+    },
+    {
+      "id": "fcb2dba1",
+      "source": "CISA KEV",
+      "title": "TrueConf Server Missing Authentication for Critical Function Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-20",
+      "due_date": "2026-08-23",
+      "summary": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary script. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cl…",
+      "severity": "Critical",
+      "vendor": "TrueConf — Server",
+      "cve": "CVE-2026-72529"
+    },
     {
       "id": "f76f73ed",
       "source": "ASD",
