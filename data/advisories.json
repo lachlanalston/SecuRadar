@@ -1,18 +1,6 @@
 {
-  "last_updated": "2026-08-21T17:58:04Z",
+  "last_updated": "2026-08-21T18:48:26Z",
   "advisories": [
-    {
-      "id": "f3ba3034",
-      "source": "CISA KEV",
-      "title": "Microsoft Entra ID Deserialization of Untrusted Data Vulnerability",
-      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-      "date": "2026-08-21",
-      "due_date": "2026-08-24",
-      "summary": "Microsoft Entra ID formerly known as Azure Active Directory contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud service…",
-      "severity": "Low",
-      "vendor": "Microsoft — Entra ID",
-      "cve": "CVE-2026-69836"
-    },
     {
       "id": "c0a5ca6b",
       "source": "CISA KEV",
