@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-21T11:52:33Z",
+  "last_updated": "2026-08-21T12:47:06Z",
   "advisories": [
     {
       "id": "420c2ad6",
@@ -2999,8 +2999,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2025-10-06",
       "due_date": "2025-10-27",
-      "summary": "Microsoft Windows Common Log File System Driver contains a privilege escalation vulnerability that could allow a local, privileged attacker to bypass certain security mechanisms. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-      "severity": "Low",
+      "summary": "Microsoft Windows Common Log File System Driver contains a privilege escalation vulnerability that could allow a local, privileged attacker to bypass certain security mechanisms. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "Microsoft — Windows",
       "cve": "CVE-2021-43226"
     },
@@ -14432,8 +14432,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2022-03-15",
       "due_date": "2022-04-05",
-      "summary": "A buffer overflow vulnerability in SonicOS allows a remote attacker to cause Denial of Service (DoS) and potentially execute arbitrary code by sending a malicious request to the firewall. Required action: Apply updates per vendor instructions.",
-      "severity": "Low",
+      "summary": "A buffer overflow vulnerability in SonicOS allows a remote attacker to cause Denial of Service (DoS) and potentially execute arbitrary code by sending a malicious request to the firewall. Required action: Apply updates per vendor instructions. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "SonicWall — SonicOS",
       "cve": "CVE-2020-5135"
     },
@@ -19099,7 +19099,7 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2021-11-03",
       "due_date": "2022-05-03",
-      "summary": "Microsoft MSCOMCTL.OCX contains an unspecified vulnerability that allows for remote code execution, allowing an attacker to take complete control of an affected system under the context of the current user. Required action: Apply updates per vendor instructions.",
+      "summary": "Microsoft MSCOMCTL.OCX contains an unspecified vulnerability that allows for remote code execution, allowing an attacker to take complete control of an affected system under the context of the current user. Required action: Apply updates per vendor instructions. Known ransomware campaign use.",
       "severity": "Critical",
       "vendor": "Microsoft — MSCOMCTL.OCX",
       "cve": "CVE-2012-0158"
