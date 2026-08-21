@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-08-21T16:34:06Z",
+  "last_updated": "2026-08-21T17:28:13Z",
   "advisories": [
+    {
+      "id": "f3ba3034",
+      "source": "CISA KEV",
+      "title": "Microsoft Entra ID Deserialization of Untrusted Data Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-21",
+      "due_date": "2026-08-24",
+      "summary": "Microsoft Entra ID formerly known as Azure Active Directory contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud service…",
+      "severity": "Low",
+      "vendor": "Microsoft — Entra ID",
+      "cve": "CVE-2026-69836"
+    },
+    {
+      "id": "c0a5ca6b",
+      "source": "CISA KEV",
+      "title": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-21",
+      "due_date": "2026-08-24",
+      "summary": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in No…",
+      "severity": "Low",
+      "vendor": "Synacor — Zimbra Collaboration Suite (ZCS)",
+      "cve": "CVE-2026-73570"
+    },
     {
       "id": "420c2ad6",
       "source": "CISA KEV",
