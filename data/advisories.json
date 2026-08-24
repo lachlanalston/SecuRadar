@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-08-24T05:37:30Z",
+  "last_updated": "2026-08-24T06:58:01Z",
   "advisories": [
+    {
+      "id": "960275f5",
+      "source": "ASD",
+      "title": "HIGH ALERT: Active exploitation of a software development platform within Australia",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-a-software-development-platform-within-australia",
+      "date": "2026-08-24",
+      "summary": "Alert on actively exploited vulnerabilities affecting TeamCity On-Premise servers. Assess exposure and apply vendor mitigations for CVE 2026 63077 (Critical, 9.8).",
+      "severity": "Critical",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "c0a5ca6b",
       "source": "CISA KEV",
