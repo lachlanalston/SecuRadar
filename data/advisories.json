@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-24T18:39:05Z",
+  "last_updated": "2026-08-24T19:29:03Z",
   "advisories": [
     {
       "id": "960275f5",
@@ -11,6 +11,18 @@
       "severity": "Critical",
       "vendor": "N/A",
       "cve": "N/A"
+    },
+    {
+      "id": "55eecf6f",
+      "source": "CISA KEV",
+      "title": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-24",
+      "due_date": "2026-08-27",
+      "summary": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as unauthorized access to critical data or complete access to all Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in accessible data. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the produc…",
+      "severity": "Critical",
+      "vendor": "Oracle — HTTP Server and Oracle Weblogic Server Proxy Plug-in",
+      "cve": "CVE-2026-21962"
     },
     {
       "id": "c0a5ca6b",
