@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-08-25T17:31:10Z",
+  "last_updated": "2026-08-25T18:38:47Z",
   "advisories": [
+    {
+      "id": "565afc44",
+      "source": "CISA KEV",
+      "title": "Gitea Code Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-25",
+      "due_date": "2026-08-28",
+      "summary": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow a…",
+      "severity": "Low",
+      "vendor": "Gitea — Gitea",
+      "cve": "CVE-2026-60004"
+    },
     {
       "id": "960275f5",
       "source": "ASD",
