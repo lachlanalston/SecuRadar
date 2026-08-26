@@ -1,6 +1,78 @@
 {
-  "last_updated": "2026-08-26T16:53:29Z",
+  "last_updated": "2026-08-26T19:01:20Z",
   "advisories": [
+    {
+      "id": "f99e67ca",
+      "source": "CISA KEV",
+      "title": "Ajax.NET Professional Deserialization of Untrusted Data Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-26",
+      "due_date": "2026-09-09",
+      "summary": "Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes)…",
+      "severity": "Critical",
+      "vendor": "Ajax.NET Professional — Ajax.NET Professional",
+      "cve": "CVE-2021-23758"
+    },
+    {
+      "id": "040a59c1",
+      "source": "CISA KEV",
+      "title": "Red Hat Libuser Race Condition Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-26",
+      "due_date": "2026-09-09",
+      "summary": "Red Hat libuser contains a race condition vulnerability that allows authenticated local users to corrupt the /etc/passwd file to cause a denial of service or privilege escalation.  Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or disconti…",
+      "severity": "Low",
+      "vendor": "Red Hat — Libuser",
+      "cve": "CVE-2015-3246"
+    },
+    {
+      "id": "e025f8d3",
+      "source": "CISA KEV",
+      "title": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-26",
+      "due_date": "2026-09-09",
+      "summary": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prior…",
+      "severity": "Low",
+      "vendor": "Red Hat — Automatic Bug Reporting Tool",
+      "cve": "CVE-2015-5287"
+    },
+    {
+      "id": "079d70a9",
+      "source": "CISA KEV",
+      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-26",
+      "due_date": "2026-09-09",
+      "summary": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the…",
+      "severity": "Low",
+      "vendor": "Linux — Kernel",
+      "cve": "CVE-2022-0995"
+    },
+    {
+      "id": "382060b9",
+      "source": "CISA KEV",
+      "title": "Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-26",
+      "due_date": "2026-08-29",
+      "summary": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service.  Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontin…",
+      "severity": "Low",
+      "vendor": "Citrix — NetScaler ADC and NetScaler Gateway",
+      "cve": "CVE-2026-8452"
+    },
+    {
+      "id": "6ed19390",
+      "source": "CISA KEV",
+      "title": "Microsoft SQL Server Remote Code Execution Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-26",
+      "due_date": "2026-08-29",
+      "summary": "Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinu…",
+      "severity": "Critical",
+      "vendor": "Microsoft — SQL Server",
+      "cve": "CVE-2019-1068"
+    },
     {
       "id": "565afc44",
       "source": "CISA KEV",
