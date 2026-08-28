@@ -1,6 +1,42 @@
 {
-  "last_updated": "2026-08-27T14:31:41Z",
+  "last_updated": "2026-08-28T00:15:41Z",
   "advisories": [
+    {
+      "id": "e76f3c11",
+      "source": "CISA KEV",
+      "title": "ownCloud Improper Authentication Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-27",
+      "due_date": "2026-08-30",
+      "summary": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key configured. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BO…",
+      "severity": "Low",
+      "vendor": "ownCloud — ownCloud",
+      "cve": "CVE-2023-49105"
+    },
+    {
+      "id": "33fb86eb",
+      "source": "CISA KEV",
+      "title": "Linux Kernel Unspecified Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-27",
+      "due_date": "2026-08-30",
+      "summary": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using Linux.  Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). …",
+      "severity": "Low",
+      "vendor": "Linux — Kernel",
+      "cve": "CVE-2026-53362"
+    },
+    {
+      "id": "8c17bfb5",
+      "source": "CISA KEV",
+      "title": "JFrog Artifactory Improper Limitation of a Pathname to a Restricted Directory Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-27",
+      "due_date": "2026-09-10",
+      "summary": "JFrog Artifactory contains an improper limitation of a pathname to a restricted directory vulnerability. This can allow an authenticated user to write data outside the intended Docker cache path under specific remote-repository conditions. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow a…",
+      "severity": "Low",
+      "vendor": "JFrog — Artifactory",
+      "cve": "CVE-2026-66384"
+    },
     {
       "id": "f99e67ca",
       "source": "CISA KEV",
@@ -12618,23 +12654,23 @@
       "cve": "CVE-2022-22947"
     },
     {
-      "id": "47dc9670",
-      "source": "NCSC UK",
-      "title": "Organisational use of Enterprise Connected Devices",
-      "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
-      "date": "2022-05-10",
-      "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "55d2b8f7",
       "source": "NCSC UK",
       "title": "ACD - The Fifth Year",
       "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
       "date": "2022-05-10",
       "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "47dc9670",
+      "source": "NCSC UK",
+      "title": "Organisational use of Enterprise Connected Devices",
+      "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
+      "date": "2022-05-10",
+      "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
