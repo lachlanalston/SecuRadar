@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-08-31T11:02:45Z",
+  "last_updated": "2026-08-31T18:04:17Z",
   "advisories": [
+    {
+      "id": "2cbd934a",
+      "source": "CISA KEV",
+      "title": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-31",
+      "due_date": "2026-09-14",
+      "summary": "PaperCut NG/MF contains an unsafe reflection vulnerability that allows an attacker to manipulate system configuration parameters and execute arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process. This vulnerability can be chained with CVE-2026-81578. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) gui…",
+      "severity": "Low",
+      "vendor": "PaperCut — NG/MF",
+      "cve": "CVE-2026-82078"
+    },
+    {
+      "id": "f22424fa",
+      "source": "CISA KEV",
+      "title": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-08-31",
+      "due_date": "2026-09-14",
+      "summary": "PaperCut NG/MF contains a missing authentication for critical function vulnerability which allows an unauthenticated remote attacker to modify certain system configurations. This vulnerability can be chained with CVE-2026-82078. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable B…",
+      "severity": "Critical",
+      "vendor": "PaperCut — NG/MF",
+      "cve": "CVE-2026-81578"
+    },
     {
       "id": "e76f3c11",
       "source": "CISA KEV",
