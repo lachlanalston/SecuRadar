@@ -1,6 +1,90 @@
 {
-  "last_updated": "2026-09-02T14:07:59Z",
+  "last_updated": "2026-09-02T17:58:49Z",
   "advisories": [
+    {
+      "id": "f1d0f0ca",
+      "source": "CISA KEV",
+      "title": "BerriAI LiteLLM Improper Authentication Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-02",
+      "due_date": "2026-09-16",
+      "summary": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer token. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-0…",
+      "severity": "Low",
+      "vendor": "BerriAI — LiteLLM",
+      "cve": "CVE-2026-59822"
+    },
+    {
+      "id": "bb78cdac",
+      "source": "CISA KEV",
+      "title": "Kludex Starlette HTTP Request/Response Smuggling Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-02",
+      "due_date": "2026-09-16",
+      "summary": "Kludex Starlette contains a HTTP request/response smuggling vulnerability that could allow attackers to inject paths into the host part, prepending the actual path leading to issues such as authentication bypass when the authentication depends on the reconstructed URL’s path. This vulnerability could be chaned with CVE-2026-42271. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see U…",
+      "severity": "Low",
+      "vendor": "Kludex — Starlette",
+      "cve": "CVE-2026-48710"
+    },
+    {
+      "id": "fc1148f3",
+      "source": "CISA KEV",
+      "title": "Kestra OSS OS Command Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-02",
+      "due_date": "2026-09-05",
+      "summary": "Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use …",
+      "severity": "Low",
+      "vendor": "Kestra — Kestra OSS",
+      "cve": "CVE-2026-49869"
+    },
+    {
+      "id": "83c00c1e",
+      "source": "CISA KEV",
+      "title": "JFrog Artifactory Improper Authentication Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-02",
+      "due_date": "2026-09-05",
+      "summary": "JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges.  Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud serv…",
+      "severity": "Low",
+      "vendor": "JFrog — Artifactory",
+      "cve": "CVE-2026-82329"
+    },
+    {
+      "id": "2b1bd6f5",
+      "source": "CISA KEV",
+      "title": "Sangoma Switchvox SQL Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-02",
+      "due_date": "2026-09-05",
+      "summary": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements…",
+      "severity": "Critical",
+      "vendor": "Sangoma — Switchvox",
+      "cve": "CVE-2026-9586"
+    },
+    {
+      "id": "4a1c1753",
+      "source": "CISA KEV",
+      "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-02",
+      "due_date": "2026-09-05",
+      "summary": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 2…",
+      "severity": "Low",
+      "vendor": "SonicWall — SMA1000 Appliances",
+      "cve": "CVE-2026-83548"
+    },
+    {
+      "id": "bd027ba8",
+      "source": "CISA KEV",
+      "title": "SonicWall SMA1000 Appliances OS Command Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-02",
+      "due_date": "2026-09-05",
+      "summary": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidanc…",
+      "severity": "Critical",
+      "vendor": "SonicWall — SMA1000 Appliances",
+      "cve": "CVE-2026-83549"
+    },
     {
       "id": "2cbd934a",
       "source": "CISA KEV",
