@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04T16:45:13Z",
+  "last_updated": "2026-09-04T19:18:56Z",
   "advisories": [
     {
       "id": "c6e4df1d",
@@ -11,6 +11,18 @@
       "severity": "Critical",
       "vendor": "Critical Alert: Critical",
       "cve": "N/A"
+    },
+    {
+      "id": "7af089b8",
+      "source": "CISA KEV",
+      "title": "Google Chromium V8 Type Confusion Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-04",
+      "due_date": "2026-09-18",
+      "summary": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance an…",
+      "severity": "Low",
+      "vendor": "Google — Chromium V8",
+      "cve": "CVE-2026-85046"
     },
     {
       "id": "f1d0f0ca",
