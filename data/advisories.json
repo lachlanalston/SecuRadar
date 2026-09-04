@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04T12:51:05Z",
+  "last_updated": "2026-09-04T16:45:13Z",
   "advisories": [
     {
       "id": "c6e4df1d",
@@ -10811,8 +10811,8 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2022-09-14",
       "due_date": "2022-10-05",
-      "summary": "Microsoft Windows Common Log File System (CLFS) driver contains an unspecified vulnerability that allows for privilege escalation. Required action: Apply updates per vendor instructions.",
-      "severity": "Low",
+      "summary": "Microsoft Windows Common Log File System (CLFS) driver contains an unspecified vulnerability that allows for privilege escalation. Required action: Apply updates per vendor instructions. Known ransomware campaign use.",
+      "severity": "Critical",
       "vendor": "Microsoft — Windows",
       "cve": "CVE-2022-37969"
     },
@@ -15678,7 +15678,7 @@
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2022-03-03",
       "due_date": "2022-03-24",
-      "summary": "An access of resource using incompatible type vulnerability exists within Adobe Flash Player that allows an attacker to perform remote code execution. Required action: The impacted product is end-of-life and should be disconnected if still in use.",
+      "summary": "An access of resource using incompatible type vulnerability exists within Adobe Flash Player that allows an attacker to perform remote code execution. Required action: The impacted product is end-of-life and should be disconnected if still in use. Known ransomware campaign use.",
       "severity": "Critical",
       "vendor": "Adobe — Flash Player",
       "cve": "CVE-2016-4117"
