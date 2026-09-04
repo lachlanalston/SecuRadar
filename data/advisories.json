@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-09-04T03:14:33Z",
+  "last_updated": "2026-09-04T08:09:06Z",
   "advisories": [
+    {
+      "id": "c6e4df1d",
+      "source": "ASD",
+      "title": "CRITICAL ALERT: Critical vulnerabilities in Citrix NetScaler Application Delivery Controller (ADC) and Citrix NetScaler Gateway products",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/critical-vulnerabilities-in-citrix-netscaler-application-delivery-controller-adc-and-citrix-netscaler-gateway-products",
+      "date": "2026-09-04",
+      "summary": "Alert on critical vulnerabilities affecting Citrix NetScaler ADC and Gateway products. Assess exposure and update all affected products.",
+      "severity": "Critical",
+      "vendor": "Critical Alert: Critical",
+      "cve": "N/A"
+    },
     {
       "id": "f1d0f0ca",
       "source": "CISA KEV",
