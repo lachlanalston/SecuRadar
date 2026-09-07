@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-09-07T20:42:39Z",
+  "last_updated": "2026-09-07T23:17:59Z",
   "advisories": [
+    {
+      "id": "2515dfb8",
+      "source": "ASD",
+      "title": "Digital camouflage: crypters make malware undetectable",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/digital-camouflage-crypters-make-malware-undetectable",
+      "date": "2026-09-07",
+      "summary": "Cybercriminals are increasingly using crypters to disguise malware and make it harder for antivirus software to detect.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "c6e4df1d",
       "source": "ASD",
