@@ -1,6 +1,54 @@
 {
-  "last_updated": "2026-09-08T16:07:08Z",
+  "last_updated": "2026-09-08T19:29:57Z",
   "advisories": [
+    {
+      "id": "7337ee11",
+      "source": "CISA KEV",
+      "title": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-08",
+      "due_date": "2026-09-11",
+      "summary": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or…",
+      "severity": "Critical",
+      "vendor": "Adobe — Commerce and Magento",
+      "cve": "CVE-2026-75650"
+    },
+    {
+      "id": "77cf1080",
+      "source": "CISA KEV",
+      "title": "Microsoft Windows Link Following Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-08",
+      "due_date": "2026-09-22",
+      "summary": "Microsoft Windows Update Stack contains a link following vulnerability that allows a local attacker to escalate privileges locally up to SYSTEM. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigation…",
+      "severity": "Low",
+      "vendor": "Microsoft — Windows",
+      "cve": "CVE-2026-81963"
+    },
+    {
+      "id": "4f1f4513",
+      "source": "CISA KEV",
+      "title": "N-able N-central Static Code Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-08",
+      "due_date": "2026-09-11",
+      "summary": "N-able N-central contains a static code injection vulnerability that could allow for pre-authentication remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable.…",
+      "severity": "Critical",
+      "vendor": "N-able — N-central",
+      "cve": "CVE-2026-86218"
+    },
+    {
+      "id": "4204ec08",
+      "source": "CISA KEV",
+      "title": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-08",
+      "due_date": "2026-09-22",
+      "summary": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if …",
+      "severity": "Low",
+      "vendor": "Microsoft — Windows",
+      "cve": "CVE-2026-85880"
+    },
     {
       "id": "2515dfb8",
       "source": "ASD",
@@ -2664,7 +2712,7 @@
       "date": "2025-12-19",
       "due_date": "2025-12-26",
       "summary": "WatchGuard Fireware OS iked process contains an out of bounds write vulnerability in the OS iked process. This vulnerability may allow a remote unauthenticated attacker to execute arbitrary code and affects both the mobile user VPN with IKEv2 and the branch office VPN using IKEv2 when configured with a dynamic gateway peer. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unav…",
-      "severity": "Low",
+      "severity": "Critical",
       "vendor": "WatchGuard — Firebox",
       "cve": "CVE-2025-14733"
     },
