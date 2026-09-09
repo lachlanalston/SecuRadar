@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-09-09T20:32:52Z",
+  "last_updated": "2026-09-09T22:58:37Z",
   "advisories": [
     {
       "id": "75a08e28",
       "source": "ASD",
-      "title": "CRITICAL ALERT: Active exploitation of Adobe Commerce and Magento Open Source vulnerability.",
+      "title": "CRITICAL ALERT: Active exploitation of Adobe Commerce and Magento Open Source vulnerability",
       "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-adobe-commerce-and-magento-open-source-vulnerability",
       "date": "2026-09-09",
       "summary": "Alert on active exploitation of a critical vulnerability in Adobe Commerce and Magento Open Source.",
