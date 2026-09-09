@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-09T17:55:06Z",
+  "last_updated": "2026-09-09T20:32:52Z",
   "advisories": [
     {
       "id": "75a08e28",
@@ -11,6 +11,54 @@
       "severity": "Critical",
       "vendor": "N/A",
       "cve": "N/A"
+    },
+    {
+      "id": "357bf85f",
+      "source": "CISA KEV",
+      "title": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-09",
+      "due_date": "2026-09-12",
+      "summary": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL VPN, ICA Proxy, CVPN, or RDP Proxy), an unauthenticated remote threat actor may be able to bypass authentication. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see U…",
+      "severity": "Low",
+      "vendor": "Citrix — NetScaler",
+      "cve": "CVE-2026-19490"
+    },
+    {
+      "id": "e0d957e1",
+      "source": "CISA KEV",
+      "title": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-09",
+      "due_date": "2026-09-12",
+      "summary": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud se…",
+      "severity": "Low",
+      "vendor": "Fortinet — Multiple Products",
+      "cve": "CVE-2025-25249"
+    },
+    {
+      "id": "1eadc9a8",
+      "source": "CISA KEV",
+      "title": "Google Chromium V8 Out of Bounds Write Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-09",
+      "due_date": "2026-09-23",
+      "summary": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guida…",
+      "severity": "Low",
+      "vendor": "Google — Chromium V8",
+      "cve": "CVE-2026-87491"
+    },
+    {
+      "id": "bbcf390d",
+      "source": "CISA KEV",
+      "title": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-09",
+      "due_date": "2026-09-12",
+      "summary": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain an authentication Bypass using an alternate path or channel vulnerability that could allow an unauthenticated, remote attacker to bypass authentication and execute script files on an affected device to obtain root access to the underlying operating system. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prio…",
+      "severity": "Low",
+      "vendor": "Cisco — Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
+      "cve": "CVE-2026-20079"
     },
     {
       "id": "7337ee11",
