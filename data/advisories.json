@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-09-09T05:00:05Z",
+  "last_updated": "2026-09-09T09:35:48Z",
   "advisories": [
+    {
+      "id": "75a08e28",
+      "source": "ASD",
+      "title": "CRITICAL ALERT: Active exploitation of Adobe Commerce and Magento Open Source vulnerability.",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/active-exploitation-of-adobe-commerce-and-magento-open-source-vulnerability",
+      "date": "2026-09-09",
+      "summary": "Alert on active exploitation of a critical vulnerability in Adobe Commerce and Magento Open Source.",
+      "severity": "Critical",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "7337ee11",
       "source": "CISA KEV",
@@ -12844,23 +12855,23 @@
       "cve": "CVE-2022-22947"
     },
     {
-      "id": "47dc9670",
-      "source": "NCSC UK",
-      "title": "Organisational use of Enterprise Connected Devices",
-      "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
-      "date": "2022-05-10",
-      "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "55d2b8f7",
       "source": "NCSC UK",
       "title": "ACD - The Fifth Year",
       "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
       "date": "2022-05-10",
       "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "47dc9670",
+      "source": "NCSC UK",
+      "title": "Organisational use of Enterprise Connected Devices",
+      "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
+      "date": "2022-05-10",
+      "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
