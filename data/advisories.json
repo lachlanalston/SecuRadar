@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-09-10T18:09:28Z",
+  "last_updated": "2026-09-10T21:04:35Z",
   "advisories": [
+    {
+      "id": "b629b0ee",
+      "source": "CISA KEV",
+      "title": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-10",
+      "due_date": "2026-09-13",
+      "summary": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacked to change the trusted RouterOS policy mask, leading to privilege escalation. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for c…",
+      "severity": "Low",
+      "vendor": "MikroTik — RouterOS",
+      "cve": "CVE-2026-86060"
+    },
+    {
+      "id": "948e6137",
+      "source": "CISA KEV",
+      "title": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-10",
+      "due_date": "2026-09-13",
+      "summary": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of t…",
+      "severity": "Critical",
+      "vendor": "MikroTik — RouterOS",
+      "cve": "CVE-2026-67277"
+    },
     {
       "id": "75a08e28",
       "source": "ASD",
