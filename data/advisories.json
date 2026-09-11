@@ -1,6 +1,42 @@
 {
-  "last_updated": "2026-09-11T15:58:39Z",
+  "last_updated": "2026-09-11T19:06:41Z",
   "advisories": [
+    {
+      "id": "bcfbeb10",
+      "source": "CISA KEV",
+      "title": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-11",
+      "due_date": "2026-09-14",
+      "summary": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sessions without authorization or host confirmation. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes).…",
+      "severity": "Low",
+      "vendor": "ConnectWise — ScreenConnect",
+      "cve": "CVE-2026-84869"
+    },
+    {
+      "id": "a7d25c5e",
+      "source": "CISA KEV",
+      "title": "JFrog Artifactory Incorrect Authorization Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-11",
+      "due_date": "2026-09-25",
+      "summary": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud s…",
+      "severity": "Low",
+      "vendor": "JFrog — Artifactory",
+      "cve": "CVE-2026-42016"
+    },
+    {
+      "id": "d23cd097",
+      "source": "CISA KEV",
+      "title": "JFrog Artifactory Improper Authentication Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-11",
+      "due_date": "2026-09-25",
+      "summary": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 2…",
+      "severity": "Critical",
+      "vendor": "JFrog — Artifactory",
+      "cve": "CVE-2026-42018"
+    },
     {
       "id": "b629b0ee",
       "source": "CISA KEV",
@@ -496,7 +532,7 @@
       "date": "2026-08-18",
       "due_date": "2026-08-21",
       "summary": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if …",
-      "severity": "Low",
+      "severity": "Critical",
       "vendor": "Broadcom — VMware vCenter",
       "cve": "CVE-2026-59310"
     },
