@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-09-14T19:03:23Z",
+  "last_updated": "2026-09-14T22:38:29Z",
   "advisories": [
+    {
+      "id": "8da8d081",
+      "source": "CISA KEV",
+      "title": "Cisco Secure Email Gateway SQL Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-14",
+      "due_date": "2026-09-17",
+      "summary": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow ap…",
+      "severity": "Low",
+      "vendor": "Cisco — Secure Email Gateway",
+      "cve": "CVE-2026-76461"
+    },
     {
       "id": "bcfbeb10",
       "source": "CISA KEV",
