@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-16T17:29:35Z",
+  "last_updated": "2026-09-16T20:23:02Z",
   "advisories": [
     {
       "id": "5a05f58c",
@@ -12,6 +12,30 @@
       "severity": "Low",
       "vendor": "Google — Pixel",
       "cve": "CVE-2026-58704"
+    },
+    {
+      "id": "0c97ec36",
+      "source": "CISA KEV",
+      "title": "Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-16",
+      "due_date": "2026-09-19",
+      "summary": "Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker to gain unauthorized access to the affected device by bypassing the web-based management interface. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “…",
+      "severity": "Low",
+      "vendor": "Cisco — Identity Services Engine",
+      "cve": "CVE-2026-76460"
+    },
+    {
+      "id": "44cbb5dc",
+      "source": "CISA KEV",
+      "title": "Acronis Backup Incorrect Default Permissions Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-16",
+      "due_date": "2026-09-19",
+      "summary": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the prod…",
+      "severity": "Low",
+      "vendor": "Acronis — Backup",
+      "cve": "CVE-2026-87886"
     },
     {
       "id": "8da8d081",
