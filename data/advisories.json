@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-09-17T07:14:32Z",
+  "last_updated": "2026-09-17T12:42:23Z",
   "advisories": [
+    {
+      "id": "d184a0d5",
+      "source": "NCSC UK",
+      "title": "Adversary simulation: what you need to know",
+      "link": "https://www.ncsc.gov.uk/guidance/adversary-simulation-what-you-need-to-know",
+      "date": "2026-09-17",
+      "summary": "Adversary simulation ('red teaming') tests your ability to prevent, detect and respond to cyber attacks.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "5a05f58c",
       "source": "CISA KEV",
@@ -7938,17 +7949,6 @@
       "severity": "Low",
       "vendor": "Microsoft — Exchange Server",
       "cve": "CVE-2024-21410"
-    },
-    {
-      "id": "517492a6",
-      "source": "NCSC UK",
-      "title": "AI and cyber security: what you need to know",
-      "link": "https://www.ncsc.gov.uk/guidance/ai-and-cyber-security-what-you-need-to-know",
-      "date": "2024-02-13",
-      "summary": "Understanding the risks - and benefits - of using AI tools.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "7e004461",
