@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-09-18T01:23:15Z",
+  "last_updated": "2026-09-18T06:21:43Z",
   "advisories": [
+    {
+      "id": "1cea3cdb",
+      "source": "ASD",
+      "title": "North Korean \"WaterPlum,\" commonly referred to as “Contagious Interview,” cyber actor group targeting IT professionals",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/north-korean-waterplum-commonly-referred-to-as-contagious-interview-cyber-actor-group-targeting-it-professionals",
+      "date": "2026-09-18",
+      "summary": "A joint cyber security advisory on North Korean threat actors targeting IT professionals through fake jobs, malware, and cryptocurrency theft.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "d184a0d5",
       "source": "NCSC UK",
