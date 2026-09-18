@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-18T11:38:01Z",
+  "last_updated": "2026-09-18T15:57:04Z",
   "advisories": [
     {
       "id": "1cea3cdb",
@@ -11,6 +11,30 @@
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
+    },
+    {
+      "id": "30244d1b",
+      "source": "CISA KEV",
+      "title": "Linux Kernel Race Condition Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "summary": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guid…",
+      "severity": "Low",
+      "vendor": "Linux — Kernel",
+      "cve": "CVE-2025-39964"
+    },
+    {
+      "id": "dbc85131",
+      "source": "CISA KEV",
+      "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "summary": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-imported file page. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’…",
+      "severity": "Low",
+      "vendor": "Linux — Kernel",
+      "cve": "CVE-2026-53266"
     },
     {
       "id": "d184a0d5",
@@ -13034,23 +13058,23 @@
       "cve": "CVE-2022-22947"
     },
     {
-      "id": "47dc9670",
-      "source": "NCSC UK",
-      "title": "Organisational use of Enterprise Connected Devices",
-      "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
-      "date": "2022-05-10",
-      "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "55d2b8f7",
       "source": "NCSC UK",
       "title": "ACD - The Fifth Year",
       "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
       "date": "2022-05-10",
       "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "47dc9670",
+      "source": "NCSC UK",
+      "title": "Organisational use of Enterprise Connected Devices",
+      "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
+      "date": "2022-05-10",
+      "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
