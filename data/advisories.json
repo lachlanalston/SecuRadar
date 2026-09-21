@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-09-21T19:05:50Z",
+  "last_updated": "2026-09-21T22:43:41Z",
   "advisories": [
+    {
+      "id": "0c0e7b2e",
+      "source": "CISA KEV",
+      "title": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-21",
+      "due_date": "2026-09-24",
+      "summary": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow a…",
+      "severity": "Low",
+      "vendor": "Zyxel — GS1900 Series Switches",
+      "cve": "CVE-2026-7273"
+    },
     {
       "id": "1cea3cdb",
       "source": "ASD",
