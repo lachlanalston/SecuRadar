@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-24T18:33:42Z",
+  "last_updated": "2026-09-24T22:00:44Z",
   "advisories": [
     {
       "id": "060e17f9",
@@ -11,6 +11,30 @@
       "severity": "High",
       "vendor": "N/A",
       "cve": "N/A"
+    },
+    {
+      "id": "b10925c5",
+      "source": "CISA KEV",
+      "title": "WSO2 Multiple Products Path Traversal Vulnerability ",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-24",
+      "due_date": "2026-09-27",
+      "summary": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution.  Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud service…",
+      "severity": "Critical",
+      "vendor": "WSO2 — Multiple Products",
+      "cve": "CVE-2026-5430"
+    },
+    {
+      "id": "29a3277c",
+      "source": "CISA KEV",
+      "title": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-24",
+      "due_date": "2026-09-27",
+      "summary": "Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction.  Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guida…",
+      "severity": "Critical",
+      "vendor": "Adobe — Commerce and Magento",
+      "cve": "CVE-2026-71362"
     },
     {
       "id": "6c41b627",
