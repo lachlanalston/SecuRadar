@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-09-25T11:18:45Z",
+  "last_updated": "2026-09-25T15:53:00Z",
   "advisories": [
+    {
+      "id": "68fd9dca",
+      "source": "CISA KEV",
+      "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-25",
+      "due_date": "2026-09-28",
+      "summary": "Mikrotik RouterOS contains an improper enforcement of behavioral workflow vulnerability that could allow an unauthenticated client to open a session channel and send an exec request. This vulnerability can be chained to achieve unauthenticated exploitation of CVE-2026-86060. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requir…",
+      "severity": "Critical",
+      "vendor": "MikroTik — RouterOS",
+      "cve": "CVE-2026-67279"
+    },
+    {
+      "id": "08fb43e0",
+      "source": "CISA KEV",
+      "title": "Microsoft SharePoint Code Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-25",
+      "due_date": "2026-09-28",
+      "summary": "Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unava…",
+      "severity": "Low",
+      "vendor": "Microsoft — SharePoint",
+      "cve": "CVE-2026-65660"
+    },
     {
       "id": "060e17f9",
       "source": "ASD",
