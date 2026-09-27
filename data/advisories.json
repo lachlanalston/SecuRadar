@@ -1,6 +1,41 @@
 {
-  "last_updated": "2026-09-27T20:18:16Z",
+  "last_updated": "2026-09-27T23:16:12Z",
   "advisories": [
+    {
+      "id": "f42e03c9",
+      "source": "ASD",
+      "title": "CRITICAL ALERT: Critical vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway products",
+      "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/critical-vulnerabilities-in-citrix-netscaler-adc-and-citrix-netscaler-gateway-products",
+      "date": "2026-09-27",
+      "summary": "Alert for organisations to implement a high-priority patch addressing new vulnerabilities, under active exploitation in Citrix NetScaler ADC and Citrix NetScaler Gateway products.",
+      "severity": "Critical",
+      "vendor": "Citrix Netscaler Adc And Citrix Netscaler Gateway",
+      "cve": "N/A"
+    },
+    {
+      "id": "7c0c7b78",
+      "source": "CISA KEV",
+      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-27",
+      "due_date": "2026-09-30",
+      "summary": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for remote code execution or denial of service Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for clo…",
+      "severity": "Critical",
+      "vendor": "Citrix — NetScaler",
+      "cve": "CVE-2026-88772"
+    },
+    {
+      "id": "2b1f7af0",
+      "source": "CISA KEV",
+      "title": "Citrix NetScaler Improper Input Validation Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-27",
+      "due_date": "2026-09-30",
+      "summary": "Citrix NetScaler ADC and NetScaler Gateway contain an improper input validation vulnerability that could allow an unauthenticated attacker to execute arbitrary commands. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of …",
+      "severity": "Low",
+      "vendor": "Citrix — NetScaler",
+      "cve": "CVE-2026-88771"
+    },
     {
       "id": "68fd9dca",
       "source": "CISA KEV",
