@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-28T22:25:16Z",
+  "last_updated": "2026-09-29T02:11:01Z",
   "advisories": [
     {
       "id": "f42e03c9",
@@ -39,7 +39,7 @@
     {
       "id": "bb747e1c",
       "source": "ASD",
-      "title": "Protect your organisations’ AI services",
+      "title": "Protect your organisation's AI services",
       "link": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/protect-your-organisations-ai-services",
       "date": "2026-09-25",
       "summary": "Protect access to AI services by securing accounts, credentials and connected systems to reduce the risk of unauthorised use, disruption and data exposure.",
