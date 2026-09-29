@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-09-29T08:53:07Z",
+  "last_updated": "2026-09-29T15:24:22Z",
   "advisories": [
+    {
+      "id": "5d56405b",
+      "source": "CISA KEV",
+      "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-29",
+      "due_date": "2026-10-02",
+      "summary": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavai…",
+      "severity": "Low",
+      "vendor": "Apple — Multiple Products",
+      "cve": "CVE-2026-86950"
+    },
     {
       "id": "f42e03c9",
       "source": "ASD",
