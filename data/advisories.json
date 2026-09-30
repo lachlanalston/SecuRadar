@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-09-30T16:40:57Z",
+  "last_updated": "2026-09-30T21:13:56Z",
   "advisories": [
+    {
+      "id": "de54d667",
+      "source": "CISA KEV",
+      "title": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-09-30",
+      "due_date": "2026-10-03",
+      "summary": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Fol…",
+      "severity": "Low",
+      "vendor": "Cisco — Catalyst SD-WAN Manager",
+      "cve": "CVE-2026-76504"
+    },
     {
       "id": "5d56405b",
       "source": "CISA KEV",
