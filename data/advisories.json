@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-10-01T19:41:56Z",
+  "last_updated": "2026-10-01T23:42:37Z",
   "advisories": [
+    {
+      "id": "0ac26dc9",
+      "source": "CISA KEV",
+      "title": "Fortinet FortiMail Path Traversal Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-01",
+      "due_date": "2026-10-04",
+      "summary": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes)…",
+      "severity": "Low",
+      "vendor": "Fortinet — FortiMail",
+      "cve": "CVE-2026-104286"
+    },
     {
       "id": "de54d667",
       "source": "CISA KEV",
