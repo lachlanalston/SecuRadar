@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-10-02T10:39:39Z",
+  "last_updated": "2026-10-02T16:30:47Z",
   "advisories": [
+    {
+      "id": "a0ad9c91",
+      "source": "CISA KEV",
+      "title": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-02",
+      "due_date": "2026-10-05",
+      "summary": "Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud s…",
+      "severity": "Low",
+      "vendor": "Zammad GmbH — Zammad",
+      "cve": "CVE-2026-102490"
+    },
+    {
+      "id": "2e36dacb",
+      "source": "CISA KEV",
+      "title": "Zammad GmbH Zammad Session Fixation Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-02",
+      "due_date": "2026-10-05",
+      "summary": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue u…",
+      "severity": "Critical",
+      "vendor": "Zammad GmbH — Zammad",
+      "cve": "CVE-2026-102489"
+    },
     {
       "id": "0ac26dc9",
       "source": "CISA KEV",
