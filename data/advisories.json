@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-10-04T17:59:52Z",
+  "last_updated": "2026-10-04T21:14:52Z",
   "advisories": [
+    {
+      "id": "43ae81b9",
+      "source": "CISA KEV",
+      "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-04",
+      "due_date": "2026-10-07",
+      "summary": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow appl…",
+      "severity": "Low",
+      "vendor": "Citrix — NetScaler",
+      "cve": "CVE-2026-88779"
+    },
     {
       "id": "a0ad9c91",
       "source": "CISA KEV",
