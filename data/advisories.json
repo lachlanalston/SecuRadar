@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-07T00:54:36Z",
+  "last_updated": "2026-10-07T06:53:10Z",
   "advisories": [
     {
       "id": "43ae81b9",
@@ -36,6 +36,17 @@
       "severity": "Critical",
       "vendor": "Zammad GmbH — Zammad",
       "cve": "CVE-2026-102489"
+    },
+    {
+      "id": "e6bd88a7",
+      "source": "ASD",
+      "title": "<a href=\"https://www.cyber.gov.au/alert/critical-vulnerabilities-in-citrix-netscaler-adc-and-citrix-netscaler-gateway-products\" hreflang=\"en\">Critical vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway products</a>",
+      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/alert/critical-vulnerabilities-in-citrix-netscaler-adc-and-citrix-netscaler-gateway-products_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
+      "date": "2026-10-01",
+      "summary": "Alert for organisations to implement a high-priority patch addressing new vulnerabilities, under active exploitation in Citrix NetScaler ADC and Citrix NetScaler Gateway products.",
+      "severity": "Critical",
+      "vendor": "Citrix Netscaler Adc And Citrix Netscaler Gateway",
+      "cve": "N/A"
     },
     {
       "id": "0ac26dc9",
@@ -98,23 +109,12 @@
       "cve": "CVE-2026-88771"
     },
     {
-      "id": "27a1a5a8",
+      "id": "f9e41578",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/news/take-a-second-to-stay-secure-this-cyber-security-action-month\" hreflang=\"en\">Take a second to stay secure this Cyber Security Action Month</a>",
-      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/news/take-a-second-to-stay-secure-this-cyber-security-action-month_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
+      "title": "Protect your organisations’ AI services",
+      "link": "https://www.cyber.gov.au/advisory/protect-your-organisations-ai-services",
       "date": "2026-09-25",
-      "summary": "Move from cyber awareness to action.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "daad9d32",
-      "source": "ASD",
-      "title": "Take a second to stay secure this Cyber Security Action Month",
-      "link": "https://www.cyber.gov.au/news/take-a-second-to-stay-secure-this-cyber-security-action-month",
-      "date": "2026-09-25",
-      "summary": "Take a second to stay secure this Cyber Security Action Month georgia.maguir… Fri, 25 Sep 2026 - 11:33 Strapline Move from cyber awareness to action.",
+      "summary": "Protect your organisations’ AI services Summary (at a glance) Malicious cyber actors are obtaining unauthorised access to organisations' AI services through compromised credentials, authentication tokens, user sessions, vulnerable applications and third-party access arrangements. This access can be used to generate harmful content, consume service credits, disrupt legitimate work and access connected systems or data. Organisations should treat access to advanced AI services as a security-sensiti…",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
@@ -156,6 +156,17 @@
       "cve": "CVE-2026-87902"
     },
     {
+      "id": "26c72932",
+      "source": "ASD",
+      "title": "<a href=\"https://www.cyber.gov.au/alert/risks-of-ai-misalignment-to-australian-organisations\" hreflang=\"en\">Risks of AI misalignment to Australian organisations</a>",
+      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/alert/risks-of-ai-misalignment-to-australian-organisations_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
+      "date": "2026-09-24",
+      "summary": "Alert on the risks of AI misalignment to Australian organisations, with mitigation advice and guidance on secure AI practices for organisations.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "b10925c5",
       "source": "CISA KEV",
       "title": "WSO2 Multiple Products Path Traversal Vulnerability ",
@@ -180,23 +191,12 @@
       "cve": "CVE-2026-71362"
     },
     {
-      "id": "f10fcb63",
+      "id": "27908a3e",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/news/asd-releases-new-guidance-on-the-agentic-ai-harnesses\" hreflang=\"en\">ASD releases new guidance on the agentic AI harnesses</a>",
-      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/news/asd-releases-new-guidance-on-the-agentic-ai-harnesses_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
+      "title": "North Korean \"WaterPlum,\" commonly referred to as “Contagious Interview,” cyber actor group targeting IT professionals",
+      "link": "https://www.cyber.gov.au/advisory/north-korean-waterplum-commonly-referred-to-as-contagious-interview-cyber-actor-group-targeting-it-professionals",
       "date": "2026-09-22",
-      "summary": "Understand how the agentic AI harness influences security, governance and operational risk in agentic AI systems.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "576d5325",
-      "source": "ASD",
-      "title": "ASD releases new guidance on the agentic AI harnesses",
-      "link": "https://www.cyber.gov.au/news/asd-releases-new-guidance-on-the-agentic-ai-harnesses",
-      "date": "2026-09-22",
-      "summary": "ASD releases new guidance on the agentic AI harnesses emily.mills Tue, 22 Sep 2026 - 10:50 Strapline Understand how the agentic AI harness influences security, governance and operational risk in agentic AI systems.",
+      "summary": "North Korean \"WaterPlum,\" commonly referred to as “Contagious Interview,” cyber actor group targeting IT professionals Summary (at a glance) This advisory explains how the North Korean cyber actor group WaterPlum (also known as Contagious Interview) targets IT professionals through fake job offers, technical interviews, and malicious coding tests. They do this to steal cryptocurrency, credentials, and sensitive information. North Korean IT workers use false identities, remote \"laptop farms,\" and…",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
@@ -248,6 +248,17 @@
       "severity": "Low",
       "vendor": "Check Point — Multiple Products",
       "cve": "CVE-2026-85102"
+    },
+    {
+      "id": "351c069b",
+      "source": "ASD",
+      "title": "Agentic AI harnesses",
+      "link": "https://www.cyber.gov.au/advisory/agentic-ai-harnesses",
+      "date": "2026-09-21",
+      "summary": "Agentic AI harnesses Summary (at a glance) The agentic AI harness is the software layer that connects large language models (LLMs) to organisational data, tools and systems. This publication explains why the harness is a critical component of agentic AI and how it affects security, governance and operational risk. It outlines key risks and the controls organisations can apply, including least-privilege access, monitoring and human oversight. Written for executive decision-makers, chief informati…",
+      "severity": "Critical",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "0c0e7b2e",
@@ -345,28 +356,6 @@
       "cve": "CVE-2026-87886"
     },
     {
-      "id": "ccaeb8ba",
-      "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/news/updated-guidance-on-detecting-and-mitigating-active-directory-compromises\" hreflang=\"en\">Updated guidance on detecting and mitigating Active Directory compromises</a>",
-      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/news/updated-guidance-on-detecting-and-mitigating-active-directory-compromises_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
-      "date": "2026-09-15",
-      "summary": "Learn how malicious actors target Microsoft Active Directory environments, why they are critical to secure and how to reduce the likelihood of cyber attacks.",
-      "severity": "Critical",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "12b0ea79",
-      "source": "ASD",
-      "title": "Updated guidance on detecting and mitigating Active Directory compromises",
-      "link": "https://www.cyber.gov.au/news/updated-guidance-on-detecting-and-mitigating-active-directory-compromises",
-      "date": "2026-09-15",
-      "summary": "Updated guidance on detecting and mitigating Active Directory compromises emily.mills Tue, 15 Sep 2026 - 20:19 Strapline Learn how malicious actors target Microsoft Active Directory environments, why they are critical to secure and how to reduce the likelihood of cyber attacks.",
-      "severity": "Critical",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "8da8d081",
       "source": "CISA KEV",
       "title": "Cisco Secure Email Gateway SQL Injection Vulnerability",
@@ -451,6 +440,17 @@
       "cve": "CVE-2026-67277"
     },
     {
+      "id": "05d90444",
+      "source": "ASD",
+      "title": "<a href=\"https://www.cyber.gov.au/alert/active-exploitation-of-adobe-commerce-and-magento-open-source-vulnerability\" hreflang=\"en\">Active exploitation of Adobe Commerce and Magento Open Source vulnerability</a>",
+      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/alert/active-exploitation-of-adobe-commerce-and-magento-open-source-vulnerability_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
+      "date": "2026-09-09",
+      "summary": "Alert on active exploitation of a critical vulnerability in Adobe Commerce and Magento Open Source.",
+      "severity": "Critical",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "357bf85f",
       "source": "CISA KEV",
       "title": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
@@ -499,24 +499,35 @@
       "cve": "CVE-2026-20079"
     },
     {
-      "id": "7e8835aa",
+      "id": "a3a4101f",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/news/digital-camouflage-how-crypters-hide-malware\" hreflang=\"en\">Digital camouflage: how crypters hide malware</a>",
-      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/news/digital-camouflage-how-crypters-hide-malware_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
+      "title": "<a href=\"https://www.cyber.gov.au/alert/critical-vulnerabilities-in-citrix-netscaler-application-delivery-controller-adc-and-citrix-netscaler-gateway-products\" hreflang=\"en\">Critical vulnerabilities in Citrix NetScaler Application Delivery Controller (ADC) and Citrix NetScaler Gateway products</a>",
+      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/alert/critical-vulnerabilities-in-citrix-netscaler-application-delivery-controller-adc-and-citrix-netscaler-gateway-products_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
       "date": "2026-09-08",
-      "summary": "Learn how crypters help malware evade detection, the risks they create, and the steps you can take to strengthen your cyber defences.",
+      "summary": "Alert on critical vulnerabilities affecting Citrix NetScaler ADC and Gateway products. Assess exposure and update all affected products.",
+      "severity": "Critical",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "8fd8a138",
+      "source": "ASD",
+      "title": "Digital camouflage: crypters make malware undetectable",
+      "link": "https://www.cyber.gov.au/advisory/digital-camouflage-crypters-make-malware-undetectable",
+      "date": "2026-09-08",
+      "summary": "Digital camouflage: crypters make malware undetectable Summary (at a glance) This advisory explains how crypter services help cybercriminals make malware harder to detect, increasing the chances that malicious software can bypass security tools. It outlines how crypter services operate as a business, making advanced malware-evasion techniques more accessible to cybercriminals with limited technical skills. The advisory also provides an overview of how crypter software works, including its key co…",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
     },
     {
-      "id": "e0afe34a",
+      "id": "d77a94f4",
       "source": "ASD",
-      "title": "Digital camouflage: how crypters hide malware",
-      "link": "https://www.cyber.gov.au/news/digital-camouflage-how-crypters-hide-malware",
+      "title": "Russian state-supported cyber actors conduct phishing campaign targeting users of Zimbra Collaboration Suite",
+      "link": "https://www.cyber.gov.au/advisory/russian-state-supported-cyber-actors-conduct-phishing-campaign-targeting-users-of-zimbra-collaboration-suite",
       "date": "2026-09-08",
-      "summary": "Digital camouflage: how crypters hide malware emily.mills Tue, 8 Sep 2026 - 12:46 Strapline Learn how crypters help malware evade detection, the risks they create, and the steps you can take to strengthen your cyber defences.",
-      "severity": "Medium",
+      "summary": "Russian state-supported cyber actors conduct phishing campaign targeting users of Zimbra Collaboration Suite Summary (at a glance) Russian state-sponsored cyber actors are conducting phishing campaigns targeting users of Zimbra Collaboration Suite. These campaigns aim to steal credentials and gain unauthorised access to email accounts and organisational networks. This advisory outlines the tactics used by the threat actors and provides practical mitigation measures to reduce the risk of compromi…",
+      "severity": "Critical",
       "vendor": "N/A",
       "cve": "N/A"
     },
@@ -581,145 +592,13 @@
       "cve": "CVE-2026-85046"
     },
     {
-      "id": "09c3cc97",
+      "id": "1ab87817",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/news/consultation-on-evolution-of-essential-eight\" hreflang=\"en\">Consultation on evolution of Essential Eight</a>",
-      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/news/consultation-on-evolution-of-essential-eight_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
+      "title": "<a href=\"https://www.cyber.gov.au/node/1215\" hreflang=\"en\">Active exploitation of a software development platform within Australia</a>",
+      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/node/1215_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
       "date": "2026-09-02",
-      "summary": "We’re consulting ASD network partners on evolving the Essential Eight cyber security framework to increase flexibility and support stronger cyber resilience.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "4cf5518a",
-      "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/news/joint-advisory-on-russian-cyber-actors-exploiting-zimbra-collaboration-suite\" hreflang=\"en\">Joint advisory on Russian cyber actors exploiting Zimbra Collaboration Suite</a>",
-      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/news/joint-advisory-on-russian-cyber-actors-exploiting-zimbra-collaboration-suite_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
-      "date": "2026-09-02",
-      "summary": "This joint advisory outlines an ongoing campaign by Russian state-sponsored cyber actors exploiting Zimbra Collaboration Suite to steal sensitive email data and maintain access.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "73fdedd4",
-      "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/news/joint-advisory-released-on-china-nexus-covert-networks-of-compromised-devices\" hreflang=\"en\">Joint advisory released on China-nexus covert networks of compromised devices</a>",
-      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/news/joint-advisory-released-on-china-nexus-covert-networks-of-compromised-devices_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
-      "date": "2026-09-02",
-      "summary": "This advisory outlines the shift in tactics, techniques and procedures used by China-nexus cyber actors to target organisations, as well as recommended mitigations.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "d52afdae",
-      "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/news/new-advice-to-help-organisations-isolate-their-vital-ot-and-enabling-systems-from-other-networks\" hreflang=\"en\">New advice to help organisations isolate their vital OT and enabling systems from other networks</a>",
-      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/news/new-advice-to-help-organisations-isolate-their-vital-ot-and-enabling-systems-from-other-networks_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
-      "date": "2026-09-02",
-      "summary": "Learn how to isolate vital OT and enabling systems from all other networks. This proactive measure can disrupt adversaries' ability to carry out cyber attacks, contain attacks already in progress, and maintain essential services during periods of crisis or service disruption.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "2f87c62b",
-      "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/news/new-ai-frontier-cyber-threat-guidance-for-boards-of-directors\" hreflang=\"en\">New AI frontier cyber threat guidance for boards of directors</a>",
-      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/news/new-ai-frontier-cyber-threat-guidance-for-boards-of-directors_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
-      "date": "2026-09-02",
-      "summary": "Questions for boards to ask about AI cyber threats.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "df59630a",
-      "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/news/updated-guidance-on-the-2026-minimum-elements-for-a-software-bill-of-materials\" hreflang=\"en\">Updated guidance on the 2026 Minimum Elements for a Software Bill of Materials</a>",
-      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/news/updated-guidance-on-the-2026-minimum-elements-for-a-software-bill-of-materials_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
-      "date": "2026-09-02",
-      "summary": "We've joined international partners to update SBOM minimum elements guidance, helping organisations improve software transparency and supply chain security.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "f0b8dd86",
-      "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/news/using-ai-to-strengthen-cyber-defence\" hreflang=\"en\">Using AI to strengthen cyber defence</a>",
-      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/news/using-ai-to-strengthen-cyber-defence_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
-      "date": "2026-09-02",
-      "summary": "Our latest publication explains how and where organisations can use AI to strengthen their cyber security while mitigating associated risks.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "77f23443",
-      "source": "ASD",
-      "title": "Consultation on evolution of Essential Eight",
-      "link": "https://www.cyber.gov.au/news/consultation-on-evolution-of-essential-eight",
-      "date": "2026-09-02",
-      "summary": "Consultation on evolution of Essential Eight Wed, 2 Sep 2026 - 12:05 Strapline We’re consulting ASD network partners on evolving the Essential Eight cyber security framework to increase flexibility and support stronger cyber resilience. Pre migration title Consultation on evolution of Essential Eight",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "6ab62712",
-      "source": "ASD",
-      "title": "Joint advisory on Russian cyber actors exploiting Zimbra Collaboration Suite",
-      "link": "https://www.cyber.gov.au/news/joint-advisory-on-russian-cyber-actors-exploiting-zimbra-collaboration-suite",
-      "date": "2026-09-02",
-      "summary": "Joint advisory on Russian cyber actors exploiting Zimbra Collaboration Suite Wed, 2 Sep 2026 - 12:05 Strapline This joint advisory outlines an ongoing campaign by Russian state-sponsored cyber actors exploiting Zimbra Collaboration Suite to steal sensitive email data and maintain access. Pre migration title Joint advisory on Russian cyber actors exploiting Zimbra Collaboration Suite",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "00ed5cf0",
-      "source": "ASD",
-      "title": "Joint advisory released on China-nexus covert networks of compromised devices",
-      "link": "https://www.cyber.gov.au/news/joint-advisory-released-on-china-nexus-covert-networks-of-compromised-devices",
-      "date": "2026-09-02",
-      "summary": "Joint advisory released on China-nexus covert networks of compromised devices Wed, 2 Sep 2026 - 12:05 Strapline This advisory outlines the shift in tactics, techniques and procedures used by China-nexus cyber actors to target organisations, as well as recommended mitigations. Pre migration title Joint advisory released on China-nexus covert networks of compromised devices",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "1f94989e",
-      "source": "ASD",
-      "title": "New advice to help organisations isolate their vital OT and enabling systems from other networks",
-      "link": "https://www.cyber.gov.au/news/new-advice-to-help-organisations-isolate-their-vital-ot-and-enabling-systems-from-other-networks",
-      "date": "2026-09-02",
-      "summary": "New advice to help organisations isolate their vital OT and enabling systems from other networks Wed, 2 Sep 2026 - 12:05 Strapline Learn how to isolate vital OT and enabling systems from all other networks. This proactive measure can disrupt adversaries' ability to carry out cyber attacks, contain attacks already in progress, and maintain essential services during periods of crisis or service disruption. Pre migration title New advice to help organisations isolate their vital OT and enabling sys…",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "3931bb3f",
-      "source": "ASD",
-      "title": "New AI frontier cyber threat guidance for boards of directors",
-      "link": "https://www.cyber.gov.au/news/new-ai-frontier-cyber-threat-guidance-for-boards-of-directors",
-      "date": "2026-09-02",
-      "summary": "New AI frontier cyber threat guidance for boards of directors Wed, 2 Sep 2026 - 12:05 Strapline Questions for boards to ask about AI cyber threats. Pre migration title New AI frontier cyber threat guidance for boards of directors",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "e818e0e8",
-      "source": "ASD",
-      "title": "Updated guidance on the 2026 Minimum Elements for a Software Bill of Materials",
-      "link": "https://www.cyber.gov.au/news/updated-guidance-on-the-2026-minimum-elements-for-a-software-bill-of-materials",
-      "date": "2026-09-02",
-      "summary": "Updated guidance on the 2026 Minimum Elements for a Software Bill of Materials Wed, 2 Sep 2026 - 12:05 Strapline We've joined international partners to update SBOM minimum elements guidance, helping organisations improve software transparency and supply chain security. Pre migration title Updated guidance on the 2026 Minimum Elements for a Software Bill of Materials",
-      "severity": "Medium",
+      "summary": "Alert on actively exploited vulnerabilities affecting TeamCity On-Premise servers. Assess exposure and apply vendor mitigations for CVE 2026 63077 (Critical, 9.8).",
+      "severity": "Critical",
       "vendor": "N/A",
       "cve": "N/A"
     },
@@ -952,6 +831,17 @@
       "cve": "CVE-2026-60004"
     },
     {
+      "id": "63ef3ba2",
+      "source": "ASD",
+      "title": "<a href=\"https://www.cyber.gov.au/alert/active-exploitation-of-a-software-development-platform-within-australia\" hreflang=\"en\">Active exploitation of a software development platform within Australia</a>",
+      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/alert/active-exploitation-of-a-software-development-platform-within-australia_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
+      "date": "2026-08-24",
+      "summary": "Alert on actively exploited vulnerabilities affecting TeamCity On-Premise servers. Assess exposure and apply vendor mitigations for CVE 2026 63077 (Critical, 9.8).",
+      "severity": "Critical",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
       "id": "55eecf6f",
       "source": "CISA KEV",
       "title": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
@@ -998,6 +888,17 @@
       "severity": "Critical",
       "vendor": "TrueConf — Server",
       "cve": "CVE-2026-72529"
+    },
+    {
+      "id": "9800ac76",
+      "source": "ASD",
+      "title": "<a href=\"https://www.cyber.gov.au/node/1213\" hreflang=\"en\">Active exploitation of remote monitoring and management platform within Australia</a>",
+      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/node/1213_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
+      "date": "2026-08-19",
+      "summary": "Alert on active exploitation in Australia of N-able and N-central vulnerabilities CVE-2026-18556 and CVE-2026-18577. Assess exposure and apply mitigations.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "CVE-2026-18556, CVE-2026-18577"
     },
     {
       "id": "89df6bec",
@@ -1324,17 +1225,6 @@
       "cve": "CVE-2026-39808"
     },
     {
-      "id": "40e6612e",
-      "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/news/new-guidance-helps-organisations-assess-vendor-readiness-for-post-quantum-cryptography\" hreflang=\"en\">New guidance helps organisations assess vendor readiness for post-quantum cryptography</a>",
-      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/news/new-guidance-helps-organisations-assess-vendor-readiness-for-post-quantum-cryptography_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
-      "date": "2026-07-15",
-      "summary": "Learn how to evaluate vendor readiness for post-quantum cryptography and support your organisation’s transition to quantum-resistant security.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "e2d3c77c",
       "source": "CISA KEV",
       "title": "Oracle E-Business Suite Improper Privilege Management Vulnerability",
@@ -1407,12 +1297,12 @@
       "cve": "CVE-2026-15410"
     },
     {
-      "id": "765f4801",
+      "id": "797d69a7",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/news/joint-advisory-on-the-exploitation-of-network-devices-by-russian-state-sponsored-cyber-actors\" hreflang=\"en\">Joint advisory on the exploitation of network devices by Russian state-sponsored cyber actors</a>",
-      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/news/joint-advisory-on-the-exploitation-of-network-devices-by-russian-state-sponsored-cyber-actors_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
+      "title": "Improve Router Hygiene to Protect Against Russian State-Sponsored Targeting",
+      "link": "https://www.cyber.gov.au/advisory/improve-router-hygiene-to-protect-against-russian-state-sponsored-targeting",
       "date": "2026-07-13",
-      "summary": "This joint advisory outlines a persistent and enduring campaign of malicious cyber activity carried out by Russian state-sponsored cyber actors.",
+      "summary": "Improve Router Hygiene to Protect Against Russian State-Sponsored Targeting Summary (at a glance) This advisory provides information on cyber activity linked to Russian Federal Security Service (FSB) Centre 16 cyber actors. It explains how cyber actors are targeting internet-facing network devices by exploiting exposed management services, weak security settings, and known vulnerabilities. Learn how these weaknesses may be used to access network information and user credentials. This guidance is…",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
@@ -1452,6 +1342,17 @@
       "severity": "Low",
       "vendor": "iCagenda — iCagenda",
       "cve": "CVE-2026-48939"
+    },
+    {
+      "id": "caa00bfa",
+      "source": "ASD",
+      "title": "<a href=\"https://www.cyber.gov.au/alert/large-scale-exploitation-campaign-targeting-website-content-management-systems-cms\" hreflang=\"en\">Large-scale exploitation campaign targeting website content management systems (CMS)</a>",
+      "link": "https://www.cyber.gov.au/__%3C%21--%20THEME%20DEBUG%20--%3E_%3C%21--%20THEME%20HOOK%3A%20%27views_view_field%27%20--%3E_%3C%21--%20BEGIN%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E_/alert/large-scale-exploitation-campaign-targeting-website-content-management-systems-cms_%3C%21--%20END%20OUTPUT%20from%20%27core/modules/views/templates/views-view-field.html.twig%27%20--%3E__",
+      "date": "2026-07-09",
+      "summary": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) is tracking a large-scale exploitation campaign targeting various vulnerabilities in web content management systems (CMS) globally, including in Australia.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
     },
     {
       "id": "3a9e0ffd",
@@ -13429,23 +13330,23 @@
       "cve": "CVE-2022-22947"
     },
     {
-      "id": "55d2b8f7",
-      "source": "NCSC UK",
-      "title": "ACD - The Fifth Year",
-      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
-      "date": "2022-05-10",
-      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "47dc9670",
       "source": "NCSC UK",
       "title": "Organisational use of Enterprise Connected Devices",
       "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
       "date": "2022-05-10",
       "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "55d2b8f7",
+      "source": "NCSC UK",
+      "title": "ACD - The Fifth Year",
+      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
+      "date": "2022-05-10",
+      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
