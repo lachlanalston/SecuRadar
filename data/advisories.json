@@ -1,6 +1,66 @@
 {
-  "last_updated": "2026-10-08T13:55:04Z",
+  "last_updated": "2026-10-08T19:41:07Z",
   "advisories": [
+    {
+      "id": "15e63bdf",
+      "source": "CISA KEV",
+      "title": " ISC BIND Data Processing Errors Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-08",
+      "due_date": "2026-10-11",
+      "summary": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are u…",
+      "severity": "Low",
+      "vendor": "ISC — BIND",
+      "cve": "CVE-2015-5477"
+    },
+    {
+      "id": "ea204ced",
+      "source": "CISA KEV",
+      "title": "Apache Struts Command Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-08",
+      "due_date": "2026-10-11",
+      "summary": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue…",
+      "severity": "Low",
+      "vendor": "Apache — Struts",
+      "cve": "CVE-2016-3081"
+    },
+    {
+      "id": "40d18ad2",
+      "source": "CISA KEV",
+      "title": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-08",
+      "due_date": "2026-10-11",
+      "summary": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution.  Required action: Apply mitigations in accordance with vendor i…",
+      "severity": "Critical",
+      "vendor": "Strapi — Strapi",
+      "cve": "CVE-2023-22894"
+    },
+    {
+      "id": "6b2c3809",
+      "source": "CISA KEV",
+      "title": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-08",
+      "due_date": "2026-10-11",
+      "summary": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontin…",
+      "severity": "Critical",
+      "vendor": "ONLYOFFICE — Docs",
+      "cve": "CVE-2021-3199"
+    },
+    {
+      "id": "789085a1",
+      "source": "CISA KEV",
+      "title": "ProFTPD Improper Access Control Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-08",
+      "due_date": "2026-10-11",
+      "summary": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of…",
+      "severity": "Low",
+      "vendor": "ProFTPD — ProFTPD",
+      "cve": "CVE-2015-3306"
+    },
     {
       "id": "43ae81b9",
       "source": "CISA KEV",
@@ -78,7 +138,7 @@
       "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2026-09-29",
-      "due_date": "2026-10-02",
+      "due_date": "2026-10-13",
       "summary": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavai…",
       "severity": "Low",
       "vendor": "Apple — Multiple Products",
@@ -788,7 +848,7 @@
       "title": "Linux Kernel Out-of-Bounds Write Vulnerability",
       "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "date": "2026-08-26",
-      "due_date": "2026-09-09",
+      "due_date": "2026-08-29",
       "summary": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the…",
       "severity": "Low",
       "vendor": "Linux — Kernel",
@@ -13330,23 +13390,23 @@
       "cve": "CVE-2022-22947"
     },
     {
-      "id": "47dc9670",
-      "source": "NCSC UK",
-      "title": "Organisational use of Enterprise Connected Devices",
-      "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
-      "date": "2022-05-10",
-      "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "55d2b8f7",
       "source": "NCSC UK",
       "title": "ACD - The Fifth Year",
       "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
       "date": "2022-05-10",
       "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "47dc9670",
+      "source": "NCSC UK",
+      "title": "Organisational use of Enterprise Connected Devices",
+      "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
+      "date": "2022-05-10",
+      "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
