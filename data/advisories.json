@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-10-08T19:41:07Z",
+  "last_updated": "2026-10-09T00:09:26Z",
   "advisories": [
+    {
+      "id": "41bc6c9a",
+      "source": "ASD",
+      "title": "<a href=\"https://www.cyber.gov.au/advisory/chinese-government-linked-cyber-threat-actors-combine-automated-and-hands-on-hacking-tools-to-steal-sensitive-data\" hreflang=\"en\">Chinese government-linked cyber threat actors combine automated and hands-on hacking tools to steal sensitive data</a>",
+      "link": "https://www.cyber.gov.au/advisory/chinese-government-linked-cyber-threat-actors-combine-automated-and-hands-on-hacking-tools-to-steal-sensitive-data",
+      "date": "2026-10-08",
+      "summary": "Learn how Chinese state-linked cyber actors steal sensitive data and discover practical steps to detect, prevent and respond to attacks.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "15e63bdf",
       "source": "CISA KEV",
@@ -13390,23 +13401,23 @@
       "cve": "CVE-2022-22947"
     },
     {
-      "id": "55d2b8f7",
-      "source": "NCSC UK",
-      "title": "ACD - The Fifth Year",
-      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
-      "date": "2022-05-10",
-      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "47dc9670",
       "source": "NCSC UK",
       "title": "Organisational use of Enterprise Connected Devices",
       "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
       "date": "2022-05-10",
       "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "55d2b8f7",
+      "source": "NCSC UK",
+      "title": "ACD - The Fifth Year",
+      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
+      "date": "2022-05-10",
+      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
