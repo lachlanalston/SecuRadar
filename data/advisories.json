@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-11T19:56:40Z",
+  "last_updated": "2026-10-11T23:31:15Z",
   "advisories": [
     {
       "id": "41bc6c9a",
@@ -1413,17 +1413,6 @@
       "severity": "Low",
       "vendor": "iCagenda — iCagenda",
       "cve": "CVE-2026-48939"
-    },
-    {
-      "id": "da810cdc",
-      "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/alert/large-scale-exploitation-campaign-targeting-website-content-management-systems-cms\" hreflang=\"en\">Large-scale exploitation campaign targeting website content management systems (CMS)</a>",
-      "link": "https://www.cyber.gov.au/alert/large-scale-exploitation-campaign-targeting-website-content-management-systems-cms",
-      "date": "2026-07-09",
-      "summary": "The Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) is tracking a large-scale exploitation campaign targeting various vulnerabilities in web content management systems (CMS) globally, including in Australia.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "3a9e0ffd",
