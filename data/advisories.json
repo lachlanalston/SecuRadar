@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-13T17:43:01Z",
+  "last_updated": "2026-10-13T22:21:32Z",
   "advisories": [
     {
       "id": "7ef15f21",
@@ -12,6 +12,18 @@
       "severity": "Low",
       "vendor": "Ivanti — Connect Secure",
       "cve": "CVE-2026-104935"
+    },
+    {
+      "id": "4f0da79c",
+      "source": "CISA KEV",
+      "title": "Microsoft Windows Command Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-13",
+      "due_date": "2026-10-16",
+      "summary": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitiga…",
+      "severity": "Low",
+      "vendor": "Microsoft — Windows",
+      "cve": "CVE-2026-96951"
     },
     {
       "id": "41bc6c9a",
