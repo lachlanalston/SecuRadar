@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-10-13T10:10:32Z",
+  "last_updated": "2026-10-13T17:43:01Z",
   "advisories": [
+    {
+      "id": "7ef15f21",
+      "source": "CISA KEV",
+      "title": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-13",
+      "due_date": "2026-10-16",
+      "summary": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product…",
+      "severity": "Low",
+      "vendor": "Ivanti — Connect Secure",
+      "cve": "CVE-2026-104935"
+    },
     {
       "id": "41bc6c9a",
       "source": "ASD",
