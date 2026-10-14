@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-10-14T01:19:28Z",
+  "last_updated": "2026-10-14T06:30:43Z",
   "advisories": [
+    {
+      "id": "fdea4182",
+      "source": "ASD",
+      "title": "Protecting operational technology and edge devices",
+      "link": "https://www.cyber.gov.au/alert/protecting-operational-technology-and-edge-devices",
+      "date": "2026-10-14",
+      "summary": "Alert on the cyber security risks to operational technology (OT), including refrigeration and cooling technology, with mitigation advice and guidance for businesses and organisations that operate this technology.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "7ef15f21",
       "source": "CISA KEV",
@@ -28,7 +39,7 @@
     {
       "id": "41bc6c9a",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/advisory/chinese-government-linked-cyber-threat-actors-combine-automated-and-hands-on-hacking-tools-to-steal-sensitive-data\" hreflang=\"en\">Chinese government-linked cyber threat actors combine automated and hands-on hacking tools to steal sensitive data</a>",
+      "title": "Chinese government-linked cyber threat actors combine automated and hands-on hacking tools to steal sensitive data",
       "link": "https://www.cyber.gov.au/advisory/chinese-government-linked-cyber-threat-actors-combine-automated-and-hands-on-hacking-tools-to-steal-sensitive-data",
       "date": "2026-10-08",
       "summary": "Learn how Chinese state-linked cyber actors steal sensitive data and discover practical steps to detect, prevent and respond to attacks.",
@@ -135,7 +146,7 @@
     {
       "id": "deafc2b0",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/alert/critical-vulnerabilities-in-citrix-netscaler-adc-and-citrix-netscaler-gateway-products\" hreflang=\"en\">Critical vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway products</a>",
+      "title": "Critical vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway products",
       "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-citrix-netscaler-adc-and-citrix-netscaler-gateway-products",
       "date": "2026-10-01",
       "summary": "Alert for organisations to implement a high-priority patch addressing new vulnerabilities, under active exploitation in Citrix NetScaler ADC and Citrix NetScaler Gateway products.",
@@ -206,7 +217,7 @@
     {
       "id": "f9e41578",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/advisory/protect-your-organisations-ai-services\" hreflang=\"en\">Protect your organisations’ AI services</a>",
+      "title": "Protect your organisations’ AI services",
       "link": "https://www.cyber.gov.au/advisory/protect-your-organisations-ai-services",
       "date": "2026-09-25",
       "summary": "Protect access to AI services by securing accounts, credentials and connected systems to reduce the risk of unauthorised use, disruption and data exposure.",
@@ -253,7 +264,7 @@
     {
       "id": "cbf463e3",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/alert/risks-of-ai-misalignment-to-australian-organisations\" hreflang=\"en\">Risks of AI misalignment to Australian organisations</a>",
+      "title": "Risks of AI misalignment to Australian organisations",
       "link": "https://www.cyber.gov.au/alert/risks-of-ai-misalignment-to-australian-organisations",
       "date": "2026-09-24",
       "summary": "Alert on the risks of AI misalignment to Australian organisations, with mitigation advice and guidance on secure AI practices for organisations.",
@@ -288,7 +299,7 @@
     {
       "id": "27908a3e",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/advisory/north-korean-waterplum-commonly-referred-to-as-contagious-interview-cyber-actor-group-targeting-it-professionals\" hreflang=\"en\">North Korean \"WaterPlum,\" commonly referred to as “Contagious Interview,” cyber actor group targeting IT professionals</a>",
+      "title": "North Korean \"WaterPlum,\" commonly referred to as “Contagious Interview,” cyber actor group targeting IT professionals",
       "link": "https://www.cyber.gov.au/advisory/north-korean-waterplum-commonly-referred-to-as-contagious-interview-cyber-actor-group-targeting-it-professionals",
       "date": "2026-09-22",
       "summary": "A joint cyber security advisory on North Korean threat actors targeting IT professionals through fake jobs, malware and cryptocurrency theft.",
@@ -347,7 +358,7 @@
     {
       "id": "351c069b",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/advisory/agentic-ai-harnesses\" hreflang=\"en\">Agentic AI harnesses</a>",
+      "title": "Agentic AI harnesses",
       "link": "https://www.cyber.gov.au/advisory/agentic-ai-harnesses",
       "date": "2026-09-21",
       "summary": "Learn how an agentic AI harness influences security, governance and operational risk, and apply practical measures to adopt agentic AI securely.",
@@ -537,7 +548,7 @@
     {
       "id": "1f9f527d",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/alert/active-exploitation-of-adobe-commerce-and-magento-open-source-vulnerability\" hreflang=\"en\">Active exploitation of Adobe Commerce and Magento Open Source vulnerability</a>",
+      "title": "Active exploitation of Adobe Commerce and Magento Open Source vulnerability",
       "link": "https://www.cyber.gov.au/alert/active-exploitation-of-adobe-commerce-and-magento-open-source-vulnerability",
       "date": "2026-09-09",
       "summary": "Alert on active exploitation of a critical vulnerability in Adobe Commerce and Magento Open Source.",
@@ -596,18 +607,18 @@
     {
       "id": "67916f51",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/alert/critical-vulnerabilities-in-citrix-netscaler-application-delivery-controller-adc-and-citrix-netscaler-gateway-products\" hreflang=\"en\">Critical vulnerabilities in Citrix NetScaler Application Delivery Controller (ADC) and Citrix NetScaler Gateway products</a>",
+      "title": "Critical vulnerabilities in Citrix NetScaler Application Delivery Controller (ADC) and Citrix NetScaler Gateway products",
       "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-citrix-netscaler-application-delivery-controller-adc-and-citrix-netscaler-gateway-products",
       "date": "2026-09-08",
       "summary": "Alert on critical vulnerabilities affecting Citrix NetScaler ADC and Gateway products. Assess exposure and update all affected products.",
       "severity": "Critical",
-      "vendor": "N/A",
+      "vendor": "Critical",
       "cve": "N/A"
     },
     {
       "id": "8fd8a138",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/advisory/digital-camouflage-crypters-make-malware-undetectable\" hreflang=\"en\">Digital camouflage: crypters make malware undetectable</a>",
+      "title": "Digital camouflage: crypters make malware undetectable",
       "link": "https://www.cyber.gov.au/advisory/digital-camouflage-crypters-make-malware-undetectable",
       "date": "2026-09-08",
       "summary": "Cybercriminals are increasingly using crypters to disguise malware and make it harder for antivirus software to detect.",
@@ -618,7 +629,7 @@
     {
       "id": "d77a94f4",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/advisory/russian-state-supported-cyber-actors-conduct-phishing-campaign-targeting-users-of-zimbra-collaboration-suite\" hreflang=\"en\">Russian state-supported cyber actors conduct phishing campaign targeting users of Zimbra Collaboration Suite</a>",
+      "title": "Russian state-supported cyber actors conduct phishing campaign targeting users of Zimbra Collaboration Suite",
       "link": "https://www.cyber.gov.au/advisory/russian-state-supported-cyber-actors-conduct-phishing-campaign-targeting-users-of-zimbra-collaboration-suite",
       "date": "2026-09-08",
       "summary": "Protect your organisation from phishing attacks by Russian state-sponsored cyber actors targeting Zimbra Collaboration Suite users.",
@@ -689,7 +700,7 @@
     {
       "id": "331727de",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/node/1215\" hreflang=\"en\">Active exploitation of a software development platform within Australia</a>",
+      "title": "Active exploitation of a software development platform within Australia",
       "link": "https://www.cyber.gov.au/node/1215",
       "date": "2026-09-02",
       "summary": "Alert on actively exploited vulnerabilities affecting TeamCity On-Premise servers. Assess exposure and apply vendor mitigations for CVE 2026 63077 (Critical, 9.8).",
@@ -928,7 +939,7 @@
     {
       "id": "d657f97b",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/alert/active-exploitation-of-a-software-development-platform-within-australia\" hreflang=\"en\">Active exploitation of a software development platform within Australia</a>",
+      "title": "Active exploitation of a software development platform within Australia",
       "link": "https://www.cyber.gov.au/alert/active-exploitation-of-a-software-development-platform-within-australia",
       "date": "2026-08-24",
       "summary": "Alert on actively exploited vulnerabilities affecting TeamCity On-Premise servers. Assess exposure and apply vendor mitigations for CVE 2026 63077 (Critical, 9.8).",
@@ -987,7 +998,7 @@
     {
       "id": "9acfdb2b",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/alert/active-exploitation-of-remote-monitoring-and-management-platform-within-australia\" hreflang=\"en\">Active exploitation of remote monitoring and management platform within Australia</a>",
+      "title": "Active exploitation of remote monitoring and management platform within Australia",
       "link": "https://www.cyber.gov.au/alert/active-exploitation-of-remote-monitoring-and-management-platform-within-australia",
       "date": "2026-08-19",
       "summary": "Alert on active exploitation in Australia of N-able and N-central vulnerabilities CVE-2026-18556 and CVE-2026-18577. Assess exposure and apply mitigations.",
@@ -1394,7 +1405,7 @@
     {
       "id": "797d69a7",
       "source": "ASD",
-      "title": "<a href=\"https://www.cyber.gov.au/advisory/improve-router-hygiene-to-protect-against-russian-state-sponsored-targeting\" hreflang=\"en\">Improve Router Hygiene to Protect Against Russian State-Sponsored Targeting</a>",
+      "title": "Improve Router Hygiene to Protect Against Russian State-Sponsored Targeting",
       "link": "https://www.cyber.gov.au/advisory/improve-router-hygiene-to-protect-against-russian-state-sponsored-targeting",
       "date": "2026-07-13",
       "summary": "Learn how Russian FSB-linked cyber actors exploit vulnerable network devices and the steps your organisation can take to reduce risk.",
