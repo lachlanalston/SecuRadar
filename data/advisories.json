@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-14T17:48:25Z",
+  "last_updated": "2026-10-14T21:19:55Z",
   "advisories": [
     {
       "id": "fdea4182",
@@ -11,6 +11,54 @@
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
+    },
+    {
+      "id": "fbcc0c41",
+      "source": "CISA KEV",
+      "title": "Ahsay AhsayCBS Command Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-14",
+      "due_date": "2026-10-17",
+      "summary": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance a…",
+      "severity": "Low",
+      "vendor": "Ahsay — AhsayCBS",
+      "cve": "CVE-2026-105134"
+    },
+    {
+      "id": "b93b1165",
+      "source": "CISA KEV",
+      "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-14",
+      "due_date": "2026-10-17",
+      "summary": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or…",
+      "severity": "Low",
+      "vendor": "Cisco — Secure Email Gateway",
+      "cve": "CVE-2026-76519"
+    },
+    {
+      "id": "4654c2c2",
+      "source": "CISA KEV",
+      "title": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-14",
+      "due_date": "2026-10-17",
+      "summary": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (…",
+      "severity": "Low",
+      "vendor": "Ahsay — AhsayCBS",
+      "cve": "CVE-2026-105133"
+    },
+    {
+      "id": "e8bb14da",
+      "source": "CISA KEV",
+      "title": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-14",
+      "due_date": "2026-10-17",
+      "summary": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services…",
+      "severity": "Low",
+      "vendor": "Palo Alto Networks — PAN-OS",
+      "cve": "CVE-2026-0322"
     },
     {
       "id": "7ef15f21",
