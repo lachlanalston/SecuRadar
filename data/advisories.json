@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-15T00:00:22Z",
+  "last_updated": "2026-10-15T04:59:45Z",
   "advisories": [
     {
       "id": "fdea4182",
@@ -1449,17 +1449,6 @@
       "severity": "Critical",
       "vendor": "SonicWall — SMA1000 Appliances",
       "cve": "CVE-2026-15410"
-    },
-    {
-      "id": "797d69a7",
-      "source": "ASD",
-      "title": "Improve Router Hygiene to Protect Against Russian State-Sponsored Targeting",
-      "link": "https://www.cyber.gov.au/advisory/improve-router-hygiene-to-protect-against-russian-state-sponsored-targeting",
-      "date": "2026-07-13",
-      "summary": "Learn how Russian FSB-linked cyber actors exploit vulnerable network devices and the steps your organisation can take to reduce risk.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "13ef1f59",
