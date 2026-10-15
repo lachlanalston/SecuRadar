@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-10-15T04:59:45Z",
+  "last_updated": "2026-10-15T09:45:54Z",
   "advisories": [
+    {
+      "id": "380fb0c8",
+      "source": "NCSC UK",
+      "title": "Using TLS to protect data",
+      "link": "https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data",
+      "date": "2026-10-15",
+      "summary": "Recommended profiles to securely configure TLS for the most common versions and scenarios, with additional guidance for managing older versions.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "fdea4182",
       "source": "ASD",
@@ -8353,17 +8364,6 @@
       "severity": "Critical",
       "vendor": "ConnectWise — ScreenConnect",
       "cve": "CVE-2024-1709"
-    },
-    {
-      "id": "c5268505",
-      "source": "NCSC UK",
-      "title": "Private Branch Exchange (PBX) best practice",
-      "link": "https://www.ncsc.gov.uk/guidance/private-branch-exchange-best-practice",
-      "date": "2024-02-20",
-      "summary": "Protecting your organisation’s telephony systems from cyber attacks and telecoms fraud.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "5e76d53f",
