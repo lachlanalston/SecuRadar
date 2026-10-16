@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-10-16T14:34:46Z",
+  "last_updated": "2026-10-16T18:38:28Z",
   "advisories": [
+    {
+      "id": "06ec62b5",
+      "source": "CISA KEV",
+      "title": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-16",
+      "due_date": "2026-10-19",
+      "summary": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the…",
+      "severity": "Low",
+      "vendor": "BeyondTrust — Remote Support",
+      "cve": "CVE-2026-102764"
+    },
+    {
+      "id": "b86750c9",
+      "source": "CISA KEV",
+      "title": "Fortinet Multiple Products Path Traversal Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-16",
+      "due_date": "2026-10-19",
+      "summary": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes…",
+      "severity": "Low",
+      "vendor": "Fortinet — Multiple Products",
+      "cve": "CVE-2025-61624"
+    },
     {
       "id": "380fb0c8",
       "source": "NCSC UK",
