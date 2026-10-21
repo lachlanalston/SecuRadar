@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-10-21T01:25:14Z",
+  "last_updated": "2026-10-21T06:20:52Z",
   "advisories": [
+    {
+      "id": "5da3f325",
+      "source": "ASD",
+      "title": "Critical vulnerabilities in PHP",
+      "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-php",
+      "date": "2026-10-21",
+      "summary": "A security release for two critical PHP vulnerabilities is set for public disclosure on 22 October 2026. PHP is widely used to power web applications.",
+      "severity": "Critical",
+      "vendor": "Critical",
+      "cve": "N/A"
+    },
     {
       "id": "4d3c2a5b",
       "source": "CISA KEV",
