@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-23T16:39:02Z",
+  "last_updated": "2026-10-23T20:12:49Z",
   "advisories": [
     {
       "id": "1e6e51a4",
@@ -11,6 +11,30 @@
       "severity": "Critical",
       "vendor": "Fortinet",
       "cve": "N/A"
+    },
+    {
+      "id": "fce24648",
+      "source": "CISA KEV",
+      "title": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-23",
+      "due_date": "2026-10-26",
+      "summary": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in No…",
+      "severity": "Low",
+      "vendor": "Arista — VeloCloud Orchestrator",
+      "cve": "CVE-2026-114625"
+    },
+    {
+      "id": "3842fe66",
+      "source": "CISA KEV",
+      "title": "Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-23",
+      "due_date": "2026-10-26",
+      "summary": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance …",
+      "severity": "Critical",
+      "vendor": "Collabora — Collabora Online – Built-in CODE Server",
+      "cve": "CVE-2026-110447"
     },
     {
       "id": "5da3f325",
