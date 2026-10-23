@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-10-23T01:15:42Z",
+  "last_updated": "2026-10-23T06:19:09Z",
   "advisories": [
+    {
+      "id": "1e6e51a4",
+      "source": "ASD",
+      "title": "Critical vulnerabilities in Fortinet products",
+      "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-fortinet-products",
+      "date": "2026-10-23",
+      "summary": "Fortinet have announced critical vulnerabilities in Fortinet products, and are releasing security updates which customers should implement as a priority.",
+      "severity": "Critical",
+      "vendor": "Fortinet",
+      "cve": "N/A"
+    },
     {
       "id": "5da3f325",
       "source": "ASD",
