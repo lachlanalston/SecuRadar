@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-10-27T19:50:40Z",
+  "last_updated": "2026-10-27T23:32:31Z",
   "advisories": [
+    {
+      "id": "6b95ee74",
+      "source": "CISA KEV",
+      "title": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-27",
+      "due_date": "2026-11-10",
+      "summary": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (…",
+      "severity": "Critical",
+      "vendor": "Adobe — Commerce and Magento",
+      "cve": "CVE-2026-48356"
+    },
+    {
+      "id": "a35627a7",
+      "source": "CISA KEV",
+      "title": "Google Brotli Unchecked Return Value Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-27",
+      "due_date": "2026-11-10",
+      "summary": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Foren…",
+      "severity": "Low",
+      "vendor": "Google — Brotli",
+      "cve": "CVE-2026-111497"
+    },
     {
       "id": "55b90300",
       "source": "CISA KEV",
