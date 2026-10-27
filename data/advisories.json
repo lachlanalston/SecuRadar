@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-10-26T23:02:11Z",
+  "last_updated": "2026-10-27T02:18:15Z",
   "advisories": [
+    {
+      "id": "55b90300",
+      "source": "CISA KEV",
+      "title": "PHP Memory Corruption Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-26",
+      "due_date": "2026-10-29",
+      "summary": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are…",
+      "severity": "Critical",
+      "vendor": "PHP Group — PHP",
+      "cve": "CVE-2026-109618"
+    },
+    {
+      "id": "7d72b94c",
+      "source": "CISA KEV",
+      "title": "PHP Stale Internal Request-State Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-26",
+      "due_date": "2026-10-29",
+      "summary": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders …",
+      "severity": "Critical",
+      "vendor": "PHP Group — PHP",
+      "cve": "CVE-2026-109619"
+    },
     {
       "id": "1e6e51a4",
       "source": "ASD",
