@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-10-28T17:00:11Z",
+  "last_updated": "2026-10-28T21:36:32Z",
   "advisories": [
+    {
+      "id": "15426ee8",
+      "source": "CISA KEV",
+      "title": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-28",
+      "due_date": "2026-11-11",
+      "summary": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use o…",
+      "severity": "Low",
+      "vendor": "Broadcom — VMware ESX",
+      "cve": "CVE-2026-41709"
+    },
+    {
+      "id": "f43e48d8",
+      "source": "CISA KEV",
+      "title": "Linux Kernel Missing Initialization of a Variable Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-28",
+      "due_date": "2026-10-31",
+      "summary": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root. Required action: Apply mitigations in accordance with vendor instructions, en…",
+      "severity": "Low",
+      "vendor": "Linux — Kernel",
+      "cve": "CVE-2026-46300"
+    },
     {
       "id": "6b95ee74",
       "source": "CISA KEV",
