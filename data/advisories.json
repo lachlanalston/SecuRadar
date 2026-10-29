@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-10-29T15:24:42Z",
+  "last_updated": "2026-10-29T20:26:43Z",
   "advisories": [
+    {
+      "id": "314c3198",
+      "source": "CISA KEV",
+      "title": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-29",
+      "due_date": "2026-11-01",
+      "summary": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance …",
+      "severity": "Low",
+      "vendor": "GitLab — Community Edition and Enterprise Edition",
+      "cve": "CVE-2026-97229"
+    },
+    {
+      "id": "40ae9486",
+      "source": "CISA KEV",
+      "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-29",
+      "due_date": "2026-11-01",
+      "summary": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics …",
+      "severity": "Low",
+      "vendor": "Cisco — Secure Firewall ASA Software and Cisco Secure FTD Software",
+      "cve": "CVE-2026-76418"
+    },
     {
       "id": "15426ee8",
       "source": "CISA KEV",
@@ -13688,23 +13712,23 @@
       "cve": "CVE-2022-22947"
     },
     {
-      "id": "55d2b8f7",
-      "source": "NCSC UK",
-      "title": "ACD - The Fifth Year",
-      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
-      "date": "2022-05-10",
-      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "47dc9670",
       "source": "NCSC UK",
       "title": "Organisational use of Enterprise Connected Devices",
       "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
       "date": "2022-05-10",
       "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "55d2b8f7",
+      "source": "NCSC UK",
+      "title": "ACD - The Fifth Year",
+      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
+      "date": "2022-05-10",
+      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
