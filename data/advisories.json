@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-10-30T13:20:16Z",
+  "last_updated": "2026-10-30T18:44:05Z",
   "advisories": [
+    {
+      "id": "48c07213",
+      "source": "CISA KEV",
+      "title": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-30",
+      "due_date": "2026-11-13",
+      "summary": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Foren…",
+      "severity": "Low",
+      "vendor": "Ivanti — Connect Secure",
+      "cve": "CVE-2026-118527"
+    },
+    {
+      "id": "ed171896",
+      "source": "CISA KEV",
+      "title": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-30",
+      "due_date": "2026-11-02",
+      "summary": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Fo…",
+      "severity": "Critical",
+      "vendor": "Ivanti — Connect Secure",
+      "cve": "CVE-2026-111357"
+    },
     {
       "id": "314c3198",
       "source": "CISA KEV",
