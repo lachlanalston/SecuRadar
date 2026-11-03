@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-11-02T22:25:12Z",
+  "last_updated": "2026-11-03T03:36:49Z",
   "advisories": [
+    {
+      "id": "1cbf8f60",
+      "source": "NCSC UK",
+      "title": "Artificial intelligence and cyber intrusion",
+      "link": "https://www.ncsc.gov.uk/report/artificial-intelligence-and-cyber-intrusion",
+      "date": "2026-11-03",
+      "summary": "An NCSC assessment that examines current AI-enabled threat trends and projections of the threat landscape to 2028.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "48c07213",
       "source": "CISA KEV",
@@ -13736,23 +13747,23 @@
       "cve": "CVE-2022-22947"
     },
     {
-      "id": "55d2b8f7",
-      "source": "NCSC UK",
-      "title": "ACD - The Fifth Year",
-      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
-      "date": "2022-05-10",
-      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "47dc9670",
       "source": "NCSC UK",
       "title": "Organisational use of Enterprise Connected Devices",
       "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
       "date": "2022-05-10",
       "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "55d2b8f7",
+      "source": "NCSC UK",
+      "title": "ACD - The Fifth Year",
+      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
+      "date": "2022-05-10",
+      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
@@ -21795,17 +21806,6 @@
       "date": "2020-05-04",
       "summary": "NCSC technical paper about the privacy and security design of the NHS contact tracing app developed to help slow the spread of coronavirus.",
       "severity": "High",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "15051fd6",
-      "source": "NCSC UK",
-      "title": "Summary of NCSC’s security analysis for the UK telecoms sector",
-      "link": "https://www.ncsc.gov.uk/report/summary-of-ncsc-security-analysis-for-the-uk-telecoms-sector",
-      "date": "2020-01-28",
-      "summary": "A summary of the NCSC’s security analysis for the UK telecoms sector",
-      "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
     }
