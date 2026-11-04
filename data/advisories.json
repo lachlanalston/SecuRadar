@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-03T19:09:21Z",
+  "last_updated": "2026-11-04T00:05:43Z",
   "advisories": [
     {
       "id": "1cbf8f60",
@@ -11,6 +11,18 @@
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
+    },
+    {
+      "id": "8b522248",
+      "source": "CISA KEV",
+      "title": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-03",
+      "due_date": "2026-11-06",
+      "summary": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths used during full-package core upgrades. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Fo…",
+      "severity": "Low",
+      "vendor": "WordPress — WordPress Core",
+      "cve": "CVE-2026-119977"
     },
     {
       "id": "48c07213",
