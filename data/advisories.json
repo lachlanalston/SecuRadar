@@ -1,6 +1,18 @@
 {
-  "last_updated": "2026-11-04T15:09:19Z",
+  "last_updated": "2026-11-04T21:24:54Z",
   "advisories": [
+    {
+      "id": "a8762c0e",
+      "source": "CISA KEV",
+      "title": "Apple Multiple Products Improper Authentication Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-04",
+      "due_date": "2026-11-18",
+      "summary": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance f…",
+      "severity": "Low",
+      "vendor": "Apple — Multiple Products",
+      "cve": "CVE-2024-27834"
+    },
     {
       "id": "1cbf8f60",
       "source": "NCSC UK",
