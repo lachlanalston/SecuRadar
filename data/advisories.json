@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-05T01:39:55Z",
+  "last_updated": "2026-11-05T09:01:40Z",
   "advisories": [
     {
       "id": "a8762c0e",
@@ -722,17 +722,6 @@
       "severity": "Low",
       "vendor": "Check Point — Multiple Products",
       "cve": "CVE-2026-85102"
-    },
-    {
-      "id": "351c069b",
-      "source": "ASD",
-      "title": "Agentic AI harnesses",
-      "link": "https://www.cyber.gov.au/advisory/agentic-ai-harnesses",
-      "date": "2026-09-21",
-      "summary": "Learn how an agentic AI harness influences security, governance and operational risk, and apply practical measures to adopt agentic AI securely.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "0c0e7b2e",
