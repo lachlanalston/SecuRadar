@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-14T20:27:28Z",
+  "last_updated": "2026-11-15T00:08:58Z",
   "advisories": [
     {
       "id": "d0d44665",
@@ -313,17 +313,6 @@
       "cve": "CVE-2026-109619"
     },
     {
-      "id": "1e6e51a4",
-      "source": "ASD",
-      "title": "Critical vulnerabilities in Fortinet products",
-      "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-fortinet-products",
-      "date": "2026-10-23",
-      "summary": "Fortinet have announced critical vulnerabilities in Fortinet products, and are releasing security updates which customers should implement as a priority.",
-      "severity": "Critical",
-      "vendor": "Fortinet",
-      "cve": "N/A"
-    },
-    {
       "id": "fce24648",
       "source": "CISA KEV",
       "title": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
@@ -346,17 +335,6 @@
       "severity": "Critical",
       "vendor": "Collabora — Collabora Online – Built-in CODE Server",
       "cve": "CVE-2026-110447"
-    },
-    {
-      "id": "5da3f325",
-      "source": "ASD",
-      "title": "Critical vulnerabilities in PHP",
-      "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-php",
-      "date": "2026-10-21",
-      "summary": "A security release for two critical PHP vulnerabilities is set for public disclosure on 22 October 2026. PHP is widely used to power web applications.",
-      "severity": "Critical",
-      "vendor": "Critical",
-      "cve": "N/A"
     },
     {
       "id": "4d3c2a5b",
@@ -478,17 +456,6 @@
       "cve": "CVE-2026-21589"
     },
     {
-      "id": "fdea4182",
-      "source": "ASD",
-      "title": "Protecting operational technology and edge devices",
-      "link": "https://www.cyber.gov.au/alert/protecting-operational-technology-and-edge-devices",
-      "date": "2026-10-14",
-      "summary": "Alert on the cyber security risks to operational technology (OT), including refrigeration and cooling technology, with mitigation advice and guidance for businesses and organisations that operate this technology.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "fbcc0c41",
       "source": "CISA KEV",
       "title": "Ahsay AhsayCBS Command Injection Vulnerability",
@@ -559,17 +526,6 @@
       "severity": "Low",
       "vendor": "Microsoft — Windows",
       "cve": "CVE-2026-96951"
-    },
-    {
-      "id": "41bc6c9a",
-      "source": "ASD",
-      "title": "Chinese government-linked cyber threat actors combine automated and hands-on hacking tools to steal sensitive data",
-      "link": "https://www.cyber.gov.au/advisory/chinese-government-linked-cyber-threat-actors-combine-automated-and-hands-on-hacking-tools-to-steal-sensitive-data",
-      "date": "2026-10-08",
-      "summary": "Learn how Chinese state-linked cyber actors steal sensitive data and discover practical steps to detect, prevent and respond to attacks.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "15e63bdf",
@@ -668,17 +624,6 @@
       "cve": "CVE-2026-102489"
     },
     {
-      "id": "deafc2b0",
-      "source": "ASD",
-      "title": "Critical vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway products",
-      "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-citrix-netscaler-adc-and-citrix-netscaler-gateway-products",
-      "date": "2026-10-01",
-      "summary": "Alert for organisations to implement a high-priority patch addressing new vulnerabilities, under active exploitation in Citrix NetScaler ADC and Citrix NetScaler Gateway products.",
-      "severity": "Critical",
-      "vendor": "Citrix Netscaler Adc And Citrix Netscaler Gateway",
-      "cve": "N/A"
-    },
-    {
       "id": "0ac26dc9",
       "source": "CISA KEV",
       "title": "Fortinet FortiMail Path Traversal Vulnerability",
@@ -739,17 +684,6 @@
       "cve": "CVE-2026-88771"
     },
     {
-      "id": "f9e41578",
-      "source": "ASD",
-      "title": "Protect your organisations’ AI services",
-      "link": "https://www.cyber.gov.au/advisory/protect-your-organisations-ai-services",
-      "date": "2026-09-25",
-      "summary": "Protect access to AI services by securing accounts, credentials and connected systems to reduce the risk of unauthorised use, disruption and data exposure.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "68fd9dca",
       "source": "CISA KEV",
       "title": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
@@ -786,17 +720,6 @@
       "cve": "CVE-2026-87902"
     },
     {
-      "id": "cbf463e3",
-      "source": "ASD",
-      "title": "Risks of AI misalignment to Australian organisations",
-      "link": "https://www.cyber.gov.au/alert/risks-of-ai-misalignment-to-australian-organisations",
-      "date": "2026-09-24",
-      "summary": "Alert on the risks of AI misalignment to Australian organisations, with mitigation advice and guidance on secure AI practices for organisations.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "b10925c5",
       "source": "CISA KEV",
       "title": "WSO2 Multiple Products Path Traversal Vulnerability",
@@ -819,17 +742,6 @@
       "severity": "Critical",
       "vendor": "Adobe — Commerce and Magento",
       "cve": "CVE-2026-71362"
-    },
-    {
-      "id": "27908a3e",
-      "source": "ASD",
-      "title": "North Korean \"WaterPlum,\" commonly referred to as “Contagious Interview,” cyber actor group targeting IT professionals",
-      "link": "https://www.cyber.gov.au/advisory/north-korean-waterplum-commonly-referred-to-as-contagious-interview-cyber-actor-group-targeting-it-professionals",
-      "date": "2026-09-22",
-      "summary": "A joint cyber security advisory on North Korean threat actors targeting IT professionals through fake jobs, malware and cryptocurrency theft.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "6c41b627",
@@ -1059,17 +971,6 @@
       "cve": "CVE-2026-67277"
     },
     {
-      "id": "1f9f527d",
-      "source": "ASD",
-      "title": "Active exploitation of Adobe Commerce and Magento Open Source vulnerability",
-      "link": "https://www.cyber.gov.au/alert/active-exploitation-of-adobe-commerce-and-magento-open-source-vulnerability",
-      "date": "2026-09-09",
-      "summary": "Alert on active exploitation of a critical vulnerability in Adobe Commerce and Magento Open Source.",
-      "severity": "Critical",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "357bf85f",
       "source": "CISA KEV",
       "title": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
@@ -1116,39 +1017,6 @@
       "severity": "Low",
       "vendor": "Cisco — Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
       "cve": "CVE-2026-20079"
-    },
-    {
-      "id": "67916f51",
-      "source": "ASD",
-      "title": "Critical vulnerabilities in Citrix NetScaler Application Delivery Controller (ADC) and Citrix NetScaler Gateway products",
-      "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-citrix-netscaler-application-delivery-controller-adc-and-citrix-netscaler-gateway-products",
-      "date": "2026-09-08",
-      "summary": "Alert on critical vulnerabilities affecting Citrix NetScaler ADC and Gateway products. Assess exposure and update all affected products.",
-      "severity": "Critical",
-      "vendor": "Critical",
-      "cve": "N/A"
-    },
-    {
-      "id": "8fd8a138",
-      "source": "ASD",
-      "title": "Digital camouflage: crypters make malware undetectable",
-      "link": "https://www.cyber.gov.au/advisory/digital-camouflage-crypters-make-malware-undetectable",
-      "date": "2026-09-08",
-      "summary": "Cybercriminals are increasingly using crypters to disguise malware and make it harder for antivirus software to detect.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
-      "id": "d77a94f4",
-      "source": "ASD",
-      "title": "Russian state-supported cyber actors conduct phishing campaign targeting users of Zimbra Collaboration Suite",
-      "link": "https://www.cyber.gov.au/advisory/russian-state-supported-cyber-actors-conduct-phishing-campaign-targeting-users-of-zimbra-collaboration-suite",
-      "date": "2026-09-08",
-      "summary": "Protect your organisation from phishing attacks by Russian state-sponsored cyber actors targeting Zimbra Collaboration Suite users.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "7337ee11",
@@ -1209,17 +1077,6 @@
       "severity": "Low",
       "vendor": "Google — Chromium V8",
       "cve": "CVE-2026-85046"
-    },
-    {
-      "id": "331727de",
-      "source": "ASD",
-      "title": "Active exploitation of a software development platform within Australia",
-      "link": "https://www.cyber.gov.au/node/1215",
-      "date": "2026-09-02",
-      "summary": "Alert on actively exploited vulnerabilities affecting TeamCity On-Premise servers. Assess exposure and apply vendor mitigations for CVE 2026 63077 (Critical, 9.8).",
-      "severity": "Critical",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "f1d0f0ca",
@@ -1450,17 +1307,6 @@
       "cve": "CVE-2026-60004"
     },
     {
-      "id": "d657f97b",
-      "source": "ASD",
-      "title": "Active exploitation of a software development platform within Australia",
-      "link": "https://www.cyber.gov.au/alert/active-exploitation-of-a-software-development-platform-within-australia",
-      "date": "2026-08-24",
-      "summary": "Alert on actively exploited vulnerabilities affecting TeamCity On-Premise servers. Assess exposure and apply vendor mitigations for CVE 2026 63077 (Critical, 9.8).",
-      "severity": "Critical",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "55eecf6f",
       "source": "CISA KEV",
       "title": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in Improper Access Control Vulnerability",
@@ -1507,17 +1353,6 @@
       "severity": "Critical",
       "vendor": "TrueConf — Server",
       "cve": "CVE-2026-72529"
-    },
-    {
-      "id": "9acfdb2b",
-      "source": "ASD",
-      "title": "Active exploitation of remote monitoring and management platform within Australia",
-      "link": "https://www.cyber.gov.au/alert/active-exploitation-of-remote-monitoring-and-management-platform-within-australia",
-      "date": "2026-08-19",
-      "summary": "Alert on active exploitation in Australia of N-able and N-central vulnerabilities CVE-2026-18556 and CVE-2026-18577. Assess exposure and apply mitigations.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "CVE-2026-18556, CVE-2026-18577"
     },
     {
       "id": "89df6bec",
