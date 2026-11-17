@@ -1,6 +1,17 @@
 {
-  "last_updated": "2026-11-17T00:57:40Z",
+  "last_updated": "2026-11-17T08:57:33Z",
   "advisories": [
+    {
+      "id": "51a67b75",
+      "source": "ASD",
+      "title": "Vulnerabilities are moving quickly, so patch, protect, prevent",
+      "link": "https://www.cyber.gov.au/alert/vulnerabilities-are-moving-quickly-so-patch-protect-prevent",
+      "date": "2026-11-17",
+      "summary": "Actions&nbsp;organisations can take to identify internet-exposed systems, address vulnerabilities and reduce cyber security risk.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
     {
       "id": "d0d44665",
       "source": "CISA KEV",
