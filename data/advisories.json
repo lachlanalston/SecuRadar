@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-17T08:57:33Z",
+  "last_updated": "2026-11-17T18:21:43Z",
   "advisories": [
     {
       "id": "51a67b75",
@@ -11,6 +11,18 @@
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
+    },
+    {
+      "id": "d9495211",
+      "source": "CISA KEV",
+      "title": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-17",
+      "due_date": "2026-12-01",
+      "summary": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data type through a PUT request. If the certificate authority automatically signs requests without strong verification, an unauthenticated network attacker can obtain a valid certificate and exploit the vu…",
+      "severity": "Critical",
+      "vendor": "Perforce — Puppet Enterprise",
+      "cve": "CVE-2026-115731"
     },
     {
       "id": "d0d44665",
@@ -2031,7 +2043,7 @@
       "due_date": "2026-07-02",
       "summary": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication. Req…",
       "severity": "Low",
-      "vendor": "SimpleHelp  — SimpleHelp",
+      "vendor": "SimpleHelp — SimpleHelp",
       "cve": "CVE-2026-48558"
     },
     {
@@ -2619,7 +2631,7 @@
       "due_date": "2026-05-08",
       "summary": "SimpleHelp contains a path traversal vulnerability that allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited to execute arbitrary code on the host in the context of the SimpleHelp server user. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
       "severity": "Critical",
-      "vendor": "SimpleHelp  — SimpleHelp",
+      "vendor": "SimpleHelp — SimpleHelp",
       "cve": "CVE-2024-57728"
     },
     {
@@ -2631,7 +2643,7 @@
       "due_date": "2026-05-08",
       "summary": "SimpleHelp contains a missing authorization vulnerability that could allow low-privileged technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges to the server admin role. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
       "severity": "Critical",
-      "vendor": "SimpleHelp  — SimpleHelp",
+      "vendor": "SimpleHelp — SimpleHelp",
       "cve": "CVE-2024-57726"
     },
     {
@@ -3985,7 +3997,7 @@
       "due_date": "2025-12-29",
       "summary": "Array Networks ArrayOS AG contains an OS command injection vulnerability that could allow an attacker to execute arbitrary commands. Required action: Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
       "severity": "Low",
-      "vendor": "Array Networks  — ArrayOS AG",
+      "vendor": "Array Networks — ArrayOS AG",
       "cve": "CVE-2025-66644"
     },
     {
@@ -6471,7 +6483,7 @@
       "due_date": "2025-03-06",
       "summary": "SimpleHelp remote support software contains multiple path traversal vulnerabilities that allow unauthenticated remote attackers to download arbitrary files from the SimpleHelp host via crafted HTTP requests. These files may include server configuration files and hashed user passwords. Required action: Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
       "severity": "Critical",
-      "vendor": "SimpleHelp  — SimpleHelp",
+      "vendor": "SimpleHelp — SimpleHelp",
       "cve": "CVE-2024-57727"
     },
     {
@@ -7091,7 +7103,7 @@
       "due_date": "2024-12-16",
       "summary": "Array Networks AG and vxAG ArrayOS contain a missing authentication for critical function vulnerability that allows an attacker to read local files and execute code on the SSL VPN gateway. Required action: Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable. Known ransomware campaign use.",
       "severity": "Critical",
-      "vendor": "Array Networks  — AG/vxAG ArrayOS",
+      "vendor": "Array Networks — AG/vxAG ArrayOS",
       "cve": "CVE-2023-28461"
     },
     {
@@ -13927,23 +13939,23 @@
       "cve": "CVE-2022-22947"
     },
     {
-      "id": "55d2b8f7",
-      "source": "NCSC UK",
-      "title": "ACD - The Fifth Year",
-      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
-      "date": "2022-05-10",
-      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "47dc9670",
       "source": "NCSC UK",
       "title": "Organisational use of Enterprise Connected Devices",
       "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
       "date": "2022-05-10",
       "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "55d2b8f7",
+      "source": "NCSC UK",
+      "title": "ACD - The Fifth Year",
+      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
+      "date": "2022-05-10",
+      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
