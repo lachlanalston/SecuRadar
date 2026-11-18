@@ -1,6 +1,54 @@
 {
-  "last_updated": "2026-11-18T17:49:38Z",
+  "last_updated": "2026-11-18T23:56:47Z",
   "advisories": [
+    {
+      "id": "46b34010",
+      "source": "CISA KEV",
+      "title": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-18",
+      "due_date": "2026-11-21",
+      "summary": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 2…",
+      "severity": "Low",
+      "vendor": "Synology — DiskStation Manager (DSM)",
+      "cve": "CVE-2024-10441"
+    },
+    {
+      "id": "c2bb54af",
+      "source": "CISA KEV",
+      "title": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-18",
+      "due_date": "2026-12-02",
+      "summary": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud servi…",
+      "severity": "Low",
+      "vendor": "BerriAI — LiteLLM",
+      "cve": "CVE-2026-40217"
+    },
+    {
+      "id": "12417c51",
+      "source": "CISA KEV",
+      "title": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-18",
+      "due_date": "2026-11-21",
+      "summary": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that access an unintended controller route from a public survey context and supply a crafted file-path or stream parameter during data import processing. Exploitation requires knowledge of a valid public survey hash. Required action: Apply mitigations …",
+      "severity": "Low",
+      "vendor": "Vanderbilt University — Research Electronic Data Capture (REDCap)",
+      "cve": "CVE-2026-90817"
+    },
+    {
+      "id": "f732f58c",
+      "source": "CISA KEV",
+      "title": "Apache Axis Unsafe Reflection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-18",
+      "due_date": "2026-11-21",
+      "summary": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class is available on the application classpath. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. Required action: Apply mitigations in ac…",
+      "severity": "Low",
+      "vendor": "Apache — Axis",
+      "cve": "CVE-2026-90436"
+    },
     {
       "id": "51a67b75",
       "source": "ASD",
