@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-19T16:21:14Z",
+  "last_updated": "2026-11-19T23:09:16Z",
   "advisories": [
     {
       "id": "46b34010",
@@ -1578,17 +1578,6 @@
       "severity": "Critical",
       "vendor": "TrueConf — Server",
       "cve": "CVE-2026-72529"
-    },
-    {
-      "id": "9acfdb2b",
-      "source": "ASD",
-      "title": "Active exploitation of remote monitoring and management platform within Australia",
-      "link": "https://www.cyber.gov.au/alert/active-exploitation-of-remote-monitoring-and-management-platform-within-australia",
-      "date": "2026-08-19",
-      "summary": "Alert on active exploitation in Australia of N-able and N-central vulnerabilities CVE-2026-18556 and CVE-2026-18577. Assess exposure and apply mitigations.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "CVE-2026-18556, CVE-2026-18577"
     },
     {
       "id": "89df6bec",
