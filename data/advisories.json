@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-23T06:04:38Z",
+  "last_updated": "2026-11-23T18:36:46Z",
   "advisories": [
     {
       "id": "0fa969ff",
@@ -57,7 +57,7 @@
       "date": "2026-11-18",
       "due_date": "2026-11-21",
       "summary": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 2…",
-      "severity": "Low",
+      "severity": "Critical",
       "vendor": "Synology — DiskStation Manager (DSM)",
       "cve": "CVE-2024-10441"
     },
@@ -14024,23 +14024,23 @@
       "cve": "CVE-2022-22947"
     },
     {
-      "id": "55d2b8f7",
-      "source": "NCSC UK",
-      "title": "ACD - The Fifth Year",
-      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
-      "date": "2022-05-10",
-      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "47dc9670",
       "source": "NCSC UK",
       "title": "Organisational use of Enterprise Connected Devices",
       "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
       "date": "2022-05-10",
       "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "55d2b8f7",
+      "source": "NCSC UK",
+      "title": "ACD - The Fifth Year",
+      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
+      "date": "2022-05-10",
+      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
