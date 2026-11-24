@@ -1,6 +1,42 @@
 {
-  "last_updated": "2026-11-24T15:07:25Z",
+  "last_updated": "2026-11-24T23:59:46Z",
   "advisories": [
+    {
+      "id": "35b4e27f",
+      "source": "CISA KEV",
+      "title": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-24",
+      "due_date": "2026-11-27",
+      "summary": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript. Successful exploitation can result in attacker-controlled JavaScript being distributed through Optimizely-hosted assets and executed in browsers visiting affected customer websites. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance …",
+      "severity": "Critical",
+      "vendor": "Optimizely — Web Experimentation",
+      "cve": "CVE-2026-132224"
+    },
+    {
+      "id": "3420a177",
+      "source": "CISA KEV",
+      "title": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-24",
+      "due_date": "2026-11-27",
+      "summary": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL i…",
+      "severity": "Low",
+      "vendor": "Idunno — AntiCsrf",
+      "cve": "CVE-2026-131914"
+    },
+    {
+      "id": "744bf60b",
+      "source": "CISA KEV",
+      "title": "Drupal Core Remote Code Execution Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-24",
+      "due_date": "2026-11-27",
+      "summary": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics …",
+      "severity": "Critical",
+      "vendor": "Drupal — Core",
+      "cve": "CVE-2026-132165"
+    },
     {
       "id": "9157697d",
       "source": "CISA KEV",
@@ -1591,17 +1627,6 @@
       "severity": "Low",
       "vendor": "Gitea — Gitea",
       "cve": "CVE-2026-60004"
-    },
-    {
-      "id": "d657f97b",
-      "source": "ASD",
-      "title": "Active exploitation of a software development platform within Australia",
-      "link": "https://www.cyber.gov.au/alert/active-exploitation-of-a-software-development-platform-within-australia",
-      "date": "2026-08-24",
-      "summary": "Alert on actively exploited vulnerabilities affecting TeamCity On-Premise servers. Assess exposure and apply vendor mitigations for CVE 2026 63077 (Critical, 9.8).",
-      "severity": "Critical",
-      "vendor": "N/A",
-      "cve": "N/A"
     },
     {
       "id": "55eecf6f",
@@ -14048,23 +14073,23 @@
       "cve": "CVE-2022-22947"
     },
     {
-      "id": "47dc9670",
-      "source": "NCSC UK",
-      "title": "Organisational use of Enterprise Connected Devices",
-      "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
-      "date": "2022-05-10",
-      "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "55d2b8f7",
       "source": "NCSC UK",
       "title": "ACD - The Fifth Year",
       "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
       "date": "2022-05-10",
       "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "47dc9670",
+      "source": "NCSC UK",
+      "title": "Organisational use of Enterprise Connected Devices",
+      "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
+      "date": "2022-05-10",
+      "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
