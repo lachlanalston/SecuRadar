@@ -1,6 +1,30 @@
 {
-  "last_updated": "2026-11-23T18:36:46Z",
+  "last_updated": "2026-11-24T04:11:24Z",
   "advisories": [
+    {
+      "id": "9157697d",
+      "source": "CISA KEV",
+      "title": "Project MONAI MONAI Label Path Traversal Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-23",
+      "due_date": "2026-11-26",
+      "summary": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BO…",
+      "severity": "Critical",
+      "vendor": "Project MONAI — MONAI Label",
+      "cve": "CVE-2026-133968"
+    },
+    {
+      "id": "fcf4f0d0",
+      "source": "CISA KEV",
+      "title": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-23",
+      "due_date": "2026-11-26",
+      "summary": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forens…",
+      "severity": "Low",
+      "vendor": "N-able — MailAssure",
+      "cve": "CVE-2026-134624"
+    },
     {
       "id": "0fa969ff",
       "source": "CISA KEV",
