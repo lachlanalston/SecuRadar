@@ -1,6 +1,42 @@
 {
-  "last_updated": "2026-11-27T12:56:46Z",
+  "last_updated": "2026-11-27T21:51:15Z",
   "advisories": [
+    {
+      "id": "795dc83f",
+      "source": "CISA KEV",
+      "title": "OSGeo GeoServer XML Injection Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-27",
+      "due_date": "2026-11-30",
+      "summary": "OsGeo GeoServer contains an XML injection vulnerability that allows an unauthenticated remote attacker to cause the server to read local text files accessible to the GeoServer process or fetch attacker-specified HTTP or HTTPS URLs via a crafted ID parameter in the WFS 2.0 GetFeatureById stored query. This vulnerability can be chained with CVE-2026-129244, CVE-2026-129243, CVE-2026-129245, and CVE-2026-129242 to achieve unauthenticated remote code execution on an affected GeoServer instance. Requ…",
+      "severity": "Critical",
+      "vendor": "OSGeo — GeoServer",
+      "cve": "CVE-2026-120705"
+    },
+    {
+      "id": "79104b53",
+      "source": "CISA KEV",
+      "title": "OSGeo GeoServer Incorrect Authorization Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-27",
+      "due_date": "2026-11-30",
+      "summary": "GeoServer contains an incorrect authorization vulnerability that allows an unauthenticated remote attacker to bypass service-level role checks and invoke operations protected solely by those checks via a request with a prefixed service parameter. This vulnerability can be chained with CVE-2026-129244, CVE-2026-120705, CVE-2026-129245, and CVE-2026-129242 to achieve unauthenticated remote code execution on an affected GeoServer instance. Required action: Apply mitigations in accordance with vendo…",
+      "severity": "Critical",
+      "vendor": "OSGeo — GeoServer",
+      "cve": "CVE-2026-129243"
+    },
+    {
+      "id": "cdfcec01",
+      "source": "CISA KEV",
+      "title": "Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability",
+      "link": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-27",
+      "due_date": "2026-11-30",
+      "summary": "Drupal Core contains an improper check for unusual or exceptional conditions vulnerability that allows an unauthenticated remote attacker to take over a site via the exposed Drupal installer when the site is in one of the affected unusual or incomplete installation states. Required action: Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirem…",
+      "severity": "Low",
+      "vendor": "Drupal — Core",
+      "cve": "CVE-2026-136716"
+    },
     {
       "id": "3af39497",
       "source": "CISA KEV",
@@ -14193,23 +14229,23 @@
       "cve": "CVE-2022-22947"
     },
     {
-      "id": "55d2b8f7",
-      "source": "NCSC UK",
-      "title": "ACD - The Fifth Year",
-      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
-      "date": "2022-05-10",
-      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
-      "severity": "Medium",
-      "vendor": "N/A",
-      "cve": "N/A"
-    },
-    {
       "id": "47dc9670",
       "source": "NCSC UK",
       "title": "Organisational use of Enterprise Connected Devices",
       "link": "https://www.ncsc.gov.uk/report/organisational-use-of-enterprise-connected-devices",
       "date": "2022-05-10",
       "summary": "Assessing the cyber security threat to UK organisations using Enterprise Connected Devices.",
+      "severity": "Medium",
+      "vendor": "N/A",
+      "cve": "N/A"
+    },
+    {
+      "id": "55d2b8f7",
+      "source": "NCSC UK",
+      "title": "ACD - The Fifth Year",
+      "link": "https://www.ncsc.gov.uk/report/acd-the-fifth-year",
+      "date": "2022-05-10",
+      "summary": "Key findings from the 5th year of the Active Cyber Defence (ACD) programme.",
       "severity": "Medium",
       "vendor": "N/A",
       "cve": "N/A"
